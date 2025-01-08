@@ -54,7 +54,7 @@ We can change the type of the Ordered list by mentioning the type attribute in t
 We could see here that the numbering changed to <b>Alphabetical</b> and then later to <b>Roman numbers</b>.
 
 <h3>3.Nested Lists:</h3>
-We can have ul in ol or vice-versa.
+We can have ul in ol or vice-versa.<br>
 <b>Example:</b><br>
 <img src="Images\nsl.png" alt="Nested list sample image"><br>
 <b>Output:</b><br>
