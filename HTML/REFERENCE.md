@@ -4,7 +4,7 @@ HTML is used to define the structure of the webpage.
 
 <h2>Understanding the Boiler plate in HTML:</h2>
 HTML Boilerplate a set of pre-written of HTML,CSS and JS which forms the starting point of your web project
-<img src="boilerplate.png" alt="Boilerplate">
+<img src="Images\boilerplate.png" alt="Boilerplate">
 
 <h3>Doctype decleration:</h3>
 <b>Syntax: <!DOCTYPE html> </b><br>
@@ -20,3 +20,20 @@ The <head> section contains meta-information about the document, such as the cha
 
 <h3>Body Section:</h3>
 The Body section is where you write all the HTML tags.
+
+<h2>Lists:</h2>
+<h3>1.Unordered List</h3>
+Here the tag <b>"ul"</b> is Unordered list tag and to <b>"li"</b> are the list items tag.<br>
+<b>Example:</b><br>
+<img src="Images\ul.png" alt="Unordered list"><br>
+<b>Output:</b><br>
+<img src="Images\ul_op.png" alt="Unordered list Output"><br>
+We get the ans in bulletin points.
+
+<h3>2.Ordered List</h3>
+Here the tag <b>"ol"</b> is Unordered list tag and to <b>"li"</b> are the list items tag.<br>
+<b>Example:</b><br>
+<img src="Images\ol.png" alt="Unordered list sample image"><br>
+<b>Output:</b><br>
+<img src="Images\ol_op.png" alt="Unordered list sample image"><br>
+Here we get the ans in numbers.
