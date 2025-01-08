@@ -30,7 +30,7 @@ Here the tag <b>"ul"</b> is Unordered list tag and to <b>"li"</b> are the list i
 <img src="Images\ul_op.png" alt="Unordered list Output"><br>
 We get the ans in bulletin points.
 
-<h3>Unordered list with type attribute:<h3>
+<h3>1a.Unordered list with type attribute:<h3>
 <b>Example:</b><br>
 <img src="Images\ul1.png" alt="Unordered list"><br>
 <b>Output:</b><br>
@@ -45,7 +45,7 @@ Here the tag <b>"ol"</b> is Unordered list tag and to <b>"li"</b> are the list i
 <img src="Images\ol_op.png" alt="Ordered list Output"><br>
 Here we get the ans in numbers.<br>
 
-<h3>Ordered list with type attribute:</h3>
+<h3>2a.Ordered list with type attribute:</h3>
 We can change the type of the Ordered list by mentioning the type attribute in the ordered list opening tag.<br>
 <b>Example:</b><br>
 <img src="Images\ol1.png" alt="Ordered list with type attribute"><br>
