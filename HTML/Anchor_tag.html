@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anchor-Tag</title>
+</head>
+<body>
+<h2 id =Normal_Link >Normal Link:</h2>
+<!-- We can actually go to other webpages -->
+<a href="https://example.com">Link</a>
+<br><hr>
+<h2>Download link:</h2>
+<!-- Making a download link -->
+<a href="FILES\HTML and CSS design and build websites.pdf" download="FILES\HTML and CSS design and build websites.pdf">John Duckett book</a>
+<br><hr>
+<h2>Ping:</h2>
+To know how many times the link has been clicked<br>
+<!-- Ping is an attribute used to know how many times the link has been clicked -->
+<!-- with the help of the ping attribute we can actually make use of it in the backend -->
+<a href="https://example.com" ping="https://example.com/tracking">Ping Attribute to conut the number of clicks</a>
+<br><hr>
+<h2>hreflang:</h2>
+The hreflang attribute helps specify the language and region of a webpage,
+improving search engine results and user experience for multilingual websites.<br>
+<!-- If you have a French version of your website, you'd use hreflang="fr"
+to tell search engines that the page is in French. -->
+<a href="https://example.com/es/" hreflang="es">Visit Spanish version of example.com</a>
+<br><hr>
+<h2>Target:</h2>
+Target helps,where to display the linked URL, as the name for a browsing context<br>
+<a href="https://example.com" target="_self">In the same page(default)</a><br>
+<a href="https://example.com" target="_blank">New tab</a><br>
+<!-- If your webpage contains frames or iframes,
+clicking the link with target="_top" will load the linked page in the entire window, removing the frames.-->
+<a href="https://example.com" target="_top">Just like self but opens the linked document in the full window, removing frames.</a><br>
+<a href="https://example.com" target="_self">Opens the link in the immediate parent frame. If no parent exists, it behaves like _self</a><br>
+<hr>
+<h2>Adding icons:</h2>
+<a href="https://example.com" target="_blank">Example.com<img src="Images\hyperlink.png" height="12px" width="12px"></a>
+<br><hr>
+<h2>Adding links to elements on the same page:</h2>
+To create a "Jump to" link, you need to assign an id to the target element, ensuring the id has no spaces only underscores.<br>
+<a href="#Normal_Link">Jump to</a>
+<br><hr>
+<h2>Linking to the Email address:</h2>
+<a href="mailto:kattadinesh2@gmail.com">My email</a>
+<br><hr>
+<h2></h2>
+</body>
+</html>
