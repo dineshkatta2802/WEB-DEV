@@ -115,7 +115,7 @@ Refer to this link to kow more about "Attributes":<a href="https://developer.moz
 <li>Here the href stand for hyperlink reference.</li>
 <li>We can even make an anchor tag to download any file</li>
 </ol>
-<h3>Normal Link:</h3>
+<h3 id="Normal_Link">Normal Link:</h3>
     <p>Links are created using the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute.</p>
     <p>Example: <a href="https://example.com">Link</a></p>
     <hr>
@@ -159,5 +159,57 @@ Refer to this link to kow more about "Attributes":<a href="https://developer.moz
         Example.com <img src="Images/hyperlink.png" alt="Hyperlink Icon" height="12px" width="12px">
     </a>
 
-<h3>Adding links to an element on the sam e page</h3>
+<h3>Adding links to an element on the same page</h3>
+To create a "Jump to" link, you need to assign an id to the target element, ensuring the id has no spaces only underscores.<br>
+<a href="#Normal_Link">Jump to</a>
+<br><hr>
 
+<h2>Image Tag:</h2>
+<code>Synatx:&lt;img src="..." alt="..." ...&gt;</code><br>
+<ol>
+<li>Here the <code>src</code> attribute contain the path  to the image</li>
+<li>The <code>alt</code> attribute contains the alternative text,it is displayed when the image cannot be loaded</li>
+<li>There are so many other attributes like height and width and so on.</li>
+</ol>
+<h3>Image format supported by the image tag:</h3>
+<ol>
+<li><b>APNG(Animated Portable Network Graphics):</b>A good choice for lossless animation with high quality</li>
+<li><b>AVIF(AV1 Image File Format):</b>For modern images with small file sizes and good quality. Works for both static and animated images.<br>
+Example: A product photo on an e-commerce website that loads fast but looks great.</li>
+<li><b>GIF(Graphic Interchange Format):</b>For simple animations or images with few colors.</li>
+<li><b>JPEG(Joint Photographic Experts Group):</b>For photos and images where file size is important, and some quality loss is acceptable.<br>
+Example: A vacation photo uploaded to a blog.</li>
+<li><b>PNG(Portable Network Graphics):</b>For high-quality images with transparency.<br>
+Example: A company logo with a transparent background.</li>
+<li><b>SVG(Scalable Vector Graphics):</b>For logos, icons, and illustrations that need to scale without losing quality.</li>
+<li><b>WebP(Web Picture Format):</b> For both still images and animations with excellent quality and reduced file sizes.</li>
+</ol>
+<h3>Recommendations:</h3>
+<ul>
+<li>Use WebP or AVIF when possible—they provide great quality and small file sizes.</li>
+<li>Use PNG or SVG for images with transparency or vector graphics.</li>
+<li>Use JPEG for photographs when compression is acceptable.</li>
+<li>Use GIF or APNG for basic animations.</li>
+</ul>
+
+<h3>loading attribute:</h3>
+<ul>
+<li>The loading attribute in HTML is used to control the loading behavior of 
+images <code>&lt;img&gt;</code> and iframes <code>&lt;iframe&gt;</code>. It improves page performance by delaying 
+the loading of these elements until they are needed.</li>
+<img src="Images\console.png"><br>
+<img src="Images\console_req.png"><br>
+<li>When the page is refreshed, all 10 images are requested and loaded at once.</li>
+<li>This behavior is the default property of the loading attribute, known as <code>loading="eager"</code>.</li>
+<li>Loads the image or iframe immediately, regardless of whether it's visible</li>
+<code>Syntax:&lt;img src="..." loading="eager"&gt;</code><br>
+<li>For someone with a poor internet connection, this can take time and may cause their device to lag or freeze.</li>
+<img src="Images\console1.png"><br>
+<img src="Images\console1_req.png"><br>
+<li>In order to stop such problem we use <code>loading = "lazy"</code> attribute.</li>
+<li>It doesn't load the image or iframe until it's near the viewport (visible on the screen).</li>
+<img src="Images\console2.png"><br>
+<li>Only that images are loaded that are visible on the screen.</li>
+<img src="Images\console2_req.png"><br>
+<li>We even have another option of <code>loading="auto"</code> that lets the browser decide the best loading behavior based on its logic.</li>
+</ul>
