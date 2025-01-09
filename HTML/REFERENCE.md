@@ -213,3 +213,4 @@ the loading of these elements until they are needed.</li>
 <img src="Images\console2_req.png"><br>
 <li>We even have another option of <code>loading="auto"</code> that lets the browser decide the best loading behavior based on its logic.</li>
 </ul>
+<h3>Responsive Web-design:</h3>
