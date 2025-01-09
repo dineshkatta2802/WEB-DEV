@@ -173,15 +173,15 @@ To create a "Jump to" link, you need to assign an id to the target element, ensu
 </ol>
 <h3>Image format supported by the image tag:</h3>
 <ol>
-<li><b>APNG(Animated Portable Network Graphics):</b>A good choice for lossless animation with high quality</li>
-<li><b>AVIF(AV1 Image File Format):</b>For modern images with small file sizes and good quality. Works for both static and animated images.<br>
+<li><b>APNG(Animated Portable Network Graphics):</b> A good choice for lossless animation with high quality</li>
+<li><b>AVIF(AV1 Image File Format):</b> For modern images with small file sizes and good quality. Works for both static and animated images.<br>
 Example: A product photo on an e-commerce website that loads fast but looks great.</li>
-<li><b>GIF(Graphic Interchange Format):</b>For simple animations or images with few colors.</li>
-<li><b>JPEG(Joint Photographic Experts Group):</b>For photos and images where file size is important, and some quality loss is acceptable.<br>
+<li><b>GIF(Graphic Interchange Format): </b>For simple animations or images with few colors.</li>
+<li><b>JPEG(Joint Photographic Experts Group):</b> For photos and images where file size is important, and some quality loss is acceptable.<br>
 Example: A vacation photo uploaded to a blog.</li>
-<li><b>PNG(Portable Network Graphics):</b>For high-quality images with transparency.<br>
+<li><b>PNG(Portable Network Graphics):</b> For high-quality images with transparency.<br>
 Example: A company logo with a transparent background.</li>
-<li><b>SVG(Scalable Vector Graphics):</b>For logos, icons, and illustrations that need to scale without losing quality.</li>
+<li><b>SVG(Scalable Vector Graphics):</b> For logos, icons, and illustrations that need to scale without losing quality.</li>
 <li><b>WebP(Web Picture Format):</b> For both still images and animations with excellent quality and reduced file sizes.</li>
 </ol>
 <h3>Recommendations:</h3>
