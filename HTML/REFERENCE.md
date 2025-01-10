@@ -8,7 +8,7 @@
 
 <section>
 <h2>*****<a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet(Cheat Sheet Link)</a>*****</h2>
-<h3><a href="BOOKS AND CHEAT SHEETS/EMMET CHEAT SHEET.pdf" download="EMMET CHEAT SHEET.pdf">CLICK HERE TO DOWNLOAD</a>
+<h3><a href="BOOKS_CHEATSHEETS/EMMET CHEAT SHEET.pdf" download="EMMET CHEAT SHEET.pdf">CLICK HERE TO DOWNLOAD</a>
 </h3>
 </section>
 
@@ -165,7 +165,7 @@ Refer to this link to kow more about "Attributes":<a href="https://developer.moz
 <h3>Download Link:</h2>
     <p>The <code>download</code> attribute allows users to download a file directly from the link.</p>
     <p>Syntax: <code>&lt;a href="file_path" download="file_name"&gt;Link Text&lt;/a&gt;</code></p>
-    <p>Example: <a href="BOOKS AND CHEAT SHEETS/HTML_and_CSS_design_and_build_websites.pdf" download="HTML_and_CSS_design_and_build_websites.pdf">Download John Duckett's Book</a></p>
+    <p>Example: <a href="BOOKS_CHEATSHEETS/HTML_and_CSS_design_and_build_websites.pdf" download="HTML_and_CSS_design_and_build_websites.pdf">Download John Duckett's Book</a></p>
     <hr>
 
 <h3>Ping Attribute:</h3>
