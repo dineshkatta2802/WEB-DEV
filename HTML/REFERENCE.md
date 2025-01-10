@@ -1,10 +1,17 @@
+<section>
 <h1>HTML</h1>
 <ol>
 <li>HTML stands for hyper text markup language.</li>
 <li>HTML is used to define the structure of the webpage.</li>
 </ol>
+</section>
 
+<section>
+<h2>*****<a href="https://docs.emmet.io/cheat-sheet/">Emmet(Cheat Sheet Link)</a>*****</h2>
+<h3><a href="HTML\EMMET CHEAT SHEET.pdf" download="EMMET CHEAT SHEET.pdf">CLICK HERE TO DOWNLOAD</a></h3>
+</section>
 
+<section>
 <h2>Understanding the Boiler plate in HTML:</h2>
 HTML Boilerplate a set of pre-written of HTML,CSS and JS which forms the starting point of your web project
 <img src="Images\boilerplate.png" alt="Boilerplate">
@@ -27,8 +34,11 @@ The <head> section contains meta-information about the document, such as the cha
 <h3>Body Section:</h3>
 <code>Syntax:&lt;body&gt; &lt;body&gt;</code><br>
 The Body section is where you write all the HTML tags.
+</section>
 
 <hr>
+
+<section>
 <h2>Inline v/s block elements</h2>
 <table>
 <tr>
@@ -50,7 +60,11 @@ The Body section is where you write all the HTML tags.
 </table>
 Here is the image to understand better about Inline and Block elements.
 <img src="Images\Block_Inline.png" alt="Inline and block elements representation">
+</section>
+
 <hr>
+
+<section>
 <h2>Lists:</h2>
 <h3>1.Unordered List:</h3>
 Here the tag <code>&lt;ul&gt;</code> is Unordered list tag and to <code>&lt;li&gt;</code> are the list items tag.<br>
@@ -65,7 +79,6 @@ We get the ans in bulletin points.
 <img src="Images\ul1.png" alt="Unordered list"><br>
 <b>Output:</b><br>
 <img src="Images\ul1_op.png" alt="Unordered list Output"><br>
-
 
 <h3>2.Ordered List:</h3>
 Here the tag <code>&lt;ol&gt;</code> is Unordered list tag and to <code>&lt;li&gt;</code> are the list items tag.<br>
@@ -89,8 +102,11 @@ We can have <code>&lt;ul&gt;</code> in <code>&lt;ol&gt;</code> or vice-versa.<br
 <img src="Images\nsl.png" alt="Nested list sample image"><br>
 <b>Output:</b><br>
 <img src="Images\nsl_op.png" alt="Nested list Output"><br>
+</section>
 
 <hr>
+
+<section>
 <h2>Attributes:</h2>
 <ol>
 <li>These are the special words that are used inside the opening tag of HTML elements</li>
@@ -128,7 +144,11 @@ We can have <code>&lt;ul&gt;</code> in <code>&lt;ol&gt;</code> or vice-versa.<br
 <li>There are several other attributes which  you can find in teh hyperlink below</li>
 </ol>
 Refer to this link to kow more about "Attributes":<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">MND Refrences</a>
+</section>
 
+<hr>
+
+<section>
 <h2>Anchor tag:</h2>
 <code>Syntax:&lt;a href="..."&gt; &lt;/a&gt;</code><br>
 <ol>
@@ -183,8 +203,12 @@ Refer to this link to kow more about "Attributes":<a href="https://developer.moz
 <h3>Adding links to an element on the same page</h3>
 To create a "Jump to" link, you need to assign an id to the target element, ensuring the id has no spaces only underscores.<br>
 <a href="#Normal_Link">Jump to</a>
-<br><hr>
+<br>
+</section>
 
+<hr>
+
+<section>
 <h2>Image Tag<code>&lt;img&gt;</code>:</h2>
 <code>Synatx:&lt;img src="..." alt="..." ...&gt;</code><br>
 <ol>
@@ -251,7 +275,11 @@ Essentially, it indicates the number of pixels that make up the width of the ima
 </ul>
 </ul>
 <code>Later on you can learn it in detail when we know about CSS for now understand what is it.</code>
+</section>
+
 <hr>
+
+<section>
 <h2>Div Tag<code>&lt;div&gt;</code>:</h2>
 <ul>
 <li><code>&lt;div&gt;</code> tag is Block level tag.</li>
@@ -259,8 +287,11 @@ Essentially, it indicates the number of pixels that make up the width of the ima
 <li><code>&lt;div&gt;</code> tag is used as acontainer in HTML.</li>
 <li><code>&lt;div&gt;</code> tag can be styled by<code>class</code> or <code>id</code> attribute</li>
 </ul>
+</section>
+
 <hr>
 
+<section>
 <h2>Span Tag<code>&lt;span&gt;</code>:</h2>
 <ul>
 <li><code>&lt;span&gt;</code> tag is Inline level tag.</li>
@@ -268,3 +299,117 @@ Essentially, it indicates the number of pixels that make up the width of the ima
 <li><code>&lt;span&gt;</code> tag is used as acontainer in HTML.</li>
 <li><code>&lt;span&gt;</code> tag can be styled by<code>class</code> or <code>id</code> attribute</li>
 </ul>
+</section>
+
+<hr>
+
+<section>
+<h2>Subscript and Superscript Tags<code>&lt;sub&gt;|&lt;sup&gt;</code>:</h2>
+These Tags are used only due to typographical reasons like for writing math forulas
+and some chemical equations.<br>
+Example:Let's write the basic a+b whole square formulae<br>
+(a+b)<sup>2</sup> = (a)<sup>2</sup>+(b)<sup>2</sup>+2(ab)<br>
+Simailrly let's write water's chemical formulae<br>
+H<sub>2</sub>O<br>
+</section>
+
+<hr>
+
+<section>
+<h2>Semantics Markup:</h2>
+In HTML we basically have 2 types of tags:<br>
+<ol>
+<li>Semantic Tags</li>
+<ul>
+<li>Sematic Tags are those tags where we can find the functionality of the tag just by seeing the name of the tag.</li>
+<li>We mainly use Semantic tags because of the following reasons:
+<ul><li>Improves Accessibility:Help assistive technologies like screen readers understand the content structure.</li>
+<li>SEO Friendly:Search engines better understand the content and context, improving rankings.</li>
+<li>Provide better Structure to teh web page by dividing and sectioning them into respective parts.</li>
+<li>Improve Code Readability</li>
+<li>Follow Web Standards.</li></ul>
+</li>
+<li><img src="Images\Semantic.gif"></li>
+</ul>
+<li>Non-Semantic Tags</li>
+<ul>
+<li>Non-Semantic Atgs are those tags where we cannot identify the tags functionality by its name.</li>
+</ul>
+</ol>
+Let's understand in detail about Semantic Tags<br>
+<h3>Section Tag<code>&lt;section&gt;</code>:</h3>
+<ul>
+<li> It is typically used to group related content under a common theme or purpose, and it often includes a heading to describe its content.</li>
+<li> Helps define a logical structure for a webpage.</li>
+<li>
+<b>**NOTE:**</b><br>
+<b>Section tag and <code>&lt;div|span&gt</code> tag can seem to be same because they are for structuring teh web page,but they are of different purpose i.e,
+section tag is a group of elements with same purpose whereas a<code>&lt;div|span&gt;</code> grouping elements for layout purposes but without a clear topic. </b></li>
+</ul>
+
+<hr>
+
+<h3>Atricle Tag<code>&lt;articel&gt;</code>:</h3>
+<ul>
+<li>Represents self-contained content that can stand alone or be shared independently (e.g., blog posts, news articles).</li>
+<li><code>Syntax:&lt;article&gt;.....&lt;/article&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>Aside Tag<code>&lt;aside&gt;</code>:</h3>
+<ul>
+<li> Represents complementary or tangential content related to the main content (e.g., sidebars, advertisements, quotes).</li>
+<li><code>Syntax:&lt;aside&gt;.....&lt;/aside&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>Header Tag<code>&lt;header&gt;</code>:</h3>
+<ul>
+<li>Defines the introductory content or navigational links for a page or section</li>
+<li><code>Syntax:&lt;header&gt;.....&lt;/header&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>Footer Tag<code>&lt;footer&gt;</code>:</h3>
+<ul>
+<li> Represents footer content, such as copyrights or links.</li>
+<li><code>Syntax:&lt;footer&gt;.....&lt;/footer&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>Navigation Tag<code>&lt;nav&gt;</code>:</h3>
+<ul>
+<li>The <code>&lt;nav&gt;</code> tag in HTML is a semantic element used to define a section of the webpage that contains navigational links. These links typically help users navigate through different 
+sections of the same page or other pages on the website.</li>
+<li>Specifies navigation menus or links.</li>
+<li><code>Syntax:&lt;nav&gt;.....&lt;/nav&gt;</code></li>
+</ul>
+
+<hr>
+
+<h3>Main Tag<code>&lt;main&gt;</code>:</h3>
+<ul>
+<li> The <code>&lt;main&gt;</code> tag in HTML is a semantic element used to identify the primary content of a webpage. It is designed to contain the content that is directly related to the central topic or purpose of the page.</li>
+<li><code>Syntax:&lt;main&gt;.....&lt;/main&gt;</code></li>
+</ul>
+</section>
+
+<hr>
+
+<section>
+<h2>HTML Entities:</h2>
+<ul>
+<li>In HTML, there are reserved characters, such as < (less than) and > (greater than), which are used to define tags like <p>. 
+However, if you use these reserved characters within the content, browsers may misinterpret them as part of the tags.</li>
+<li>The following are the HTML entities:</li>
+<li>
+<table><thead><tr><th style="text-align: center;"><h4><span>Symbols</span></h4></th><th style="text-align: center;"><h4><span>Description</span></h4></th><th style="text-align: center;"><h4><span>Entity name</span></h4></th><th style="text-align: center;"><h4><span>Entity Number</span></h4></th></tr></thead><tbody><tr><td><span>&nbsp;</span></td><td><span>non-breaking space</span></td><td><span>&amp;nbsp;</span></td><td><span>&amp;#160;</span></td></tr><tr><td><span>&lt;</span></td><td><span>less than</span></td><td><span>&amp;lt;</span></td><td><span>&amp;#60;</span></td></tr><tr><td><span>®</span></td><td><span>registered trademark</span></td><td><span>&amp;reg;</span></td><td><span>&amp;#174;</span></td></tr><tr><td><span>©</span></td><td><span>copyright</span></td><td><span>&amp;copy;</span></td><td><span>&amp;#169;</span></td></tr><tr><td><span>€</span></td><td><span>euro</span></td><td><span>&amp;euro;</span></td><td><span>&amp;#8364;</span></td></tr><tr><td><span>¥</span></td><td><span>yen</span></td><td><span>&amp;yen;</span></td><td><span>&amp;#165;</span></td></tr><tr><td><span>£</span></td><td><span>pound</span></td><td><span>&amp;pound;</span></td><td><span>&amp;#163;</span></td></tr><tr><td><span>¢</span></td><td><span>cent</span></td><td><span>&amp;cent;</span></td><td><span>&amp;#162;</span></td></tr><tr><td><span>“</span></td><td><span>double quotation mark</span></td><td><span>&amp;quot;</span></td><td><span>&amp;#34;</span></td></tr><tr><td><span>&amp;</span></td><td><span>ampersand</span></td><td><span>&amp;amp;</span></td><td><span>&amp;#38;</span></td></tr><tr><td><span>&gt;</span></td><td><span>greater than</span></td><td><span>&amp;gt;</span></td><td><span>&amp;#62;</span></td></tr><tr><td><span>∂</span></td><td><span>PARTIAL DIFFERENTIAL</span></td><td><span>&amp;part;</span></td><td><span>&amp;#8706;</span></td></tr><tr><td><span>∃</span></td><td><span>THERE EXISTS</span></td><td><span>&amp;exist;</span></td><td><span>&amp;#8707;</span></td></tr><tr><td><span>∅</span></td><td><span>EMPTY SETS</span></td><td><span>&amp;empty;</span></td><td><span>&amp;#8709;</span></td></tr><tr><td><span>∇</span></td><td><span>NABLA</span></td><td><span>&amp;nabla;</span></td><td><span>&amp;#8711;</span></td></tr><tr><td><span>∈</span></td><td><span>ELEMENT OF</span></td><td><span>&amp;isin;</span></td><td><span>&amp;#8712;</span></td></tr><tr><td><span>∉</span></td><td><span>NOT AN ELEMENT OF</span></td><td><span>&amp;notin;</span></td><td><span>&amp;#8713;</span></td></tr><tr><td><span>+</span></td><td><span>PLUS SIGN</span></td><td><span>&amp;plus;</span></td><td><span>&amp;#43;</span></td></tr><tr><td><span>∏</span></td><td><span>N-ARY PRODUCT</span></td><td><span>&amp;prod;</span></td><td><span>&amp;#8719;</span></td></tr><tr><td><span>∑</span></td><td><span>N-ARY SUMMATION</span></td><td><span>&amp;sum;</span></td><td><span>&amp;#8721;</span></td></tr><tr><td><span>Α</span></td><td><span>Alpha</span></td><td><span>&amp;Alpha;</span></td><td><span>&amp;#913;</span></td></tr><tr><td><span>Β</span></td><td><span>Beta</span></td><td><span>&amp;Beta;</span></td><td><span>&amp;#914;</span></td></tr><tr><td><span>Γ</span></td><td><span>Gamma</span></td><td><span>&amp;Gamma;</span></td><td><span>&amp;#915;</span></td></tr><tr><td><span>Δ</span></td><td><span>delta</span></td><td><span>&amp;Delta;</span></td><td><span>&amp;#916;</span></td></tr><tr><td><span>Ε</span></td><td><span>Epsilon</span></td><td><span>&amp;Epsilon;</span></td><td><span>&amp;#917;</span></td></tr><tr><td><span>Ζ</span></td><td><span>Zeta</span></td><td><span>&amp;Zeta;</span></td><td><span>&amp;#918;</span></td></tr><tr><td><span>♥</span></td><td><span>BLACK HEART SUIT = valentine</span></td><td><span>&amp;hearts;</span></td><td><span>&amp;#9829;</span></td></tr><tr><td><span>♣</span></td><td><span>BLACK CLUB SUIT = shamrock</span></td><td><span>&amp;clubs;</span></td><td><span>&amp;#9827;</span></td></tr><tr><td><span>♠</span></td><td><span>BLACK SPADE SUIT</span></td><td><span>&amp;spades;</span></td><td><span>&amp;#9824;</span></td></tr><tr><td><span>↓</span></td><td><span>DOWNWARDS ARROW</span></td><td><span>&amp;darr;</span></td><td><span>&amp;#8595;</span></td></tr><tr><td><span>→</span></td><td><span>RIGHTWARDS ARROW</span></td><td><span>&amp;rarr;</span></td><td><span>&amp;#8594;</span></td></tr><tr><td><span>↑</span></td><td><span>UPWARDS ARROW</span></td><td><span>&amp;uarr;</span></td><td><span>&amp;#8593;</span></td></tr><tr><td><span>←</span></td><td><span>LEFTWARDS ARROW</span></td><td><span>&amp;larr;</span></td><td><span>&amp;#8592;</span></td></tr><tr><td><span>™</span></td><td><span>TRADEMARK</span></td><td><span>&amp;trade;</span></td><td><span>&amp;#8482;</span></td></tr><tr><td><span>♦</span></td><td><span>BLACK DIAMOND SUIT</span></td><td><span>♦</span></td><td><span>&amp;#9830;</span></td></tr><tr><td><span>°</span></td><td><span>degree</span></td><td><span>&amp;deg;</span></td><td><span>&amp;#176;</span></td></tr><tr><td><span>∞</span></td><td><span>infinity</span></td><td><span>&amp;infin;</span></td><td><span>&amp;#8734;</span></td></tr><tr><td><span>‰</span></td><td><span>per-mille</span></td><td><span>&amp;permil;</span></td><td><span>&amp;#137;</span></td></tr><tr><td><span>⋅</span></td><td><span>dot operator</span></td><td><span>&amp;sdot;</span></td><td><span>&amp;#8901;</span></td></tr><tr><td><span>±</span></td><td><span>plus-minus</span></td><td><span>&amp;plusmn;</span></td><td><span>&amp;#177;</span></td></tr><tr><td><span>†</span></td><td><span>hermitian</span></td><td><span>&amp;hercon;</span></td><td><span>&amp;#8889;</span></td></tr><tr><td><span>–</span></td><td><span>minus sign</span></td><td><span>&amp;minus;</span></td><td><span>&amp;#8722;</span></td></tr><tr><td><span>¬</span></td><td><span>–</span></td><td><span>&amp;not;</span></td><td><span>&amp;#172;</span></td></tr><tr><td><span>%</span></td><td><span>percent sign</span></td><td><span>&amp;percent;</span></td><td><span>&amp;#37;</span></td></tr><tr><td><span>f</span></td><td><span>Function</span></td><td><span>&amp;fnof;</span></td><td><span>&amp;#402;</span></td></tr><tr><td><span>∥</span></td><td><span>parallel</span></td><td><span>&amp;parallel;</span></td><td><span>&amp;#8741;</span></td></tr></tbody></table>
+</li>
+<li>We can use "Emoji's" as well - Just search for emoji and its HTML entity number on Google</li>
+</ul>
+</section>
+
