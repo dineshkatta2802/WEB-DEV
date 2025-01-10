@@ -29,7 +29,28 @@ The <head> section contains meta-information about the document, such as the cha
 The Body section is where you write all the HTML tags.
 
 <hr>
-
+<h2>Inline v/s block elements</h2>
+<table>
+<tr>
+<th>Block</th>
+<th>Inline</th>
+</tr>
+<tr>
+<td>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</td>
+<td>An inline element does not start on a new line.</td>
+</tr>
+<tr>
+<td>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</td>
+<td>An Inline element doen't take up full width available.</td>
+</tr>
+<tr>
+<td>Common Examples:<code>&lt;div&gt;</code>,<code>&lt;p&gt;</code>,<code>&lt;h1 to h6&gt;</code>,<code>&lt;ul|ol&gt;</code>,<code>&lt;section&gt;</code></td>
+<td>Common Examples:<code>&lt;span&gt;</code>,<code>&lt;a&gt;</code>,<code>&lt;strong&gt;</code>,<code>&lt;em&gt;</code>,<code>&lt;img&gt;</code></td>
+</tr>
+</table>
+Here is the image to understand better about Inline and Block elements.
+<img src="Images\Block_Inline.png" alt="Inline and block elements representation">
+<hr>
 <h2>Lists:</h2>
 <h3>1.Unordered List:</h3>
 Here the tag <code>&lt;ul&gt;</code> is Unordered list tag and to <code>&lt;li&gt;</code> are the list items tag.<br>
@@ -164,7 +185,7 @@ To create a "Jump to" link, you need to assign an id to the target element, ensu
 <a href="#Normal_Link">Jump to</a>
 <br><hr>
 
-<h2>Image Tag:</h2>
+<h2>Image Tag<code>&lt;img&gt;</code>:</h2>
 <code>Synatx:&lt;img src="..." alt="..." ...&gt;</code><br>
 <ol>
 <li>Here the <code>src</code> attribute contain the path  to the image</li>
@@ -230,3 +251,20 @@ Essentially, it indicates the number of pixels that make up the width of the ima
 </ul>
 </ul>
 <code>Later on you can learn it in detail when we know about CSS for now understand what is it.</code>
+<hr>
+<h2>Div Tag<code>&lt;div&gt;</code>:</h2>
+<ul>
+<li><code>&lt;div&gt;</code> tag is Block level tag.</li>
+<li>The<code>&lt;div&gt;</code>tag is also known as the content Division element.</li>
+<li><code>&lt;div&gt;</code> tag is used as acontainer in HTML.</li>
+<li><code>&lt;div&gt;</code> tag can be styled by<code>class</code> or <code>id</code> attribute</li>
+</ul>
+<hr>
+
+<h2>Span Tag<code>&lt;span&gt;</code>:</h2>
+<ul>
+<li><code>&lt;span&gt;</code> tag is Inline level tag.</li>
+<li>The<code>&lt;span&gt;</code>tag is also known as the content Division element.</li>
+<li><code>&lt;span&gt;</code> tag is used as acontainer in HTML.</li>
+<li><code>&lt;span&gt;</code> tag can be styled by<code>class</code> or <code>id</code> attribute</li>
+</ul>
