@@ -7,7 +7,7 @@
 </section>
 
 <section>
-<h2>*****<a href="https://docs.emmet.io/cheat-sheet/">Emmet(Cheat Sheet Link)</a>*****</h2>
+<h2>*****<a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Emmet(Cheat Sheet Link)</a>*****</h2>
 <h3><a href="BOOKS AND CHEAT SHEETS/EMMET CHEAT SHEET.pdf" download="EMMET CHEAT SHEET.pdf">CLICK HERE TO DOWNLOAD</a>
 </h3>
 </section>
