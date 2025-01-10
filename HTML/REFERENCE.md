@@ -214,3 +214,19 @@ the loading of these elements until they are needed.</li>
 <li>We even have another option of <code>loading="auto"</code> that lets the browser decide the best loading behavior based on its logic.</li>
 </ul>
 <h3>Responsive Web-design:</h3>
+<ul>
+<li>We want to display identical image content, just larger or smaller depending on the device.</li>
+<li>We can however use two attributes<code>srcset and size</code> to provide several additional source images along with hints to help the browser pick the right one. </li>
+<li>The srcset and sizes attributes look complicated, but they're not too hard to understand</li>
+<li>Each value contains a comma-separated list, and each part of those lists is made up of three sub-parts.</li>
+<li><code>srcset</code> defines the set of images we will allow the browser to choose.It contains 3 parts:</li>
+<ul><li>An image source</li>
+<li>A space</li>
+<li>The image intrinsic width in pixels(w)</li>
+<ul><li>The "Image Intrinsic width" refers to the natural or original width of an image measured in pixels. 
+This width is determined by the image's resolution and does not change regardless of how the image is displayed or resized on different screen sizes or devices. 
+Essentially, it indicates the number of pixels that make up the width of the image when it is rendered at its original size.</li>
+<li>It tells you how many tiny dots(pixels) are across the picture when it's in its original form!</li></ul>
+</ul>
+</ul>
+<code>Later on you can learn it in detail when we know about CSS for now understand what is it.</code>
