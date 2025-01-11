@@ -675,11 +675,306 @@ Output<br>
         <li>Check out this<a href="Form.html"> file </a>to understand all the below attributes</li>
         <li><b>name Attribute<code>name</code>:</b> It provides name for the form</li>
         <li><b>Target Attribute <code>target</code>:</b> Check this <a href="#target">link</a> to know more about target.</li>
-        <li><b>Action Attribute <code>action</code>:</b> send data to server upon submission.</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><b>Action Attribute <code>action</code>:</b> Send data to server upon submission.</li>
+        <li><b>Enctype Attribute <code>enctype</code>:</b> The enctype attribute tells the browser how to format the form data when sending it to the server.Specifies how the form-data should be encoded when submitting it to the server (only for method="post").Click here to understand in detail about <a href="https://www.geeksforgeeks.org/html-enctype-attribute/">Enctype Attribute</a></li>
+        <li><b>Auto-Complete Attribute <code>autocomplete</code>:</b> Specifies whether a form should have autocomplete on or off.</li>
+        <li><b>Method Attribute <code>method</code>:</b> Specifies the HTTP method to use when sending form-data</li>
+        <li>Click here to get better understanding on <a href="https://www.geeksforgeeks.org/html-form-tag/">form tag</a> in detail.</li>
         </ul></li>
-    <li></li>
+    <li><b>Input Tag <code>&lt;input&gt;</code>:</b>
+    <ul><li>The <code>&lt;input&gt;</code> tag specifies an input field where the user can enter data.</li>
+    <li>Check this <a href="Form.html">file</a> for more understanding on <code>&lt;input&gt;</code> tag.</li>
+    <li>
+    <table class="no-markdown">
+  <colgroup>
+    <col>
+    <col style="width: 50%">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Basic Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/button">button</a></td>
+      <td>
+        A push button with no default behavior displaying the value of the <a href="#value"><code>value</code></a> attribute, empty by default.
+      </td>
+      <td id="examplebutton">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="button" name="button" value="Button" /&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplebutton" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplebutton sample" id="frame_examplebutton" width="200" height="60" src="https://d1fc11e602e3ef314b92be203e8e35f0b99177ed.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUoqLSnJz4tRUshLzEXhlyXmlIIEnGAC%2BnZKOkpZUNOKi5KVrJT0U%2FN0Q4P1U%2FKTi%2FXDU5P0PUJ8ffRdc1JzU%2FNK9MHW6CvVAgA%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplebutton" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/checkbox">checkbox</a></td>
+      <td>A check box allowing single values to be selected/deselected.</td>
+      <td id="examplecheckbox">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="checkbox" name="checkbox"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplecheckbox" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplecheckbox sample" id="frame_examplecheckbox" width="200" height="60" src="https://b2b17035ee5a28731ce5221af94b12d13f7ce07e.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUrOSE3OTsqviFFSyEvMRRXRt1PSUcqC6i8uSlayUtJPzdMNDdZPyU8u1g9PTdL3CPH10XfNSc1NzSvRBxusr1QLAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplecheckbox" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/color">color</a></td>
+      <td>
+        A control for specifying a color; opening a color picker when active in supporting browsers.
+      </td>
+      <td id="examplecolor">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="color" name="color"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplecolor" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplecolor sample" id="frame_examplecolor" width="200" height="60" src="https://8eb9b38c3e159abe8ff9db867d10a26d0b69370c.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUrOz8kvilFSyEvMReLq2ynpKGVBdRYXJStZKemn5umGBuun5CcX64enJul7hPj66LvmpOam5pXog43UV6oFAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplecolor" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/date">date</a></td>
+      <td>
+        A control for entering a date (year, month, and day, with no time).
+        Opens a date picker or numeric wheels for year, month, day when active
+        in supporting browsers.
+      </td>
+      <td id="exampledate">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="date" name="date"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampledate" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampledate sample" id="frame_exampledate" width="200" height="60" src="https://1dc7e877f26770351f38c6e945ff6106c2ab2c89.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUpJLEmNUVLIS8xF8PTtlHSUsqD6iouSlayU9FPzdEOD9VPyk4v1w1OT9D1CfH30XXNSc1PzSvTBBuor1QIA" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledate" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="/en-US/docs/Web/HTML/Element/input/datetime-local">datetime-local</a>
+      </td>
+      <td>
+        A control for entering a date and time, with no time zone. Opens a date
+        picker or numeric wheels for date- and time-components when active in supporting browsers.
+      </td>
+      <td id="exampledtl">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="datetime-local" name="datetime-local"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampledtl" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampledtl sample" id="frame_exampledtl" width="200" height="60" src="https://d261063b4ae738985ce72c8e1aeb82f757b56de2.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUpJLEktycxN1c3JT07MiVFSyEvMxSaub6eko5QFNau4KFnJSkk%2FNU83NFg%2FJT%2B5WD88NUnfI8TXR981JzU3Na9EH2yJvlItAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledtl" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/email">email</a></td>
+      <td>
+        A field for editing an email address. Looks like a
+        <code>text</code> input, but has validation parameters and relevant
+        keyboard in supporting browsers and devices with dynamic keyboards.
+      </td>
+      <td id="exampleemail">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="email" name="email"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampleemail" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampleemail sample" id="frame_exampleemail" width="200" height="60" src="https://13ce50c855ba66f7f8f20ce4498566bb81113eb4.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUrNTczMiVFSyEvMReLq2ynpKGVBdRYXJStZKemn5umGBuun5CcX64enJul7hPj66LvmpOam5pXog43UV6oFAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleemail" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/file">file</a></td>
+      <td>
+        A control that lets the user select a file.
+        Use the <a href="#accept"><code>accept</code></a> attribute to define the types of files that the control can select.
+      </td>
+      <td id="examplefile">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="file" accept="image/*, text/*" name="file"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplefile" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplefile sample" id="frame_examplefile" width="100%" height="60" src="https://30dbef61abc4809ac740948ebb756c8b8b174ba0.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=Rc2xCkIxDEbhVyn%2FeKlkL143wUEnFZcuNUattLHYCIr47oII7ofvvMC9IwAeZ6sFAVGnWdvdnD2bjBHHXCTCJWZpNkbkmk5Cg3cmD6Mhwmmq%2F5Bm8Lj8yH5jBJDoZLumw5U77WRPi81qSfMiVdTo%2ByK8Pw%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplefile" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/hidden">hidden</a></td>
+      <td>
+        A control that is not displayed but whose value is submitted to the
+        server. There is an example in the next column, but it's hidden!
+      </td>
+      <td id="examplehidden">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input id="userId" name="userId" type="hidden" value="abc123"&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplehidden" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplehidden sample" id="frame_examplehidden" width="200" height="60" src="https://b29f8226449c67b9b9e9064e119c08471e54817a.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=TY0xC8IwFAb%2FSvjmykPdgroJCjq14pIlTR40kjxLkwgi%2FnepODjeDXcvuJyhgQZDSREaRjZBxlpU8FuDmnk6egMlNvE%2Fl%2Bc48xC8ZzFQDxvrLGzvlqu1wQ4Nbr9ynhw0iGVxacnfXaYr93TozifaR04shb5LwvsD" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplehidden" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/image">image</a></td>
+      <td>
+        A graphical <code>submit</code> button. Displays an image defined by the <code>src</code> attribute.
+        The <a href="#alt"><code>alt</code></a> attribute displays if the image <a href="#src"><code>src</code></a> is missing.
+      </td>
+      <td id="exampleimage">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="image" name="image" src="" alt="image input"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampleimage" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampleimage sample" id="frame_exampleimage" width="200" height="60" src="https://cb2d0261a582af181faf07aeb2eb3ac58d141d1a.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=TYyxCsJAEAV%2F5Xh1ZPvD2AkWWmlIs815Lhq5W0N2LYL470JQsJyBmReyGSLQ4Oa1IIJ1Pej49ODzKC1jqOkqjKCp%2FqNNuWUwQir%2B02EJGbRBg%2Ft3a1NGBImuuiNdHtmolzPtToc9bYtUUaclI7w%2F" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleimage" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/month">month</a></td>
+      <td>A control for entering a month and year, with no time zone.</td>
+      <td id="examplemonth">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="month" name="month"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplemonth" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplemonth sample" id="frame_examplemonth" width="200" height="60" src="https://76330e5724c04a7bd667ad8a91c9fcb8c9d323b8.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUcrNzyvJiFFSyEvMReLq2ynpKGVBdRYXJStZKemn5umGBuun5CcX64enJul7hPj66LvmpOam5pXog43UV6oFAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplemonth" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/number">number</a></td>
+      <td>
+        A control for entering a number. Displays a spinner and adds default
+        validation. Displays a numeric keypad in some devices
+        with dynamic keypads.
+      </td>
+      <td id="examplenumber">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="number" name="number"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplenumber" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplenumber sample" id="frame_examplenumber" width="200" height="60" src="https://e22ed507fbb179363ae59da4c53c0fa298a348ea.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=TcyxDkAwFEbhV5F%2FJndvsEkMTIilC3UTRC%2FRGkS8u0QMxjN854JxDgoIMXq7QEFLPMl2%2BMCfGycactied41AOvtvShFi%2FqzbDRSIJWoqGlbjqOWe8rosKFvYsnh6p4T7AQ%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplenumber" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/password">password</a></td>
+      <td>
+        A single-line text field whose value is obscured.
+        Will alert user if site is not secure.
+      </td>
+      <td id="examplepassword">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="password" name="password"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplepassword" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplepassword sample" id="frame_examplepassword" width="200" height="60" src="https://ea82cf2aaa5eed47b354ad39850485b672edd03d.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpILC4uzy9KiVFSyEvMRRXRt1PSUcqC6i8uSlayUtJPzdMNDdZPyU8u1g9PTdL3CPH10XfNSc1NzSvRBxusr1QLAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplepassword" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/radio">radio</a></td>
+      <td>
+        A radio button, allowing a single value to be selected out of multiple choices with the same <a href="#name"><code>name</code></a> value.
+      </td>
+      <td id="exampleradio">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="radio" name="radio"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampleradio" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampleradio sample" id="frame_exampleradio" width="200" height="60" src="https://2e257ce5216ccfc2ccb319ac3aeb3c0aacd39cfc.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpKTMnMj1FSyEvMReLq2ynpKGVBdRYXJStZKemn5umGBuun5CcX64enJul7hPj66LvmpOam5pXog43UV6oFAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleradio" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/range">range</a></td>
+      <td>
+        A control for entering a number whose exact value is not important.
+        Displays as a range widget defaulting to the middle value.
+        Used in conjunction <a href="#min"><code>min</code></a> and <a href="#max"><code>max</code></a> to define the range of acceptable values.
+      </td>
+      <td id="examplerange">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="range" name="range" min="0" max="25"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplerange" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplerange sample" id="frame_examplerange" width="200" height="60" src="https://fd90afef89aac9badb4c8064dffe748d004ec65d.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=TY29CsJAEAZfJXx1ZINgc3jpAim0MmKzzXku%2BSG3htwFFPHdg2JhN9PMvOBjhAFydCmMMGDd9zotKUvPSSxjdtoKI1MX%2FjX0ahnFh9zDMrY7BpXIMfxycfYwINHN%2BUS3u490kSvVzfFA1ShBNNH3Q3iv" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplerange" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/reset">reset</a></td>
+      <td>
+        A button that resets the contents of the form to default values. Not recommended.
+      </td>
+      <td id="examplereset">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="reset" name="reset"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplereset" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplereset sample" id="frame_examplereset" width="200" height="60" src="https://b79135ee603edcd076958ae20d4152854949e7fc.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpKLU4tiVFSyEvMReLq2ynpKGVBdRYXJStZKemn5umGBuun5CcX64enJul7hPj66LvmpOam5pXog43UV6oFAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplereset" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/search">search</a></td>
+      <td>
+        A single-line text field for entering search strings. Line-breaks are
+        automatically removed from the input value. May include a delete icon in
+        supporting browsers that can be used to clear the field. Displays a
+        search icon instead of enter key on some devices with dynamic keypads.
+      </td>
+      <td id="examplesearch">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="search" name="search"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplesearch" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplesearch sample" id="frame_examplesearch" width="200" height="60" src="https://0ebe5bd245ac9ada5a79220870b50f3d1284987f.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpOTSxKzohRUshLzEXm69sp6ShlQfUWFyUrWSnpp%2Bbphgbrp%2BQnF%2BuHpybpe4T4%2Bui75qTmpuaV6IMN1VeqBQA%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplesearch" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/submit">submit</a></td>
+      <td>A button that submits the form.</td>
+      <td id="examplesubmit">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="submit" name="submit"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->examplesubmit" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="examplesubmit sample" id="frame_examplesubmit" width="200" height="60" src="https://b794b782db75547b6fc0d97e308acd87557c5eea.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSouTcrNLIlRUshLzEXm69sp6ShlQfUWFyUrWSnpp%2Bbphgbrp%2BQnF%2BuHpybpe4T4%2Bui75qTmpuaV6IMN1VeqBQA%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="examplesubmit" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/tel">tel</a></td>
+      <td>
+        A control for entering a telephone number. Displays a telephone keypad
+        in some devices with dynamic keypads.
+      </td>
+      <td id="exampletel">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="tel" name="tel"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampletel" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampletel sample" id="frame_exampletel" width="200" height="60" src="https://308808de5df34d1cdcdcdcf2ae0b28355a72536d.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpJzYlRUshLzIVz9O2UdJSyoLqKi5KVrJT0U%2FN0Q4P1U%2FKTi%2FXDU5P0PUJ8ffRdc1JzU%2FNK9MHG6SvVAgA%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletel" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/text">text</a></td>
+      <td>
+        The default value. A single-line text field. Line-breaks are
+        automatically removed from the input value.
+      </td>
+      <td id="exampletext">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="text" name="text"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampletext" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampletext sample" id="frame_exampletext" width="200" height="60" src="https://6e026a854db1f1dd2b6546872a1199c0b1425eeb.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpJrSiJUVLIS8xF8PTtlHSUsqD6iouSlayU9FPzdEOD9VPyk4v1w1OT9D1CfH30XXNSc1PzSvTBBuor1QIA" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletext" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/time">time</a></td>
+      <td>A control for entering a time value with no time zone.</td>
+      <td id="exampletime">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="time" name="time"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampletime" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampletime sample" id="frame_exampletime" width="200" height="60" src="https://461e0477c4e26a415adcdd7317dfa47219e76205.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSrJzE2NUVLIS8xF8PTtlHSUsqD6iouSlayU9FPzdEOD9VPyk4v1w1OT9D1CfH30XXNSc1PzSvTBBuor1QIA" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampletime" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/url">url</a></td>
+      <td>
+        A field for entering a URL. Looks like a <code>text</code> input, but
+        has validation parameters and relevant keyboard in supporting browsers
+        and devices with dynamic keyboards.
+      </td>
+      <td id="exampleurl">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="url" name="url"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampleurl" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampleurl sample" id="frame_exampleurl" width="200" height="60" src="https://7e74416f538ba7b637afc03d5d17a7e5c1034e1a.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSotyolRUshLzIVz9O2UdJSyoLqKi5KVrJT0U%2FN0Q4P1U%2FKTi%2FXDU5P0PUJ8ffRdc1JzU%2FNK9MHG6SvVAgA%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleurl" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="/en-US/docs/Web/HTML/Element/input/week">week</a></td>
+      <td>
+        A control for entering a date consisting of a week-year number and a week number with no time zone.
+      </td>
+      <td id="exampleweek">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="week" name="week"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampleweek" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampleweek sample" id="frame_exampleweek" width="200" height="60" src="https://2b3e803f5566c857a717fa02dddb7a0fa9a982b6.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUSpPTc2OUVLIS8xF8PTtlHSUsqD6iouSlayU9FPzdEOD9VPyk4v1w1OT9D1CfH30XXNSc1PzSvTBBuor1QIA" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampleweek" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="3">Obsolete values</th>
+    </tr>
+    <tr>
+      <td><code>datetime</code> <abbr class="icon icon-deprecated" title="Deprecated. Not for use in new websites.">
+<span class="visually-hidden">Deprecated</span>
+</abbr></td>
+      <td>
+        A control for entering a date and time (hour, minute, second, and fraction of a second) based on UTC time zone.
+      </td>
+      <td id="exampledatetime">
+        <div class="code-example"><pre class="brush: html hidden notranslate"><code>
+&lt;input type="datetime" name="datetime"/&gt;</code></pre></div>
+        <div class="code-example"><div class="example-header play-sample"><button class="play-button" type="button" data-glean="play_action: breakout->exampledatetime" title="Open in Playground">play</button></div><iframe class="sample-code-frame" title="exampledatetime sample" id="frame_exampledatetime" width="200" height="75" src="https://1e069594d846e0703459bf0c9257071055868cf8.mdnplay.dev/en-US/docs/Web/HTML/Element/input/runner.html?state=q1ZKLi5WslJS0lHKKMnNUbJSismzycwrKC1RKKksSLWNUUpJLEktycxNjVFSyEvMRRXRt1PSUcqC6i8uSlayUtJPzdMNDdZPyU8u1g9PTdL3CPH10XfNSc1NzSvRBxusr1QLAA%3D%3D" data-live-path="/en-US/docs/Web/HTML/Element/input/" data-live-id="exampledatetime" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    </li>
+    </ul>
+    </li>
 </ul>
 </section>
