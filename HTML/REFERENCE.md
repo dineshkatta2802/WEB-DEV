@@ -661,6 +661,8 @@ Example:
 and so on with the help of other attributes we can make table much prettier like <code>border-radius|bg-color</code> etc...<br>
 <h3>Later we gonna deep dive into borders in CSS</h3>
 <li><img src="Images\border_radius_bgcolor_collapse.png" alt="bordered table"></li>
+Output<br>
+<li><img src="Images\border_radius_bgcolor_collapse_op.png" alt="bordered table"></li>
 </ul>
 </ul>
 </section>
