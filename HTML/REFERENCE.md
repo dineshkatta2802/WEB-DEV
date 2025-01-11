@@ -179,7 +179,7 @@ Refer to this link to kow more about "Attributes":<a href="https://developer.moz
     <p>Example: <a href="https://example.com/es/" hreflang="es">Visit Spanish version</a></p>
     <hr>
 
-<h3>Target Attribute:</h3>
+<h3 id="target">Target Attribute:</h3>
     <p>Specifies where to open the linked document.</p>
     <ul>
         <li><code>_self</code>: Default; opens in the same tab.</li>
@@ -664,5 +664,22 @@ and so on with the help of other attributes we can make table much prettier like
 Output<br>
 <li><img src="Images\border_radius_bgcolor_collapse_op.png" alt="bordered table"></li>
 </ul>
+</ul>
+</section>
+<hr>
+<section>
+<h2>Form Tag <code>&lt;form&gt;</code> :</h2>
+<ul>
+    <li>The <code>&lt;form&gt;</code>8 tag is used to create an HTML form for user input.</li>
+    <li><b>Attributes:</b><br><ul>
+        <li>Check out this<a href="Form.html"> file </a>to understand all the below attributes</li>
+        <li><b>name Attribute<code>name</code>:</b> It provides name for the form</li>
+        <li><b>Target Attribute <code>target</code>:</b> Check this <a href="#target">link</a> to know more about target.</li>
+        <li><b>Action Attribute <code>action</code>:</b> send data to server upon submission.</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul></li>
+    <li></li>
 </ul>
 </section>
