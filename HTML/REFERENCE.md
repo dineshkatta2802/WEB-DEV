@@ -400,7 +400,46 @@ sections of the same page or other pages on the website.</li>
 </section>
 
 <hr>
+💻 Programmers always find the most efficient solution! 🖊️
 
+Teacher: "Write 'I am sorry' 100 times as punishment."
+
+Normal Students: 📄 "Challenge accepted."
+Programmers: 🤖 "There's got to be a better way..."
+python
+Copy code
+for _ in range(100):
+print("I am Sorry")
+Why waste effort when automation can save the day? 💪
+
+Efficiency isn't just a skill; it's a mindset. 😎
+#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor💻 Programmers always find the most efficient solution! 🖊️
+
+Teacher: "Write 'I am sorry' 100 times as punishment."
+
+Normal Students: 📄 "Challenge accepted."
+Programmers: 🤖 "There's got to be a better way..."
+python
+Copy code
+for _ in range(100):
+print("I am Sorry")
+Why waste effort when automation can save the day? 💪
+
+Efficiency isn't just a skill; it's a mindset. 😎
+#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor💻 Programmers always find the most efficient solution! 🖊️
+
+Teacher: "Write 'I am sorry' 100 times as punishment."
+
+Normal Students: 📄 "Challenge accepted."
+Programmers: 🤖 "There's got to be a better way..."
+python
+Copy code
+for _ in range(100):
+print("I am Sorry")
+Why waste effort when automation can save the day? 💪
+
+Efficiency isn't just a skill; it's a mindset. 😎
+#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor
 <section>
 <h2>HTML Entities:</h2>
 <ul>
@@ -414,3 +453,141 @@ However, if you use these reserved characters within the content, browsers may m
 </ul>
 </section>
 
+<hr>
+
+<section>
+<h2>Table Tag<code>&lt;table&gt;</code>:</h2>
+<ul>
+<li>A table is a structured set of data showed in rows and columns.</li>
+<li>Always enclose in <code>&lt;table&gt; and &lt;/table&gt;</code></li>
+<li>Let's create a cell,it is enclode in <code>&lt;td&gt; and &lt;/td&gt;</code> td-table data</li>
+<li>
+<code>
+<b>Code:</b>
+&lt;table&gt;<br>
+&lt;td&gt;First cell &lt;/td&gt;<br>
+&lt;td&gt;Second cell &lt;/td&gt;<br>
+&lt;td&gt;Third cell &lt;/td&gt;<br>
+&lt;td&gt;Fourth cell &lt;/td&gt;<br>
+&lt;td&gt;Fifth cell &lt;/td&gt;<br>
+&lt;/table&gt;<br>
+</code>
+</li>
+
+<table>
+<td>First cell </td>
+<td>Second cell </td>
+<td>Third cell </td>
+<td>Fourth cell </td>
+<td>Fifth cell </td>
+</table>
+<li>The cells are not placed underneath each other, rather they are automatically aligned with each other on the same row</li>
+<li>To stop this row from growing and start placing subsequent cells on a second row, we need to use the <code>&lt;tr&gt;</code> element</li>
+<table>
+<!-- Row 1: -->
+<tr>
+<th>Row-1</th>
+<td>First cell </td>
+<td>Second cell </td>
+<td>Third cell </td>
+<td>Fourth cell </td>
+<td>Fifth cell </td>
+</tr>
+<!-- Row 2: -->
+<tr>
+<th>Row-2</th>
+<td>Cell-1</td>
+<td>Cell-2</td>
+<td>Cell-3</td>
+<td>Cell-4</td>
+<td>Cell-5</td>
+</tr>
+</table>
+
+<code>
+<b>Code:</b>
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;Row-1&lt;/th&gt;<br>
+&lt;td&gt;First cell &lt;/td&gt;<br>
+&lt;td&gt;Second cell &lt;/td&gt;<br>
+&lt;td&gt;Third cell &lt;/td&gt;<br>
+&lt;td&gt;Fourth cell &lt;/td&gt;<br>
+&lt;td&gt;Fifth cell &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;Row-2&lt;/th&gt;<br>
+&lt;td&gt;Cell-1&lt;/td&gt;<br>
+&lt;td&gt;Cell-2&lt;/td&gt;<br>
+&lt;td&gt;Cell-3&lt;/td&gt;<br>
+&lt;td&gt;Cell-4&lt;/td&gt;<br>
+&lt;td&gt;Cell-5&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;<br>
+</code>
+<li>Adding header with <code>&lt;th&gt;</code></li>
+<li>Header makes it is easier to find the data you are looking for when the headers clearly stand out, and the design just generally looks better.</li>
+<table>
+
+<!-- Header -->
+<tr>
+<th>&nbsp;</th>
+<th>Column1</th>
+<th>Column2</th>
+<th>Column3</th>
+<th>Column4</th>
+<th>Column5</th>
+</tr>
+
+<!-- Row 1: -->
+<tr>
+<th>Row-1</th>
+<td>First cell </td>
+<td>Second cell </td>
+<td>Third cell </td>
+<td>Fourth cell </td>
+<td>Fifth cell </td>
+</tr>
+
+<!-- Row 2: -->
+<tr>
+<th>Row-2</th>
+<td>Cell-1</td>
+<td>Cell-2</td>
+<td>Cell-3</td>
+<td>Cell-4</td>
+<td>Cell-5</td>
+</tr>
+</table>
+
+<code>
+<b>Code:</b><br>
+&lt;table&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;&nbsp;&lt;/th&gt;<br>
+&lt;th&gt;Column1&lt;/th&gt;<br>
+&lt;th&gt;Column2&lt;/th&gt;<br>
+&lt;th&gt;Column3&lt;/th&gt;<br>
+&lt;th&gt;Column4&lt;/th&gt;<br>
+&lt;th&gt;Column5&lt;/th&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;Row-1&lt;/th&gt;<br>
+&lt;td&gt;First cell &lt;/td&gt;<br>
+&lt;td&gt;Second cell &lt;/td&gt;<br>
+&lt;td&gt;Third cell &lt;/td&gt;<br>
+&lt;td&gt;Fourth cell &lt;/td&gt;<br>
+&lt;td&gt;Fifth cell &lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;tr&gt;<br>
+&lt;th&gt;Row-2&lt;/th&gt;<br>
+&lt;td&gt;Cell-1&lt;/td&gt;<br>
+&lt;td&gt;Cell-2&lt;/td&gt;<br>
+&lt;td&gt;Cell-3&lt;/td&gt;<br>
+&lt;td&gt;Cell-4&lt;/td&gt;<br>
+&lt;td&gt;Cell-5&lt;/td&gt;<br>
+&lt;/tr&gt;<br>
+&lt;/table&gt;
+</code>
+</ul>
+</section>
