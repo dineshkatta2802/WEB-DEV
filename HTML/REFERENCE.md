@@ -400,46 +400,6 @@ sections of the same page or other pages on the website.</li>
 </section>
 
 <hr>
-💻 Programmers always find the most efficient solution! 🖊️
-
-Teacher: "Write 'I am sorry' 100 times as punishment."
-
-Normal Students: 📄 "Challenge accepted."
-Programmers: 🤖 "There's got to be a better way..."
-python
-Copy code
-for _ in range(100):
-print("I am Sorry")
-Why waste effort when automation can save the day? 💪
-
-Efficiency isn't just a skill; it's a mindset. 😎
-#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor💻 Programmers always find the most efficient solution! 🖊️
-
-Teacher: "Write 'I am sorry' 100 times as punishment."
-
-Normal Students: 📄 "Challenge accepted."
-Programmers: 🤖 "There's got to be a better way..."
-python
-Copy code
-for _ in range(100):
-print("I am Sorry")
-Why waste effort when automation can save the day? 💪
-
-Efficiency isn't just a skill; it's a mindset. 😎
-#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor💻 Programmers always find the most efficient solution! 🖊️
-
-Teacher: "Write 'I am sorry' 100 times as punishment."
-
-Normal Students: 📄 "Challenge accepted."
-Programmers: 🤖 "There's got to be a better way..."
-python
-Copy code
-for _ in range(100):
-print("I am Sorry")
-Why waste effort when automation can save the day? 💪
-
-Efficiency isn't just a skill; it's a mindset. 😎
-#ProgrammerLife #Automation #WorkSmarterNotHarder #CodingHumor
 <section>
 <h2>HTML Entities:</h2>
 <ul>
@@ -460,8 +420,8 @@ However, if you use these reserved characters within the content, browsers may m
 <ul>
 <li>A table is a structured set of data showed in rows and columns.</li>
 <li>Always enclose in <code>&lt;table&gt; and &lt;/table&gt;</code></li>
-<li>Let's create a cell,it is enclode in <code>&lt;td&gt; and &lt;/td&gt;</code> td-table data</li>
-<li>
+<li>Let's create a cell,it is enclosed in <code>&lt;td&gt; and &lt;/td&gt;</code> td-table data</li>
+<li><h3>Table Data &lt;td&gt; :</h3>
 <code>
 <b>Code:</b>
 &lt;table&gt;<br>
@@ -483,6 +443,7 @@ However, if you use these reserved characters within the content, browsers may m
 </table>
 <li>The cells are not placed underneath each other, rather they are automatically aligned with each other on the same row</li>
 <li>To stop this row from growing and start placing subsequent cells on a second row, we need to use the <code>&lt;tr&gt;</code> element</li>
+<li><h3>Table Row &lt;tr&gt; :</h3></li>
 <table>
 <!-- Row 1: -->
 <tr>
@@ -527,6 +488,7 @@ However, if you use these reserved characters within the content, browsers may m
 </code>
 <li>Adding header with <code>&lt;th&gt;</code></li>
 <li>Header makes it is easier to find the data you are looking for when the headers clearly stand out, and the design just generally looks better.</li>
+<li><h3>Table Header &lt;th&gt; :</h3></li>
 <table>
 
 <!-- Header -->
@@ -589,5 +551,115 @@ However, if you use these reserved characters within the content, browsers may m
 &lt;/tr&gt;<br>
 &lt;/table&gt;
 </code>
+<li>We can  add caption to the table using the caption tag</li>
+<li><h3>Caption Tag &lt;caption&gt; :</h3></li>
+<table>
+<!-- Caption-->
+<caption> Sample table </caption>
+<!-- Header -->
+<tr>
+<th>&nbsp;</th>
+<th>Column1</th>
+<th>Column2</th>
+<th>Column3</th>
+<th>Column4</th>
+<th>Column5</th>
+</tr>
+
+<!-- Row 1: -->
+<tr>
+<th>Row-1</th>
+<td>First cell </td>
+<td>Second cell </td>
+<td>Third cell </td>
+<td>Fourth cell </td>
+<td>Fifth cell </td>
+</tr>
+
+<!-- Row 2: -->
+<tr>
+<th>Row-2</th>
+<td>Cell-1</td>
+<td>Cell-2</td>
+<td>Cell-3</td>
+<td>Cell-4</td>
+<td>Cell-5</td>
+</tr>
+</table>
+<li><h3>Semantics in Table:</h3></li>
+<li>Sometimes your tables get a bit more complex in structure, 
+it is useful to give them more structural definition. 
+One clear way to do this is by using <code>&lt;thead&gt;,&lt;tbody&gt;,&lt;tfoot&gt;</code>, which allow you to mark up a header, body, and footer section for the table.</li>
+<li><h3>Colspan and Rowspan attribute :</h3></li>
+Smaple Image:
+<img src="Images\colspan_rowspan.png">
+Example:
+<table>
+    <thead>
+    <tr>
+        <th rowspan="4">SrNo</th>
+        <th rowspan="4">Details of the Services Provided</th>
+        <th rowspan="4">Qty</th>
+        <th colspan="2">Service period</th>
+        <th colspan="4">Service performance Details</th>
+    </tr>
+    <tr>
+        <th>From</th>
+        <th>To</th>
+        <th>SNo</th>
+        <th>Service ID NO'</th>
+        <th>Gap in Service(in days)</th>
+        <th>Overall Performance Remarks(Satisfactory/Un-Satisfactory)</th>
+    </tr>
+
+</thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Military</td>
+        <td>90kg</td>
+        <td>TPT</td>
+        <td>BZA</td>
+        <td>231012</td>
+        <td>A950</td>
+        <td>60 days</td>
+        <td>Satisfactory</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Railway</td>
+        <td>40kg</td>
+        <td>KDP</td>
+        <td>VSKP</td>
+        <td>321026</td>
+        <td>A950</td>
+        <td>42 days</td>
+        <td>Un-Satisfactory</td>
+    </tr>
+<tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</tbody>
+</table>
+<h3>This table is not with border the fact that you are seeing borders is just because of the "GITHUB",the original table should look like this</h3>
+<img  src="Images/borderless.png" alt="borderless table">
+<li><h3>Table Borders :</h3></li>
+<ul><li>HTML tables can have borders of different styles and shapes.</li>
+<li>Adding border's to the table using the <code>border</code> element in the <code>&lt;style&gt;</code> tag in the head section.</li>
+<li><img src="Images/border_tags.png" alt="bordered table Synatx"></li>
+<li><img src="Images/border_tags_op.png" alt="bordered table"></li>
+<li>Now with the help of <code>border collapse</code> we gonna collapse the border</li>
+<li><img src="Images/border_collapse.png" alt="bordered table"></li>
+and so on with the help of other attributes we can make table much prettier like <code>border-radius|bg-color</code> etc...<br>
+<h3>Later we gonna deep dive into borders in CSS</h3>
+</ul>
 </ul>
 </section>
