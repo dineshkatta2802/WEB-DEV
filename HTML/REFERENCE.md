@@ -693,4 +693,5 @@ Output<br>
 <li>Check out this <a href="https://www.geeksforgeeks.org/html-input-tag/?ref=lbp" target="_blank">link</a> for all the elements in input tag</li>
 <li>In order to access the different types of input we should learn "type" attribute.</li>
 <li>The type attribute mentions what type of input we are using</li>
+<li> <h4>For additional info check this <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button">link</a></h4></li>
 </ul>
