@@ -1,0 +1,68 @@
+*{ 
+    margin: 2px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    justify-content: center;
+}
+
+/*Container*/
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+/*Cubic-bezier*/
+.cubic{
+    height: 150px;
+    width: 300px;
+    background-color: #9ACBD0;
+    transition: width 2s cubic-bezier(.9,1.95,.73,-0.32) .2s;
+}
+
+.cubic:hover{
+    width: 600px;
+}
+/*Transition element-1*/
+.Trans1{
+    height: 150px;
+    width: 300px;
+    background-color: #007F73;
+    transition: width 2s linear .2s;
+}
+
+.Trans1:hover{
+    width: 600px;
+}
+/*Transition element-2*/
+.Trans2{
+    height: 150px;
+    width: 300px;
+    background-color: #4CCD99;
+    transition: width 2s ease-in .2s;
+}
+
+.Trans2:hover{
+    width: 600px;
+}
+/*Transition element-3*/
+.Trans3{
+    height: 150px;
+    width: 300px;
+    background-color: #FFC700;
+    transition: width 2s ease-out .2s;
+}
+
+.Trans3:hover{
+    width: 600px;
+}
+/*Transition element-4*/
+.Trans4{
+    height: 150px;
+    width: 300px;
+    background-color: #FFF455;
+    transition: width 2s ease-in-out .2s;
+}
+
+.Trans4:hover{
+    width: 600px;
+}

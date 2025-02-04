@@ -1,0 +1,43 @@
+*{
+    text-align: center;
+    color:white;
+    border: 2px solid;
+    margin: 3px auto;
+}
+
+/*Rotate*/
+.Trans1{
+    height: 200px;
+    width: 200px;
+    background-color: #000B58;
+}
+.Trans1:hover{
+    transform: rotate(45deg);
+}
+/*Scale*/
+.Trans2{
+    height: 200px;
+    width: 200px;
+    background-color: #003161;
+}
+.Trans2:hover{
+    transform: scale(2,2);
+}
+/*Translate*/
+.Trans3{
+    height: 200px;
+    width: 200px;
+    background-color: #006A67;
+}
+.Trans3:hover{
+    transform: translate(10px,10px);
+}
+/*Skew*/
+.Trans4{
+    height: 200px;
+    width: 200px;
+    background-color: #FFF4B7;
+}
+.Trans4:hover{
+    transform: skew(10deg,10deg);
+}
