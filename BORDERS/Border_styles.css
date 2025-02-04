@@ -1,0 +1,35 @@
+h2{
+    color:#0B666A;
+}
+/*BORDER BLOCK--------------------------------------------------------------------------------------------------------*/
+#p1{
+    /* style */
+    border: solid;
+}
+
+#p2{
+    /* width |style*/
+    border: 2px solid;
+}
+
+#p3{
+    /* style | color*/
+    border: dotted #05fa77;
+}
+
+#p4{
+    /* width | style | color*/
+    border: 2px dotted #8805fa;
+}
+/*BORDER BLOCK--------------------------------------------------------------------------------------------------------*/
+.border-block1{
+    border-block-color: ;
+    border-block:4px groove #0B666A;
+    writing-mode: horizontal-tb;    
+}
+
+.border-block2{
+    border-block:4px double #0B666A;
+    writing-mode: vertical-rl; 
+}
+
