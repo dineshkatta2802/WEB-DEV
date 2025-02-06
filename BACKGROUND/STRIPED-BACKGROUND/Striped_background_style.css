@@ -1,0 +1,20 @@
+.container1,.container2,.container3{
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+
+}
+
+.container1{
+    background: linear-gradient(#222831,#393E46,#00ADB5,#EEEEEE);
+    /* background: linear-gradient(#222831 20%,#393E46 40%,#00ADB5 60%,#EEEEEE 80%); */
+}
+
+.container2{
+    background: linear-gradient(90deg,#222831,#393E46,#00ADB5,#EEEEEE);
+}
+
+.container3{
+    background: linear-gradient(45deg,#222831,#393E46,#00ADB5,#EEEEEE);
+}

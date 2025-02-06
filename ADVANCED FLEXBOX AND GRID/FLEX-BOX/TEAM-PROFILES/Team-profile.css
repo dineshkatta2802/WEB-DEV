@@ -53,6 +53,7 @@
 
 .profile{
     margin: 20px; 
+    position: relative;
     padding: 10px;
     background-color: #393E46;
     /* border: 2px solid ; */
@@ -67,7 +68,12 @@
     background-color: #26355D;
 }
 
+.profile > *{
+    position:static;
+}
+
 .profile img{
+    /* position: relatve; */
     opacity: 0.6;
     border-radius: 50%;
     height: 140px;
@@ -75,6 +81,13 @@
     object-fit: cover;
     margin: 10px;
     box-shadow: 2px 4px 5px #00ADB5;
+}
+
+@media all and (max-width: 500px) {
+    .section {
+      /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    }
 }
 
 .profile-role{

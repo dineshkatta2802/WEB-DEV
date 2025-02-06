@@ -1,0 +1,29 @@
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li{
+    margin: 5px;
+    border-radius: 20px;
+    opacity: 0.4;
+    display: flex;
+    flex:row wrap;
+}
+
+ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.04);
+    
+}
+
+img{
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
