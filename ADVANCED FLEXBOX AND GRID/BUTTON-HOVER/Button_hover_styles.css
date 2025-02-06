@@ -1,0 +1,48 @@
+*{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: inherit;
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto;
+    height: 200px;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    /*flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+.accept{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #D91656;
+}
+
+.reject{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #06D001;
+}
+
+button{
+    flex-grow: 1;
+}
+
+button:hover{
+    transition-property: flex-grow;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    flex-grow: 3;
+}
