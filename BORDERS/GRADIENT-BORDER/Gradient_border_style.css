@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    place-items: center;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 250px;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background: linear-gradient(to right,#640D5F,#D91656,#EB5B00,#FFB200);
+}
+
+.box{
+    border-radius: 20px;
+    position: relative;
+    background: #1A1A1D;
+    color: white;
+    padding: 2rem;
+}

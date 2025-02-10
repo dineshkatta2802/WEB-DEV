@@ -1,0 +1,25 @@
+body{
+    background-image: url(cosmic-environment-with-colorful-neon-laser-lights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    place-items: center;
+    margin: 40px auto;
+}
+
+main{
+    background-color: rgb(246, 244, 240,0.6);
+    border-radius: 50px;
+    color: black;
+    text-shadow: 2px 2px yellow;
+    filter: blur(20px);
+    overflow: hidden;
+}
+
+main >p{
+    text-align: center;
+    margin: 100px auto;
+    padding-top: 300px;
+    width: 50%;
+    height: 500px;
+}

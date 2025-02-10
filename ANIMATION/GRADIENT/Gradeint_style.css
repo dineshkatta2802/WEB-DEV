@@ -1,0 +1,63 @@
+:root {
+    --gradient: linear-gradient(
+        45deg, 
+        #845ec2, 
+        #d65db1, 
+        #ff6f91, 
+        #ff9671, 
+        #ffc75f, 
+        #f9f871,
+        #845ec2, 
+        #d65db1, 
+        #ff6f91,
+        #ff9671, 
+        #ffc75f, 
+        #f9f871
+    );
+}
+
+* {
+    font-family: 'Quantico', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+}
+
+.con {
+    margin: 10px auto;
+    border: 2px solid black;
+    width: 70%;
+    font-size: 100px;
+    font-weight: bold;
+    background: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#para {
+    background: var(--gradient);
+    background-size: 200% 200%;
+    /* background-position: left; */
+    background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 5px 5px white;
+    animation: gradientAnimation 1s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}

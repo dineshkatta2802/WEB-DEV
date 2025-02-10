@@ -1,0 +1,10 @@
+body{
+    place-items: center;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    text-shadow: 10px 10px yellow;
+    filter: drop-shadow(2px 2px 1px grey);
+}

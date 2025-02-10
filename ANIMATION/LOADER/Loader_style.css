@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    animation: bg 10s linear infinite;
+}
+
+@keyframes bg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loader {
+    position: relative;
+    width: 200px; /* Adjusted width for better rotation */
+    height: 200px;
+}
+
+.loader span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: crimson;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 100px;
+    transform: rotate(calc(18deg * var(--i)));
+    opacity: 0;
+    animation: appear 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i)); /* Corrected syntax */
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        box-shadow: 0 0 0px crimson;
+    }
+    10% {
+        opacity: 1;
+        box-shadow: 0 0 10px crimson, 0 0 20px crimson, 0 0 30px crimson; /* Fixed syntax */
+    }
+    100% {
+        opacity: 0;
+        box-shadow: 0 0 0px crimson;
+    }
+}

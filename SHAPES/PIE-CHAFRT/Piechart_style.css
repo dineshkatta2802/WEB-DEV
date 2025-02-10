@@ -1,0 +1,43 @@
+.pie{
+    margin: 10px auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #1A1A1D 0deg 90deg, 
+        #3B1C32 90deg 180deg, 
+        #6A1E55 180deg 270deg, 
+        #A64D79 270deg 360deg
+    );
+    animation: spin 5s ease-in-out infinite;
+    animation-delay: 0.2s;
+    animation-play-state:running;
+    /* background: linear-gradient(to right,#1A1A1D 50%,#6A1E55 50%); */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50%{ transform: rotate(-180deg);}
+    100% { transform: rotate(360deg); }
+}
+/* @keyframes bg{
+    50%{background: #6A1E55;}
+}
+
+@keyframes spin{
+    to{transform: rotate(.5turn);}
+}
+
+.pie::before{
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 0 0/50%;
+    background-color: inherit;
+    transform-origin: left;
+    transform: rotate(.1turn);
+    animation: spin 3s linear infinite,bg 6s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
+} */

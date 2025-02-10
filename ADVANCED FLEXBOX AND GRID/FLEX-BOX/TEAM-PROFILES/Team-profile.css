@@ -79,7 +79,7 @@
     height: 140px;
     min-width: 140px;
     object-fit: cover;
-    margin: 10px;
+    margin: 10px; 
     box-shadow: 2px 4px 5px #00ADB5;
 }
 
@@ -108,6 +108,7 @@
     transform: scale(1.2);
     box-shadow: 2px 2px 3px #00ADB5;
 }
+
 
 .separator{
     flex-grow: 1;
