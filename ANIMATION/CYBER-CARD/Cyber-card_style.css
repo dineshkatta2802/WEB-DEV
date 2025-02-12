@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.con{
+    /* border: 10px solid black; */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#00FF00 0%, #00FF00 60%, #00FF00 100%);
+    position: relative;
+    box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00, 0 0 60px #00FF00, 0 0 80px #00FF00, 0 0 100px #00FF00;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.right, .left, .top {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right {
+    clip-path: polygon(0px 0px, 194.56px 282.71px, 232.62px 500px, 0px 500px);
+    background-color: #000000;
+    right: 0;
+}
+
+.left {
+    clip-path: polygon(500px 0px, 305.44px 282.71px, 267.38px 500px, 500px 500px);
+    background-color: #000000;    
+    left: 0;
+}
+
+.top {
+    clip-path: polygon(0px 0px, 500px 0px, 250px 268px, 250px 268px);
+    background-color: #000000;
+    top: 0;
+}
+
+.con:hover .top {
+    transform: translateY(-50px);
+}
+
+.con:hover .right {
+    transform: translateX(-50px);
+}
+
+.con:hover .left {
+    transform: translateX(50px);
+}

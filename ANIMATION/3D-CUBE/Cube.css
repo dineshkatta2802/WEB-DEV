@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+    font-family: "Quantico", serif;
+} 
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.con {
+    display: inline-flex;
+    perspective: 1000px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+.face {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube1, .cube2, .cube3, .cube4 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: moveUp 2s infinite ease-in-out,moveUp 1.5s ease-in-out infinite;
+}
+
+.cube1 {
+    transform: rotate3d(-1, -1, 0, 45deg);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 0s;
+}
+
+.cube2 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(30px) translateX(20px) translateZ(20px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 0.5s; 
+}
+
+.cube3 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(60px) translateX(40px) translateZ(40px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 1s; 
+}
+
+.cube4 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(90px) translateX(60px) translateZ(60px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 1.5s; 
+}
+
+
+.top {
+    background: linear-gradient( #00ADB5, #EEEEEE);
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.left {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.right {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.back {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: translateZ(-100px);
+}
+
+.bottom {
+    background: #393E46;
+    border: none;
+    border-radius: 10px;
+    transform: rotateX(90deg) translateZ(-110px);
+    box-shadow: 0 0 20px aqua,
+                0 0 40px aqua,
+                0 0 60px aqua,
+                0 0 80px aqua,
+                0 0 100px aqua;
+}
+
+.front {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: translateZ(100px);
+}
+
+@keyframes loading {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotateY(360deg);
+    }
+}
