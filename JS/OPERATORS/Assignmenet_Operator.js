@@ -1,41 +1,54 @@
 let a = 5;
 let b = 10;
 
-//ADDITON ASSIGNMENT
-console.log(a += b);
+// ADDITION ASSIGNMENT
+a += b;  
+console.log(a); // 15
 
-//SUBTRACTION ASSIGNMENT
-console.log(a -= b);
+// SUBTRACTION ASSIGNMENT
+a -= b;  
+console.log(a); // 5
 
-//MULTIPLICATION ASSIGNMENT
-console.log(a *= b);
+// MULTIPLICATION ASSIGNMENT
+a *= b;  
+console.log(a); // 50
 
-//DIVISION ASSIGNMENT
-console.log(a += b);
+// DIVISION ASSIGNMENT
+a /= b;  
+console.log(a); // 5
 
-//MODOULS ASSIGNMENT
-console.log(a /= b);
+// MODULUS ASSIGNMENT
+a %= b;  
+console.log(a); // 5
 
-//EXPONENTIAL ASSIGNMENT
-console.log(a **= b);
+// EXPONENTIAL ASSIGNMENT
+a **= 2;  
+console.log(a); // 25 (a = 5^2)
 
-//LEFT-SHIFT ASSIGNMENT
-console.log(a <<= b);
+// LEFT-SHIFT ASSIGNMENT
+a <<= 1;  
+console.log(a); // 50 (Shifts bits left by 1 position)
 
-//RIGHT-SHIFT ASSIGNMENT
-console.log(a >>= b);
+// RIGHT-SHIFT ASSIGNMENT
+a >>= 1;  
+console.log(a); // 25 (Shifts bits right by 1 position)
 
-//BITWISE AND ASSIGNMENT
-console.log(a &= b);
+// BITWISE AND ASSIGNMENT
+a &= b;  
+console.log(a); // 8 (Bitwise AND of 25 and 10)
 
-//BITWISE OR ASSIGNMENT
-console.log(a |= b);
+// BITWISE OR ASSIGNMENT
+a |= b;  
+console.log(a); // 10 (Bitwise OR of 8 and 10)
 
-//BITWISE XOR ASSIGNMENT
-console.log(a ^= b);
+// BITWISE XOR ASSIGNMENT
+a ^= b;  
+console.log(a); // 0 (Bitwise XOR of 10 and 10)
 
-//LOGICAL AND ASSIGNMENT
-console.log(a &&= b);
+// LOGICAL AND ASSIGNMENT
+a &&= b;  
+console.log(a); // 0 (Since a is falsy, a becomes 0)
 
-//LOGICAL OR ASSIGNMENT
-console.log(a ||= b);
+// LOGICAL OR ASSIGNMENT
+a ||= b;  
+console.log(a); // 10 (Since a is falsy, a takes b's value)
