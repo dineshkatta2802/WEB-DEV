@@ -32,7 +32,7 @@ console.log(NaN != NaN);   // true  -> NaN is not equal to itself
 console.log(NaN == NaN);   // false -> NaN is never equal to NaN
 console.log(NaN === NaN);  // false -> NaN is never strictly equal to NaN
 
-// 2. Null Cases
+// 2q. Null Cases
 console.log(null == 0);    // false -> null is only loosely equal to undefined, not 0
 console.log(null === 0);   // false -> strict comparison (different types)
 console.log(null != 0);    // true  -> since null == 0 is false, null != 0 is true
