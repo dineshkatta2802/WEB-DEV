@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML inline handler</h2>
+    <button onclick="alert('Button clicked')">Click here 1</button>
+    <h2>JS handler</h2>
+    Handler is the function
+    <button id="btn">Click here 2</button>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.onclick = function(event){
+            alert('Button clicked');
+                    alert(event);
+                    alert(event.type);
+                    alert(event.currentTarget);
+        }
+    </script>
+
+    <form onlclick="alert('form')" style="padding: 10px;background-color: aqua;">FORM 
+        <div onclick="alert('div')" style="padding: 10px; background-color: blue;">DIV 
+            <p onclick="alert('p')" style="padding: 10px; background-color: chartreuse;">P</p>
+        </div>
+    </form>
+</body>
+</html>
