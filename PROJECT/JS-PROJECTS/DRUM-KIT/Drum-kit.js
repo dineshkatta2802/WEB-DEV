@@ -14,4 +14,4 @@ window.addEventListener("keyup", function (e) {
     if (key) {
         key.classList.remove("animation"); // Remove animation on key release
     }
-});
+}); 

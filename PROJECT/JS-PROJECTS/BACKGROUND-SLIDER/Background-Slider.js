@@ -3,7 +3,7 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 
 let active = 0;
-
+ 
 // Right Button Click Event
 rightBtn.addEventListener("click", function() {
     active++;

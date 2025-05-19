@@ -1,0 +1,50 @@
+/* Apply to all elements: reset margin/padding and use border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+h1 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Body styling to center content vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* Box style */
+.box {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 10px;
+
+    /* Flexbox to center text inside the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Animation effect */
+    transform: translateX(400%);
+    transition: transform 0.6s ease;
+}
+
+/* Even-numbered boxes slide in from the left */
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+/* When scroll activates the animation */
+.box.show {
+    transform: translateX(0);
+}
