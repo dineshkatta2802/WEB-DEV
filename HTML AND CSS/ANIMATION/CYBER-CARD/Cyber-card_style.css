@@ -9,21 +9,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100vh;
 }
 
 .box {
     width: 500px;
     height: 500px;
+    background-color: aqua;
     position: relative;
 }
 
 .con{
     /* border: 10px solid black; */
+    position: relative;
     width: 100%;
     height: 100%;
     background: linear-gradient(#00FF00 0%, #00FF00 60%, #00FF00 100%);
-    position: relative;
     box-shadow: 0 0 20px #00FF00, 0 0 40px #00FF00, 0 0 60px #00FF00, 0 0 80px #00FF00, 0 0 100px #00FF00;
     overflow: hidden;
     border-radius: 50%;
