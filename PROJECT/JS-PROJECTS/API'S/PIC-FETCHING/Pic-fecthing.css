@@ -1,60 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-body{
-    background: linear-gradient( 45deg, #00A6FB, #0582CA, #006494, #003554, #051923);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    /* flex */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.con{
-    width: 50%;
-    height: 50%;
-    background-color: aliceblue;
-    border: 2px solid aliceblue;
-    border-radius: 40px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0,.3);
-    text-align: center;
-    padding: 20px;
-    overflow: hidden;
-    position: relative;
-}
-
-/* .con::after, .con::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 40px;
-    background-image: conic-gradient(#03045E, #0077B6, #00B4D8, #90E0EF, #CAF0F8);
-    animation: spin 5s linear infinite;
-}
-
-.con::before {
-    filter: blur(10px);
-    opacity: 0.5;
-}
-
-@keyframes spin {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Indie Flower", cursive;
     }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
+
+    body {
+        width: 100%;
+        height: 100vh;
+        /* background-color: black; */
+        background: linear-gradient(45deg, #2196F3, #42A5F5, #64B5F6, #90CAF9, #BBDEFB, #E3F2FD);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-} */
+
+    .con {
+        width: 500px;
+        height: 600px;
+        background: aliceblue;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+    }
+
+    .con::after {
+        content: '';
+        position: absolute;
+        inset: -5px;
+        border-radius: 30px;
+        /* background: conic-gradient(from var(--angle), white, #0582CA, #006494, #003554, #051923, #00A6FB); */
+        background: conic-gradient(from var(--angle), #00B4D8, #03045E, #00B4D8, #03045E, #00B4D8);
+        z-index: -1;
+        animation: glow 5s linear infinite;
+    }
+
+    .con::before{
+        z-index: -2;
+        filter: blur(20px);
+        opacity: 0.2;
+    }
+
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    @keyframes glow {
+        from {
+            --angle: 0deg;
+        }
+        to {
+            --angle: 360deg;
+        }
+    }
+
+
+    .btn{
+        background-color: #03045E;
+        color: aliceblue;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    .heading{
+        font-size: 50px;
+        color: #03045E;
+    }
+
+    .photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .photo img{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 2px solid #03045E;
+    }
+
+    .photo h3{
+        text-align: center;
+        margin-top: 20px;
+        color: #03045E;
+        width: 100%;
+        height: 30px;
+    }
+
+    /* .photo{
+        display: none;
+    } */
