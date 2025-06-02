@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="AI_Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI - INTEGRATED PROJECT</title>
+</head>
+<body>
+    <div class="con color">
+        <!-- Header -->
+        <header class="header">
+            <div class="logowrap">
+                <div class="logo">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h1 class="logo-heading" data-text="AI IMAGE GENERATOR">AI IMAGE GENERATOR</h1>
+                </div>
+                <button class="toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <div class="main" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+            <form action="#" style="width: 100%;">
+                <!-- Prompt -->
+                <div class="prompt-con">
+                    <textarea class="prompt" placeholder="Enter the prompt..."></textarea>
+                    <button class="prompt-btn"><i class="fa-solid fa-dice"></i></button>
+                </div>
+                <!-- Prompt Action -->
+                <div class="prompt-actions">
+                    <div class="selectwrap">
+                        <select class="customselect">
+                            <option value="" selected disabled>Select Model</option>
+                            <option value="dall-e">DALL·E</option>
+                            <option value="midjourney">MidJourney</option>
+                            <option value="stable-diffusion">Stable Diffusion</option>
+                        </select>
+                    </div>
+
+                    <div class="selectwrap">
+                        <select class="customselect">
+                            <option value="" selected disabled>No of Images</option>
+                            <option value="">1 Image</option>
+                            <option value="">2 Images</option>
+                            <option value="">3 Images</option>
+                            <option value="">4 Images</option>
+                        </select>
+                    </div>
+
+                    <div class="selectwrap">
+                        <select class="customselect">
+                            <option value="" selected disabled>Image Mode</option>
+                            <option value="">Square (1:1)</option>
+                            <option value="">Landscape (16:9)</option>
+                            <option value="">Potrait (9:16)</option>
+                        </select>
+                    </div>
+
+                    <div class="Generate-btn"><button disabled>Generate  <i class="fa-solid fa-wand-magic-sparkles"></i></button></div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="gallery-grid">
+                <div class="imgcard">
+                    <img src="Premium Photo _ Photo cyberpunk man portrait futuristic neon style.jpg" class="imgresult" />
+                    <div class="img-overlay">
+                        <button class="download"><i class="fa-solid fa-folder-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                                <div class="imgcard">
+                    <img src="Premium Photo _ Photo cyberpunk man portrait futuristic neon style.jpg" class="imgresult" />
+                    <div class="img-overlay">
+                        <button class="download"><i class="fa-solid fa-folder-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                                <div class="imgcard">
+                    <img src="Premium Photo _ Photo cyberpunk man portrait futuristic neon style.jpg" class="imgresult" />
+                    <div class="img-overlay">
+                        <button class="download"><i class="fa-solid fa-folder-arrow-down"></i></button>
+                    </div>
+                </div>
+
+                                <div class="imgcard">
+                    <img src="Premium Photo _ Photo cyberpunk man portrait futuristic neon style.jpg" class="imgresult" />
+                    <div class="img-overlay">
+                        <button class="download"><i class="fa-solid fa-folder-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="AI.js"></script>
+</body>
+</html>
