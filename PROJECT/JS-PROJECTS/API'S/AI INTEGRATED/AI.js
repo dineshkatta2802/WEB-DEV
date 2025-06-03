@@ -7,30 +7,6 @@ let prompt = document.querySelector('.prompt');
 let dice = document.querySelector('.prompt-btn');
 let generatebtn = document.querySelector('.Generate-btn button');
 let promptText = prompt.innerHTML;
-
-// const apiKey = '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';
-
-// async function api(promptText){
-    
-//     const apiURL = "https://router.huggingface.co/nebius/v1/images/generations";
-
-//         try {
-//             headers: {
-// 				Authorization: `Bearer ${apiKey}`,
-// 				"Content-Type": "application/json",
-// 			},
-// 			method: "POST",
-// 			body: JSON.stringify({
-//                 input:,
-//                 parameters:{width,height},
-//                 "x-use-cache" "false",
-
-//             }),
-//     } catch (error) {
-        
-//     }
-// }
-
 let samplePrompts = [
     "A pastel sunset over a calm ocean with soft clouds",
     "Vintage cafe corner with plants and sunlight through windows",
