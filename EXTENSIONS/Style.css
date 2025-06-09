@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -9,27 +10,31 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* LIGHT MODE */
 body {
     width: 350px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0B132B;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: aliceblue;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color: #1a1a1a;
 }
 
 .con {
     width: 100%;
     height: 100%;
-    background-color: #0B132B;
+    background-color: #FFFFFF;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    border-radius: 12px;
 }
 
+/* LOGO & TOGGLE */
 .logowrap {
     display: flex;
     justify-content: space-between;
@@ -43,13 +48,13 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: #1C2541;
-    color: #6FFFE9;
-    transition: background-color 0.2s ease;
+    background-color: #00B3A6;
+    color: #ffffff;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .logowrap button:hover {
-    background-color: #324269;
+    background-color: #007D74;
 }
 
 .logo {
@@ -63,64 +68,107 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1C2541;
-    color: #6FFFE9;
+    background-color: #00B3A6;
+    color: #ffffff;
     width: 40px;
     height: 40px;
     border-radius: 10px;
     font-size: 18px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .logo h1 {
-    color: #6FFFE9;
-    font-size: 25px;
+    color: #00B3A6;
+    font-size: 22px;
     font-weight: bold;
     white-space: nowrap;
-    transition: color 0.3s ease;
+    transition: color 2s ease;
 }
 
-/* Power Button */
+/* POWER BUTTON */
 .power-btn {
-    font-size: 5rem;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #6FFFE9;
-    background-color: #1C2541;
+    font-size: 5rem;
+    color: #ffffff;
+    background-color: #00B3A6;
     border-radius: 20px;
-    padding: 10px;
     cursor: pointer;
-    margin-top: auto;
-    transition: background-color 0.2s ease;
+    transition: background-color 2s ease, color 2s ease;
 }
 
 .power-btn:hover {
-    background-color: #324269;
+    background-color: #007D74;
 }
 
-/* Dark Mode */
+/* SCORE SECTION */
+.score {
+    background-color: #F1F1F1;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transition: background-color 2s ease, color 2s ease;
+}
+
+.score-heading h1 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #007D74;
+    transition: color 0.5s ease;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* DARK MODE */
 body.dark-mode {
-    background-color: #1C1C1C;
+    background-color: #0f0f0f;
+    color: #F1F1F1;
 }
 
 .dark-mode .con {
-    background-color: #1C1C1C;
-}
-
-.dark-mode .logo i {
-    background-color: #2C2C2C;
-}
-
-.dark-mode .logo h1 {
-    color: #ffffff;
+    background-color: #1a1a1a;
 }
 
 .dark-mode .logowrap button {
-    background-color: #2C2C2C;
-    color: #ffffff;
+    background-color: #00FFC6;
+    color: #0f0f0f;
+}
+
+.dark-mode .logowrap button:hover {
+    background-color: #00B3A6;
+}
+
+.dark-mode .logo i {
+    background-color: #00FFC6;
+    color: #0f0f0f;
+}
+
+.dark-mode .logo h1 {
+    color: #00FFC6;
 }
 
 .dark-mode .power-btn {
-    background-color: #2C2C2C;
-    color: #ffffff;
+    background-color: #00FFC6;
+    color: #0f0f0f;
+}
+
+.dark-mode .power-btn:hover {
+    background-color: #00B3A6;
+}
+
+.dark-mode .score {
+    background-color: #2a2a2a;
+    color: #F1F1F1;
+}
+
+.dark-mode .score-heading h1 {
+    color: #00FFC6;
 }
