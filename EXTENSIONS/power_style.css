@@ -1,0 +1,95 @@
+    /* Base light mode styling */
+    .power-btn-container {
+    width: 3.5em;
+    height: 3.5em;
+    position: relative;
+    margin-left: 10px;
+    }
+
+    .power-btn-container input {
+    display: none;
+    }
+
+    .power-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background: linear-gradient(145deg, #f0f0f0, #dcdcdc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 0 #ffffff, inset -2px -2px 0px #c0c0c0;
+    transition: all 0.3s ease-in-out;
+    }
+
+    .power-btn::before {
+    content: "";
+    position: absolute;
+    width: 3.7em;
+    height: 3.7em;
+    border-radius: inherit;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    z-index: -1;
+    box-shadow: 5px 5px 10px #b0b0b0, -5px -5px 10px #ffffff;
+    }
+
+    .power-btn .icon {
+    width: 25px;
+    height: 25px;
+    }
+
+    .power-btn .icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #555;
+    transition: fill 0.3s ease-in-out;
+    }
+
+    .power-btn-container input:checked + .power-btn {
+    box-shadow: inset -2px -2px 0 #aaa, inset 2px 2px 0 #eee;
+    border: 2px solid #00B3A6;
+    animation: powerBorderGlow 0.5s ease-in-out infinite alternate;
+    }
+
+    .power-btn-container input:checked + .power-btn .icon svg {
+    fill: #00B3A6;
+    animation: powerFillGlow 0.5s ease-in-out infinite alternate;
+    }
+
+    /* Dark Mode */
+    body.dark .power-btn {
+    background: linear-gradient(145deg, #1e1e1e, #333);
+    border: 2px solid #444;
+    box-shadow: inset 2px 2px 0 #111, inset -2px -2px 0 #000;
+    }
+
+    body.dark .power-btn::before {
+    background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+    box-shadow: 5px 5px 10px #0a0a0a, -5px -5px 10px #2a2a2a;
+    }
+
+    body.dark .power-btn .icon svg {
+    fill: #aaa;
+    }
+
+    body.dark .power-btn-container input:checked + .power-btn {
+    border-color: #00B3A6;
+    }
+
+    body.dark .power-btn-container input:checked + .power-btn .icon svg {
+    fill: #00B3A6;
+    }
+
+    @keyframes powerFillGlow {
+    to {
+        fill: #00B3A6;
+    }
+    }
+
+    @keyframes powerBorderGlow {
+    to {
+        border-color: #00B3A6;
+    }
+    }
