@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBSCURA - Details</title>
     <link rel="stylesheet" href="power_style.css">
     <link rel="stylesheet" href="details_style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OBSCURA - Details</title>
 </head>
 <body>
     <div class="con">
@@ -17,19 +17,15 @@
             </div>
             <button class="toggle"><i class="fa-solid fa-moon"></i></button>
 
-            <!-- Power Toggle Button -->
-            <div class="power-btn-container">
-            <input id="powerCheckbox" type="checkbox">
-            <label class="power-btn" for="powerCheckbox">
-                <span class="icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1z" />
-                    <path d="M5.64 5.64a1 1 0 0 1 1.41 0 9 9 0 1 1-1.41 1.41 1 1 0 0 1 0-1.41z" />
-                </svg>
-                </span>
-            </label>
+            <div class="power-toggle">
+                <label class="theme-switch">
+                    <input type="checkbox" id="powerToggle" checked />
+                    <span class="slider"k>
+                        <i class="fa-solid fa-power-off toggle-icon"></i>
+                    </span>
+                </label>
             </div>
-    </div>
+        </div>
 
         <div class="defaultWebsites" id="defaultWebsites">
             <div class="website">
@@ -101,3 +97,4 @@
     <script src="details.js"></script>
 </body>
 </html>
+

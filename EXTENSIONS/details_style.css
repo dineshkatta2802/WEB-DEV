@@ -285,17 +285,17 @@ input:checked + .slider .unlock {
 }
 
 /* Dark Mode Compatibility */
+body.dark-mode {
+    background-color: #0f0f0f;
+    color: #F1F1F1;
+}
+
 body.dark-mode .slider {
     background-color: #00FFC6;
 }
 
 body.dark-mode input:checked + .slider {
     background-color: #00B3A6;
-}
-
-body.dark-mode {
-    background-color: #0f0f0f;
-    color: #F1F1F1;
 }
 
 .dark-mode .con {
@@ -320,22 +320,15 @@ body.dark-mode {
     color: #00FFC6;
 }
 
-.dark-mode .fa-google,
-.dark-mode .fa-facebook,
-.dark-mode .fa-x-twitter,
-.dark-mode .fa-telegram {
+.dark-mode .fa-brands {
     color: #00FFC6;
 }
 
-.dark-mode .fa-solid{
-    color: #0f0f0f;
-}
-
-.dark-mode .Addwebsite{
+.dark-mode .Addwebsite {
     background-color: #2a2a2a;
     color: #00FFC6;
     border-top: #007D74;
-} 
+}
 
 body.dark-mode .popup-box {
     background-color: #1a1a1a;
@@ -356,10 +349,6 @@ body.dark-mode #cancelBtn {
 body.dark-mode #saveBtn {
     background-color: #00FFC6;
     color: #0f0f0f;
-}
-
-.dark-mode .deleteBtn i{
-    color: #00FFC6;
 }
 
 .deleteBtn {
