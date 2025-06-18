@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const powerToggle = document.getElementById("powerToggle");
+  
+  // Load saved power toggle state; default to 'on' (locked) if not set
+  const savedPowerState = localStorage.getItem("powerState");
+  powerToggle.checked = savedPowerState !== "off"; // Check if it's 'on'
+
+  // Event listener for toggle changes
+  powerToggle.addEventListener("change", togglePower);
+
+  // Other initialization code can go here or below...
+  
+  // For example, initialize theme, load websites, etc.
+});
+
 const openPopupBtn = document.getElementById("openPopup");
 const popupOverlay = document.getElementById("popupOverlay");
 const cancelBtn = document.getElementById("cancelBtn");

@@ -2,23 +2,14 @@
   "manifest_version": 3,
   "name": "Obscura Extension",
   "version": "1.0",
-  "description": "Toggle between popup and details view, with malicious request blocking",
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "images/16.png",
-      "48": "images/48.png",
-      "128": "images/128.png"
-    }
-  },
-"permissions": [
-    "storage",
-    "webRequest",
-    "webRequestBlocking",
-    "tabs",
-    "<all_urls>"
-  ],
-  "background": {
+  "description": "Privacy extension with malicious request blocking",
+  "permissions": [
+  "storage",
+  "tabs",
+  "declarativeNetRequest",
+  "declarativeNetRequestFeedback"
+],
+"background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
@@ -27,5 +18,18 @@
       "js": ["content.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  }
 }

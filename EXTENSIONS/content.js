@@ -1,6 +1,6 @@
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message) => {
   if (message.action === "showWarning") {
-    if (document.getElementById("obscura-warning-overlay")) return; // already shown
+    if (document.getElementById("obscura-warning-overlay")) return;
 
     const overlay = document.createElement("div");
     overlay.id = "obscura-warning-overlay";
@@ -16,7 +16,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
-      zIndex: 2147483647,
+      zIndex: "2147483647",
       fontSize: "2rem",
       textAlign: "center",
       padding: "2rem",
@@ -24,28 +24,25 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     });
 
     overlay.innerHTML = `
-      <div>
-        <h1>Warning: Malicious Site Detected</h1>
-        <p>The site you are trying to access is blocked for your protection.</p>
-        <p><strong>${message.url}</strong></p>
-        <button id="obscura-close-btn" style="
-          margin-top: 20px; 
-          padding: 10px 20px;
-          font-size: 1rem;
-          cursor: pointer;
-          border: none;
-          border-radius: 6px;
-          background: white;
-          color: red;
-          font-weight: bold;
-        ">Close Tab</button>
-      </div>
+      <h1>Warning: Malicious Site Blocked</h1>
+      <p>The following site has been blocked for your security:</p>
+      <p style="word-break: break-word;"><strong>${message.url}</strong></p>
+      <button id="obscura-close-btn" style="
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background: white;
+        color: red;
+        font-weight: bold;
+      ">Close Tab</button>
     `;
 
     document.documentElement.prepend(overlay);
 
     document.getElementById("obscura-close-btn").addEventListener("click", () => {
-      // Close the tab on user confirmation
       chrome.runtime.sendMessage({ action: "closeTab" });
     });
   }
