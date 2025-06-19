@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Popup Page</title>
+</head>
+<body>
+<button>Click here</button>
+
+<script>
+    let button = document.getElementsByTagName('button')[0];
+
+    // ❌ This will likely be blocked (not user-initiated)
+    window.open('https://javascript.info');
+
+    // ✅ This will work (user-initiated click)
+    button.onclick = () => {
+    //   window.open("https://example.com", "_blank", "width=400,height=400");
+    let params = `scrollbars=yes,resizable=no,status=no,location=no,toolbar=yes,menubar=yes,
+width=600,height=300,left=100,top=100`;
+    window.open("https://example.com", "myTab", params);
+    };
+</script>
+</body>
+</html>
