@@ -1,32 +1,55 @@
-const blockedPatterns = [
-  "*://*.trackingdomain.com/*",
-  "*://*.adsdomain.com/*",
-  "*://*.maliciousdomain.com/*",
-  "*://*.trackersite.net/*",
-  "*://*.adserver.example/*"
-];
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg.updateRules) {
+    chrome.storage.sync.get(["blockedSites", "powerEnabled"], (data) => {
+      const blocked = data.powerEnabled ? data.blockedSites || [] : [];
 
-// Set up rules for blocking requests
-const rules = blockedPatterns.map(pattern => ({
-  id: `block-${pattern}`,
-  priority: 1,
-  action: { type: "block" },
-  condition: {
-    urlFilter: pattern,
-    resourceTypes: ["main_frame"]
+      const rules = [];
+
+      blocked.forEach((site, i) => {
+        // Rule 1: Block the whole site
+        rules.push({
+          id: i * 2 + 1,
+          priority: 1,
+          action: {
+            type: "redirect",
+            redirect: { extensionPath: "/blocked.html" }
+          },
+          condition: {
+            urlFilter: site,
+            resourceTypes: ["main_frame"]
+          }
+        });
+
+        // Rule 2: Block trackers/scripts/ads from that domain
+        rules.push({
+          id: i * 2 + 2,
+          priority: 1,
+          action: {
+            type: "block"
+          },
+          condition: {
+            urlFilter: site,
+            resourceTypes: [
+              "script",
+              "xmlhttprequest",
+              "sub_frame",
+              "image",
+              "font",
+              "stylesheet",
+              "object",
+              "media"
+            ]
+          }
+        });
+      });
+
+      chrome.declarativeNetRequest.getDynamicRules((existingRules) => {
+        const existingIds = existingRules.map(rule => rule.id);
+        chrome.declarativeNetRequest.updateDynamicRules({
+          removeRuleIds: existingIds,
+          addRules: rules
+        });
+      });
+    });
   }
-}));
-
-// Add rules to the declarativeNetRequest API
-chrome.declarativeNetRequest.updateDynamicRules({
-  addRules: rules,
-  removeRuleIds: rules.map(rule => rule.id)
 });
-
-// Listen for messages from content script
-chrome.runtime.onMessage.addListener((message, sender) => {
-  if (message.action === "closeTab" && sender.tab) {
-    chrome.tabs.remove(sender.tab.id);
-  }
-});
-    

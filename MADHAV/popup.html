@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Blocker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <i class="fa-solid fa-user-ninja"></i>
+    <h3>OBSCURA</h3>
+    <div class="power-container">
+      <label class="power-switch">
+        <input type="checkbox" id="powerToggle" />
+        <span class="power-slider"></span>
+      </label>
+      <span id="powerStatusText">Power</span>
+    </div>
+  </div>
+
+  <!-- Dark Mode Toggle -->
+  <div class="theme">
+    <h3>Dark Mode</h3>
+    <button class="toggle"><i class="fa-solid fa-moon"></i></button>
+  </div>
+
+  <!-- Website Toggles -->
+  <form id="siteForm">
+    <label class="row">Facebook
+      <div class="switch">
+        <input type="checkbox" name="site" value="facebook.com" />
+        <span class="slider"></span>
+      </div>
+    </label>
+
+    <label class="row">OpenAI
+      <div class="switch">
+        <input type="checkbox" name="site" value="openai.com" />
+        <span class="slider"></span>
+      </div>
+    </label>
+
+    <label class="row">Instagram
+      <div class="switch">
+        <input type="checkbox" name="site" value="instagram.com" />
+        <span class="slider"></span>
+      </div>
+    </label>
+
+    <label class="row">Twitter
+      <div class="switch">
+        <input type="checkbox" name="site" value="twitter.com" />
+        <span class="slider"></span>
+      </div>
+    </label>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
