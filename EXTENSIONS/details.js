@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultWebsites = document.getElementById("defaultWebsites");
   const dropdownContainer = document.getElementById("dropdownContainer");
   const dropdownContent = document.getElementById("dropdownContent");
-  const siteCheckboxes = defaultWebsites.querySelectorAll('input[type="checkbox"]');
 
   let addedWebsites = [];
 
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   addedWebsites = storedWebsites;
   loadWebsites(storedWebsites);
 
-  // Load sync state from Chrome storage (moved inside DOMContentLoaded)
+  // Load sync state from Chrome storage
   chrome.storage.sync.get(['powerEnabled', 'blockedSites'], (data) => {
     const powerEnabled = data.powerEnabled ?? false;
     const savedBlockedSites = data.blockedSites || [];
@@ -35,22 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
     powerToggle.checked = powerEnabled;
 
     if (powerEnabled) {
-      applyBlockedSites(savedBlockedSites);
+      setCheckboxEnabled(true);
     } else {
-      clearAllSites();
+      setCheckboxEnabled(false);
     }
-
-    setCheckboxEnabled(powerEnabled);
   });
 
-  // Event listeners
   openPopupBtn?.addEventListener("click", showPopup);
   cancelBtn?.addEventListener("click", hidePopup);
   saveBtn.addEventListener("click", saveWebsite);
   document.querySelector(".toggle")?.addEventListener("click", toggleTheme);
   powerToggle.addEventListener("change", togglePower);
 
-  // Website UI
   function loadWebsites(websites) {
     websites.forEach((site, index) => {
       const element = createWebsiteElement(site.name, site.url);
@@ -128,13 +123,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const label = document.createElement("label");
     label.className = "theme-switch";
-    label.innerHTML = `
-        <input type="checkbox">
-        <span class="slider">
-            <i class="fa-solid fa-lock toggle-icon lock"></i>
-            <i class="fa-solid fa-unlock toggle-icon unlock"></i>
-        </span>
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = url;
+
+    chrome.storage.sync.get("blockedSites", (data) => {
+      const blockedSites = data.blockedSites || [];
+      checkbox.checked = blockedSites.includes(url);
+    });
+
+    checkbox.addEventListener("change", () => {
+      if (!powerToggle.checked) return;
+
+      chrome.storage.sync.get("blockedSites", (data) => {
+        let blockedSites = data.blockedSites || [];
+        if (checkbox.checked) {
+          if (!blockedSites.includes(url)) blockedSites.push(url);
+        } else {
+          blockedSites = blockedSites.filter(site => site !== url);
+        }
+        chrome.storage.sync.set({ blockedSites }, () => {
+          chrome.runtime.sendMessage({ updateRules: true });
+        });
+      });
+    });
+
+    const span = document.createElement("span");
+    span.className = "slider";
+    span.innerHTML = `
+      <i class="fa-solid fa-lock toggle-icon lock"></i>
+      <i class="fa-solid fa-unlock toggle-icon unlock"></i>
     `;
+
+    label.appendChild(checkbox);
+    label.appendChild(span);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.className = "deleteBtn";
@@ -144,6 +167,14 @@ document.addEventListener("DOMContentLoaded", () => {
       container.remove();
       addedWebsites = addedWebsites.filter(site => !(site.name === name && site.url === url));
       localStorage.setItem("websites", JSON.stringify(addedWebsites));
+
+      chrome.storage.sync.get("blockedSites", (data) => {
+        const blockedSites = data.blockedSites || [];
+        const updatedSites = blockedSites.filter(site => site !== url);
+        chrome.storage.sync.set({ blockedSites: updatedSites }, () => {
+          chrome.runtime.sendMessage({ updateRules: true });
+        });
+      });
     });
 
     container.appendChild(leftPart);
@@ -172,53 +203,15 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("powerState", isOn ? "on" : "off");
 
     chrome.storage.sync.set({ powerEnabled: isOn }, () => {
+      chrome.runtime.sendMessage({ updateRules: true });
+      setCheckboxEnabled(isOn);
       if (!isOn) {
-        clearAllSites();
-        setCheckboxEnabled(false);
-        chrome.runtime.sendMessage({ updateRules: true });
-        window.location.href = "popup.html"; // ✅ Redirect when toggled off
-      } else {
-        const selectedSites = Array.from(siteCheckboxes)
-          .filter(c => c.checked)
-          .map(c => c.value);
-
-        chrome.storage.sync.set({ blockedSites: selectedSites }, () => {
-          chrome.runtime.sendMessage({ updateRules: true });
-        });
-
-        setCheckboxEnabled(true);
+        window.location.href = "popup.html";
       }
     });
   }
 
   function setCheckboxEnabled(enabled) {
-    siteCheckboxes.forEach(cb => cb.disabled = !enabled);
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.disabled = !enabled);
   }
-
-  function applyBlockedSites(sites) {
-    siteCheckboxes.forEach(cb => {
-      cb.checked = sites.includes(cb.value);
-    });
-  }
-
-  function clearAllSites() {
-    siteCheckboxes.forEach(cb => {
-      cb.checked = false;
-    });
-  }
-
-  // Checkbox change events
-  siteCheckboxes.forEach(cb => {
-    cb.addEventListener('change', () => {
-      if (!powerToggle.checked) return;
-
-      const selectedSites = Array.from(siteCheckboxes)
-        .filter(c => c.checked)
-        .map(c => c.value);
-
-      chrome.storage.sync.set({ blockedSites: selectedSites }, () => {
-        chrome.runtime.sendMessage({ updateRules: true });
-      });
-    });
-  });
 });

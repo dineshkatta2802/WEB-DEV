@@ -21,3 +21,14 @@ document.querySelector('.power-btn').addEventListener('click', () => {
   chrome.storage.sync.set({ powerEnabled: true }); // Optional: for cross-page access
   window.location.href = 'details.html';
 });
+
+chrome.storage.local.get("stats", ({ stats }) => {
+  if (stats) {
+    document.querySelector(".details").innerHTML = `
+      <p>Trackers : ${stats.trackers}</p>
+      <p>Ads : ${stats.ads}</p>
+      <p>Geo-Locations : ${stats.geo}</p>
+      <p>Cookies : ${stats.cookies}</p>
+    `;
+  }
+});

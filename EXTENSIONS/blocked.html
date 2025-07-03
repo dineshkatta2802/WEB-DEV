@@ -28,8 +28,24 @@
       max-width: 600px;
       line-height: 1.4;
     }
+    #back-button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: white;
+      color: #f44336;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    #back-button:hover {
+      transform: scale(1.05);
+    }
+
     .info {
-      margin-top: 40px;
+      margin-top: 20px;
       font-size: 0.9rem;
       opacity: 0.8;
     }
@@ -40,8 +56,18 @@
   <p>
     The page you are trying to visit has been blocked by Obscura Extension for your safety and privacy.
   </p>
-  <p class="info">
-    If you believe this is an error, please check your extension settings or disable the blocking feature.
+  <button id="back-button" aria-label="Go back to safety">Go Back</button>
+  <p class="info" role="alert">
+    If you believe this is an error, please check your extension settings.
   </p>
+<script>
+    document.getElementById('back-button').addEventListener('click', () => {
+      if (history.length > 1) {
+        history.back();
+      } else {
+        window.location.href = 'chrome://newtab';
+      }
+    });
+  </script>
 </body>
 </html>
