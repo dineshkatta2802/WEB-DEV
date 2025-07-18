@@ -19,17 +19,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// import Rendering from './BASICS/Rendering'
-// import Event from './BASICS/Event_Handling'
-import Updating from './BASICS/useState'
+//Componets made by me
+import ie from 'Import&Export'
+
 
 import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Rendering /> */}
-    {/* <Event/> */}
-    <Updating/>
+    <ie/>
   </React.StrictMode>
 );
