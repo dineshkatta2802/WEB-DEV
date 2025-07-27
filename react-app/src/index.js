@@ -23,7 +23,9 @@ import ReactDOM from 'react-dom/client';
 
 // import App from './SPA/bundle';
 // import Import from './DESCRIBING-UI/ImportExport'
-import Render from './DESCRIBING-UI/RENDERING LISTS/Rendering_lists'
+// import Render from './DESCRIBING-UI/RENDERING LISTS/Basic _Rendering_lists'
+import Filter from './DESCRIBING-UI/RENDERING LISTS/FILTERING_LISTS USING IMPORT AND EXPORT/Filtering_Lists'
+
 
 
 import "./style.css";
@@ -33,6 +35,7 @@ root.render(
   <React.StrictMode>
     {/* <App/> */}
     {/* <Import/> */}
-    <Render/>
+    {/* <Render/> */}
+    <Filter/>
   </React.StrictMode>
 );
