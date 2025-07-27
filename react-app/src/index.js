@@ -20,8 +20,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-import App from './SPA/bundle';
-import Import from './DESCRIBING-UI/ImportExport'
+
+// import App from './SPA/bundle';
+// import Import from './DESCRIBING-UI/ImportExport'
+import Render from './DESCRIBING-UI/RENDERING LISTS/Rendering_lists'
 
 
 import "./style.css";
@@ -29,7 +31,8 @@ import "./style.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
-    <Import/>
+    {/* <App/> */}
+    {/* <Import/> */}
+    <Render/>
   </React.StrictMode>
 );
