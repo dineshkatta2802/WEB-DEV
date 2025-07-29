@@ -24,7 +24,8 @@ import ReactDOM from 'react-dom/client';
 // import App from './SPA/bundle';
 // import Import from './DESCRIBING-UI/ImportExport'
 // import Render from './DESCRIBING-UI/RENDERING LISTS/Basic _Rendering_lists'
-import Filter from './DESCRIBING-UI/RENDERING LISTS/FILTERING_LISTS USING IMPORT AND EXPORT/Filtering_Lists'
+// import Filter from './DESCRIBING-UI/RENDERING LISTS/FILTERING_LISTS USING IMPORT AND EXPORT/Filtering_Lists'
+import Mini from './DESCRIBING-UI/RENDERING LISTS/MINI-PROJECT/Main'
 
 
 
@@ -36,6 +37,7 @@ root.render(
     {/* <App/> */}
     {/* <Import/> */}
     {/* <Render/> */}
-    <Filter/>
+    {/* <Filter/> */}
+    <Mini/>
   </React.StrictMode>
 );
