@@ -20,13 +20,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-
-// import App from './SPA/bundle';
-// import Import from './DESCRIBING-UI/ImportExport'
-// import Render from './DESCRIBING-UI/RENDERING LISTS/Basic _Rendering_lists'
-// import Filter from './DESCRIBING-UI/RENDERING LISTS/FILTERING_LISTS USING IMPORT AND EXPORT/Filtering_Lists'
-// import Mini from './DESCRIBING-UI/RENDERING LISTS/MINI-PROJECT/Main'
-import Props from './DESCRIBING-UI/PROPS/Props'
+import Conditional from './DESCRIBING-UI/CONDITIONAL/Conditional'
 
 
 
@@ -35,11 +29,6 @@ import "./style.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App/> */}
-    {/* <Import/> */}
-    {/* <Render/> */}
-    {/* <Filter/> */}
-    {/* <Mini/> */}
-    <Props/>
+    <Conditional/>
   </React.StrictMode>
 );
