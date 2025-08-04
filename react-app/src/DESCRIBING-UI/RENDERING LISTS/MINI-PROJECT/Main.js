@@ -19,7 +19,7 @@ export default function App() {
         Innovator: "Innovators",
         Chemist: "Chemists",
         Cosmologist: "Cosmologists"
-    };
+    }; 
 
     const singularProfessions = Object.keys(professionMap);
     const randomProfession = singularProfessions[Math.floor(Math.random() * singularProfessions.length)];

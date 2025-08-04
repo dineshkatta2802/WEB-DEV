@@ -17,4 +17,4 @@ export default function App(){
             <Avatar size={250} person = {{name : "Arya Bhatta",imageId : "3/31/Aryabhata.jpeg"}}/>
         </div>
     );
-}
+} 
