@@ -23,7 +23,7 @@ import ReactDOM from 'react-dom/client';
 // import Conditional from './DESCRIBING-UI/CONDITIONAL/Conditional'
 // import Project from './PROJECTS/DESCRIBING UI/Main'
 // import Project from './PROJECTS/DESCRIBING UI/Main'
-import Main from './DESCRIBING-UI/RENDERING LISTS/MINI-PROJECT/Main'
+import Project from './PROJECTS/DESCRIBING-UI/Main'
 
 
 
@@ -33,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Conditional/> */}
-    {/* <Project/> */}
-    <Main/>
+    <Project/>
+    {/* <Main/> */}
   </React.StrictMode>
 );
