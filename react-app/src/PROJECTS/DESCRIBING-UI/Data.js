@@ -253,7 +253,7 @@ export const AnimeData = [
     ImageId: {
       "Daytime Tiger": "/Images/Daytimetiger.jpeg",
       "Evening Elephant": "/Images/EveningElephant.jpeg",
-      "Night Guy": "/Images/Night.jpeg",
+      "NightGuy": "/Images/Night.jpeg",
       "Leaf Great Whirlwind": "/Images/LeafGreatWhirlwind.jpeg",
       "Night Guy Form": "/Images/NightGuyForm.jpg",
     },

@@ -18,6 +18,8 @@ export default function Main() {
   return (
     <div
       style={{
+        fontFamily: "'Trade Winds', system-ui",
+        color : "white",
         width: "100%",
         minHeight: "100vh",
         padding: "20px",
@@ -25,6 +27,7 @@ export default function Main() {
         flexDirection: "column",
         alignItems: "center", // centers horizontally
         justifyContent: "center", // optional: centers vertically
+        background : "linear-gradient(45deg,#0d1b2a,#1b263b,#415a77)"
       }}
     >
       <CharCard
@@ -32,7 +35,7 @@ export default function Main() {
         CharName={randomAnime.CharName}
         Power={randomAttack}
         Image={image}
-        Size={300}
+        Size={350}
       />
 
       <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", width: "100%" }}>
@@ -44,6 +47,8 @@ export default function Main() {
             width: "200px",
             height: "50px",
             cursor: "pointer",
+            borderRadius : "10px",
+            backgroundColor : "white",
           }}
         >
           Generate
