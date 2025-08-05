@@ -15,6 +15,15 @@ export default function Main() {
   const image = randomAnime.ImageId[randomAttack];
   console.log(image);
 
+  //CharLogger
+  // ✅ Log the displayed data
+  console.log("Currently Displayed:");
+  console.log(`Anime: ${randomAnime.AnimeName}`);
+  console.log(`Character: ${randomAnime.CharName}`);
+  console.log(`Power Used: ${randomAttack}`);
+  console.log("------------------------");
+
+
   return (
     <div
       style={{
@@ -35,8 +44,9 @@ export default function Main() {
         CharName={randomAnime.CharName}
         Power={randomAttack}
         Image={image}
-        Size={350}
+        Size={300}
       />
+
 
       <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", width: "100%" }}>
         <button
@@ -47,11 +57,14 @@ export default function Main() {
             width: "200px",
             height: "50px",
             cursor: "pointer",
+            border: "1px solid white",
             borderRadius : "10px",
-            backgroundColor : "white",
+            background : "linear-gradient(315deg,#415a77)",
+            fontSize : "17px",
+            color : "white",
           }}
         >
-          Generate
+          Fetch Again!
         </button>
       </div>
     </div>

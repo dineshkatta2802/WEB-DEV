@@ -28,19 +28,28 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Roronoa Zoro",
     Power: "ThreeSword Style, Asura form, Advanced Armament & Conqueror’s Haki",
-    Attack_Methods: ["Oni Giri", "Tatsumaki", "Shishi Sonson", "Asura: 12Blade Rush"],
+    Attack_Methods: [
+      "Oni Giri",
+      "Tatsumaki",
+      "Shishi Sonson",
+      "Asura : 12Blade Rush"],
     ImageId: {
       "Oni Giri": "/Images/OniGiri.jpg",
       "Tatsumaki": "/Images/Tatsumiki.gif",
       "Shishi Sonson": "/Images/Shishi.webp",
-      "Asura: 12Blade Rush": "/Images/Asura.webp",
+      "Asura : 12Blade Rush": "/Images/Asura.webp",
     },
   },
   {
     AnimeName: "OnePiece",
     CharName: "Nami",
     Power: "Weather and Navigation Mastery, KlimaTact with Zeus & Stussy",
-    Attack_Methods: ["Thunderbolt Tempo", "Mirage Tempo", "Cyclone Tempo", "Basilisk Tempo"],
+    Attack_Methods: [
+      "Thunderbolt Tempo",
+      "Mirage Tempo",
+      "Cyclone Tempo",
+      "Basilisk Tempo"
+    ],
     ImageId: {
       "Thunderbolt Tempo": "/Images/Thunderbolt.jpg",
       "Mirage Tempo": "/Images/Mirage.jpg",
@@ -52,7 +61,12 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Tony Tony Chopper",
     Power: "Hito Hito no Mi (Zoan), Rumble Ball Morphs, Medical Ninjutsu",
-    Attack_Methods: ["Heavy Point", "Guard Point", "Horn Point", "Monster Point"],
+    Attack_Methods: [
+      "Heavy Point",
+      "Guard Point",
+      "Horn Point",
+      "Monster Point"
+    ],
     ImageId: {
       "Heavy Point": "/Images/Heavy.jpg",
       "Guard Point": "/Images/Gaurd.jpg",
@@ -64,12 +78,17 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Nico Robin",
     Power: "Hana Hana no Mi (FlowerFlower Fruit), Archaeological Genius",
-    Attack_Methods: ["Clutch", "Seis Fleur", "Gigantesco Mano", "Bird: Gigantesco Fuku"],
+    Attack_Methods: [
+      "Clutch",
+      "Seis Fleur",
+      "Gigantesco Mano",
+      "Bird : Gigantesco Fuku"
+    ],
     ImageId: {
       "Clutch": "/Images/Clutch.webp",
       "Seis Fleur": "/Images/Seis.jpg",
       "Gigantesco Mano": "/Images/Giga.png",
-      "Bird: Gigantesco Fuku": "/Images/Flerus.avif",
+      "Bird : Gigantesco Fuku": "/Images/Flerus.avif",
     },
   },
   {
@@ -79,14 +98,14 @@ export const AnimeData = [
     Attack_Methods: [
       "Fire Black Leg",
       "Concasse",
-      "Diable Jambe: Hell Memories",
+      "Diable Jambe : Hell Memories",
       "Sky Walk Kick",
       "Collier Shot",
     ],
     ImageId: {
       "Fire Black Leg": "/Images/Black.jpg",
       "Concasse": "/Images/Concasse.jpg",
-      "Diable Jambe: Hell Memories": "/Images/Diable.jpg",
+      "Diable Jambe : Hell Memories": "/Images/Diable.jpg",
       "Sky Walk Kick": "/Images/sky.jpg",
       "Collier Shot": "/Images/Collier.webp",
     },
@@ -95,7 +114,12 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Franky",
     Power: "Cyborg Body, ColaPower Boost, Coup de Vent, Franky Family Plans",
-    Attack_Methods: ["Strong Right", "Weapons Left", "Coup de Vent", "Franky Flamethrower"],
+    Attack_Methods: [
+      "Strong Right",
+      "Weapons Left",
+      "Coup de Vent",
+      "Franky Flamethrower"
+    ],
     ImageId: {
       "Strong Right": "/Images/Strong.webp",
       "Weapons Left": "/Images/Weapons.jpg",
@@ -107,7 +131,12 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Usopp",
     Power: "Sniping Skills, Pop Greens, Engineering, Observation Haki",
-    Attack_Methods: ["Firebird Star", "Impact Wolf", "Sleep Star", "Green Star: Devil"],
+    Attack_Methods: [
+      "Firebird Star",
+      "Impact Wolf",
+      "Sleep Star",
+      "Green Star: Devil"
+    ],
     ImageId: {
       "Firebird Star": "/Images/FireBird.jpg",
       "Impact Wolf": "/Images/impact.jpg",
@@ -119,11 +148,16 @@ export const AnimeData = [
     AnimeName: "OnePiece",
     CharName: "Brook",
     Power: "Yomi Yomi no Mi (ReviveRevive Fruit), Soul King Powers",
-    Attack_Methods: ["SoulSolid", "HotCross", "Hummer: Humming Song", "Yomi Yomi no Soul"],
+    Attack_Methods: [
+      "Soul Solid",
+      "HotCross",
+      "Hummer : Humming Song",
+      "Yomi Yomi no Soul"
+    ],
     ImageId: {
-      "SoulSolid": "/Images/SoulSolid.webp",
+      "Soul Solid": "/Images/SoulSolid.webp",
       "HotCross": "/Images/RedHot.jpg",
-      "Hummer: Humming Song": "/Images/Humming.jpg",
+      "Hummer : Humming Song": "/Images/Humming.jpg",
       "Yomi Yomi no Soul": "/Images/Yomi.avif",
     },
   },
@@ -134,13 +168,13 @@ export const AnimeData = [
     Attack_Methods: [
       "Whirlpool Cutter",
       "Leap Over Shark Attack",
-      "Jaguar Shark: TwinFin",
+      "Jaguar Shark : TwinFin",
       "Shark: Cross Current",
     ],
     ImageId: {
       "Whirlpool Cutter": "/Images/Whirpool.jpg",
       "Leap Over Shark Attack": "/Images/Shark.jpg",
-      "Jaguar Shark: TwinFin": "/Images/Jaguar.jpg",
+      "Jaguar Shark : TwinFin": "/Images/Jaguar.jpg",
       "Shark: Cross Current": "/Images/Cross.jpg",
     },
   },
@@ -172,14 +206,14 @@ export const AnimeData = [
       "Amaterasu",
       "Susanoo",
       "Indra's Arrow",
-      "Inferno Style: Flame Control",
+      "Inferno Style : Flame Control",
     ],
     ImageId: {
-      Chidori: "/Images/Chidori.jpg",
-      Amaterasu: "/Images/Ama.jpg",
-      Susanoo: "/Images/Susanoo.jpg",
+      "Chidori": "/Images/Chidori.jpg",
+      "Amaterasu": "/Images/Ama.jpg",
+      "Susanoo": "/Images/Susanoo.jpg",
       "Indra's Arrow": "/Images/Arrow.jpg",
-      "Inferno Style: Flame Control": "/Images/FlameControl.jpg",
+      "Inferno Style : Flame Control": "/Images/FlameControl.jpg",
     },
   },
   {
@@ -209,14 +243,14 @@ export const AnimeData = [
       "Chidori (Lightning Blade)",
       "Kamui",
       "Purple Lightning",
-      "Summoning: Ninken",
+      "Summoning : Ninken",
       "Earth Style Wall",
     ],
     ImageId: {
       "Chidori (Lightning Blade)": "/Images/KChidori.jpg",
       "Kamui": "/Images/Kamui.jpg",
       "Purple Lightning": "/Images/Purple.jpg",
-      "Summoning: Ninken": "/Images/Niken.jpg",
+      "Summoning : Ninken": "/Images/Niken.jpg",
       "Earth Style Wall": "/Images/Earth.jpeg",
     },
   },
@@ -229,14 +263,14 @@ export const AnimeData = [
       "Amaterasu",
       "Susanoo",
       "Crow Clone Jutsu",
-      "Fire Style: Fireball Jutsu",
+      "Fire Style : Fireball Jutsu",
     ],
     ImageId: {
       "Tsukuyomi": "/Images/Tsu.jpg",
       "Amaterasu": "/Images/UAma.jpg",
       "Susanoo": "/Images/USusanoo.jpg",
       "Crow Clone Jutsu": "/Images/Crow.jpg",
-      "Fire Style: Fireball Jutsu": "/Images/FireBall.jpg",
+      "Fire Style : Fireball Jutsu": "/Images/FireBall.jpg",
     },
   },
   {
@@ -248,14 +282,12 @@ export const AnimeData = [
       "Evening Elephant",
       "Night Guy",
       "Leaf Great Whirlwind",
-      "Night Guy Form",
     ],
     ImageId: {
       "Daytime Tiger": "/Images/Daytimetiger.jpeg",
       "Evening Elephant": "/Images/EveningElephant.jpeg",
-      "NightGuy": "/Images/Night.jpeg",
+      "Night Guy": "/Images/Night.jpeg",
       "Leaf Great Whirlwind": "/Images/LeafGreatWhirlwind.jpeg",
-      "Night Guy Form": "/Images/NightGuyForm.jpg",
     },
   },
   {
@@ -265,23 +297,28 @@ export const AnimeData = [
     Attack_Methods: [
       "Water Surface Slash",
       "Constant Flux",
-      "Hinokami Kagura: Dance",
+      "Hinokami Kagura : Dance",
       "Fire Wheel",
       "Flame Dance",
     ],
     ImageId: {
       "Water Surface Slash": "/Images/WaterSurfaceSlash.jpg",
       "Constant Flux": "/Images/ConstantFlux.jpg", 
-      "Hinokami Kagura: Dance": "/Images/HinokamiKagura.jpg",
+      "Hinokami Kagura : Dance": "/Images/HinokamiKagura.jpg",
       "Fire Wheel": "/Images/FireWheel.jpg",
-      "Flame Dance": "/Images/Flame dance.jpg",
+      "Flame Dance": "/Images/Flamedance.jpg",
     },
   },
   {
     AnimeName: "Demon Slayer",
     CharName: "Nezuko Kamado",
     Power: "Demon Blood Art, Regeneration, Size Manipulation",
-    Attack_Methods: ["Blood Burst", "Exploding Blood", "SizeShift Kicks", "Bamboo Guard"],
+    Attack_Methods: [
+      "Blood Burst",
+      "Exploding Blood",
+      "SizeShift Kicks",
+      "Bamboo Guard"
+    ],
     ImageId: {
       "Blood Burst": "/Images/BloodBurst.jpg",
       "Exploding Blood": "/Images/ExplodingBlood.jpg",
@@ -294,11 +331,11 @@ export const AnimeData = [
     CharName: "Zenitsu Agatsuma",
     Power: "Thunder Breathing",
     Attack_Methods: [
-      "ThunderclapandFlash", 
+      "Thunder clap and Flash", 
       "Godspeed"
     ],
     ImageId: {
-      "ThunderclapandFlash": "/Images/ThunderclapandFlash.jpg",
+      "Thunder clap and Flash": "/Images/ThunderclapandFlash.jpg",
       "Godspeed": "/Images/Godspeed.jpg",
     },
   },
@@ -306,18 +343,27 @@ export const AnimeData = [
     AnimeName: "Demon Slayer",
     CharName: "Inosuke Hashibira",
     Power: "Beast Breathing",
-    Attack_Methods: ["Fang One  Pierce", "Explosive Rush", "SelfTaught Roar"],
+    Attack_Methods: [
+      "Fang One Pierce",
+      "Explosive Rush",
+      "Self Taught Roar"
+    ],
     ImageId: {
-      "Fang One  Pierce": "/Images/FangOnePierce.jpg",
+      "Fang One Pierce": "/Images/FangOnePierce.jpg",
       "Explosive Rush": "/Images/ExplosiveRush.jpg",
-      "SelfTaught Roar": "/Images/SelfTaughtRoar.jpg",
+      "Self Taught Roar": "/Images/SelfTaughtRoar.jpg",
     },
   },
   {
     AnimeName: "Demon Slayer",
     CharName: "Giyu Tomioka",
     Power: "Water Breathing, BreathofSun hint",
-    Attack_Methods: ["Dead Calm", "Water Wheel", "Flowing Dance", "Constant Flux"],
+    Attack_Methods: [
+      "Dead Calm",
+      "Water Wheel",
+      "Flowing Dance",
+      "Constant Flux"
+    ],
     ImageId: {
       "Dead Calm": "/Images/DeadCalm.jpg",
       "Water Wheel": "/Images/WaterWheel.jpg",

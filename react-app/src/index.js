@@ -20,16 +20,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-// import Conditional from './DESCRIBING-UI/CONDITIONAL/Conditional'
-import Mini from './PROJECTS/DESCRIBING-UI/Main'
-import "./style.css";
+import Main from './PROJECTS/DESCRIBING-UI/Main'
+// import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Conditional/> */}
-    {/* <Project/> */}
-    <Mini/>
-    {/* <Main/> */}
+    <Main/>
   </React.StrictMode>
 );
