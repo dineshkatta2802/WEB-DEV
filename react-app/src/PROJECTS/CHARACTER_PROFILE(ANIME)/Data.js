@@ -2,6 +2,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Monkey D. Luffy",
+    isCaptain : "YES",
     Power: "Hito Hito no Mi, Model: Nika (Gum-Gum Fruit), Gears, Haki",
     Attack_Methods: [
       "Gum-Gum Pistol",
@@ -27,6 +28,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Roronoa Zoro",
+    isCaptain : "NO",
     Power: "ThreeSword Style, Asura form, Advanced Armament & Conqueror’s Haki",
     Attack_Methods: [
       "Oni Giri",
@@ -43,6 +45,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Nami",
+    isCaptain : "NO",
     Power: "Weather and Navigation Mastery, KlimaTact with Zeus & Stussy",
     Attack_Methods: [
       "Thunderbolt Tempo",
@@ -60,6 +63,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Tony Tony Chopper",
+    isCaptain : "NO",
     Power: "Hito Hito no Mi (Zoan), Rumble Ball Morphs, Medical Ninjutsu",
     Attack_Methods: [
       "Heavy Point",
@@ -77,6 +81,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Nico Robin",
+    isCaptain : "NO",
     Power: "Hana Hana no Mi (FlowerFlower Fruit), Archaeological Genius",
     Attack_Methods: [
       "Clutch",
@@ -94,6 +99,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Sanji",
+    isCaptain : "NO",
     Power: "SkyWalk, Diable Jambe, Raid Suit (Germa 66)",
     Attack_Methods: [
       "Fire Black Leg",
@@ -113,6 +119,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Franky",
+    isCaptain : "NO",
     Power: "Cyborg Body, ColaPower Boost, Coup de Vent, Franky Family Plans",
     Attack_Methods: [
       "Strong Right",
@@ -130,6 +137,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Usopp",
+    isCaptain : "NO",
     Power: "Sniping Skills, Pop Greens, Engineering, Observation Haki",
     Attack_Methods: [
       "Firebird Star",
@@ -147,6 +155,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Brook",
+    isCaptain : "NO",
     Power: "Yomi Yomi no Mi (ReviveRevive Fruit), Soul King Powers",
     Attack_Methods: [
       "Soul Solid",
@@ -164,6 +173,7 @@ export const AnimeData = [
   {
     AnimeName: "OnePiece",
     CharName: "Jimbei",
+    isCaptain : "NO",
     Power: "FishMan Karate, FishMan Jujutsu, Deep Water Style",
     Attack_Methods: [
       "Whirlpool Cutter",
@@ -181,6 +191,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Naruto Uzumaki",
+    isCaptain : "YES",
     Power: "Kurama (NineTails), Sage Mode, Six Paths Powers",
     Attack_Methods: [
       "Rasengan",
@@ -200,6 +211,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Sasuke Uchiha",
+    isCaptain : "NO",
     Power: "Sharingan, Rinnegan, Amaterasu, Lightning Style",
     Attack_Methods: [
       "Chidori",
@@ -219,6 +231,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Sakura Haruno",
+    isCaptain : "NO",
     Power: "Superhuman Strength, Medical Ninjutsu, Byakugou Seal",
     Attack_Methods: [
       "Cherry Blossom Impact",
@@ -238,6 +251,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Kakashi Hatake",
+    isCaptain : "NO",
     Power: "Sharingan, Lightning Release, Space–Time Jutsu",
     Attack_Methods: [
       "Chidori (Lightning Blade)",
@@ -257,6 +271,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Itachi Uchiha",
+    isCaptain : "NO",
     Power: "Mangekyō Sharingan, Genjutsu, Amaterasu",
     Attack_Methods: [
       "Tsukuyomi",
@@ -276,6 +291,7 @@ export const AnimeData = [
   {
     AnimeName: "Naruto",
     CharName: "Might Guy",
+    isCaptain : "NO",
     Power: "Eight Gates Opening, Taijutsu Master",
     Attack_Methods: [
       "Daytime Tiger",
@@ -292,18 +308,17 @@ export const AnimeData = [
   },
   {
     AnimeName: "Demon Slayer",
-    CharName: "Tanjiro Kamado",
+    CharName: "Tanjiro Kamado ",
+    isCaptain : "YES",
     Power: "Water Breathing, Sun Breathing",
     Attack_Methods: [
       "Water Surface Slash",
-      "Constant Flux",
       "Hinokami Kagura : Dance",
       "Fire Wheel",
       "Flame Dance",
     ],
     ImageId: {
       "Water Surface Slash": "/Images/WaterSurfaceSlash.jpg",
-      "Constant Flux": "/Images/ConstantFlux.jpg", 
       "Hinokami Kagura : Dance": "/Images/HinokamiKagura.jpg",
       "Fire Wheel": "/Images/FireWheel.jpg",
       "Flame Dance": "/Images/Flamedance.jpg",
@@ -312,6 +327,7 @@ export const AnimeData = [
   {
     AnimeName: "Demon Slayer",
     CharName: "Nezuko Kamado",
+    isCaptain : "NO",
     Power: "Demon Blood Art, Regeneration, Size Manipulation",
     Attack_Methods: [
       "Blood Burst",
@@ -329,6 +345,7 @@ export const AnimeData = [
   {
     AnimeName: "Demon Slayer",
     CharName: "Zenitsu Agatsuma",
+    isCaptain : "NO",
     Power: "Thunder Breathing",
     Attack_Methods: [
       "Thunder clap and Flash", 
@@ -342,6 +359,7 @@ export const AnimeData = [
   {
     AnimeName: "Demon Slayer",
     CharName: "Inosuke Hashibira",
+    isCaptain : "NO",
     Power: "Beast Breathing",
     Attack_Methods: [
       "Fang One Pierce",
@@ -357,6 +375,7 @@ export const AnimeData = [
   {
     AnimeName: "Demon Slayer",
     CharName: "Giyu Tomioka",
+    isCaptain : "NO",
     Power: "Water Breathing, BreathofSun hint",
     Attack_Methods: [
       "Dead Calm",

@@ -8,12 +8,14 @@ export default function Main() {
 
   // Pick a random attack method from that character
   const attackMethods = randomAnime.Attack_Methods;
-  const randomAttack =
-    attackMethods[Math.floor(Math.random() * attackMethods.length)];
+  const randomAttack = attackMethods[Math.floor(Math.random() * attackMethods.length)];
 
   // Get the image corresponding to that attack
   const image = randomAnime.ImageId[randomAttack];
   console.log(image);
+
+  //Getting to know the Captain
+  const Captain = randomAnime.isCaptain === "YES";
 
   //CharLogger
   // ✅ Log the displayed data
@@ -31,7 +33,7 @@ export default function Main() {
         color : "white",
         width: "100%",
         minHeight: "100vh",
-        padding: "20px",
+        // padding: "2px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center", // centers horizontally
@@ -39,10 +41,12 @@ export default function Main() {
         background : "linear-gradient(45deg,#0d1b2a,#1b263b,#415a77)"
       }}
     >
+      {/* Importing Component */}
       <CharCard
         AnimeName={randomAnime.AnimeName}
         CharName={randomAnime.CharName}
         Power={randomAttack}
+        Captain={Captain}
         Image={image}
         Size={300}
       />
