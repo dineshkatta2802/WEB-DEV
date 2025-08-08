@@ -1,20 +1,20 @@
-const loadText = document.querySelector('.text')
+const Text = document.querySelector('.text')
 const bg = document.querySelector('.bg')
 
-let load = 0
+let loadingVal = 0
 
 let interval = setInterval(blurring, 30)
 
 function blurring() {
-  load++
+  loadingVal++
 
-  if (load > 99) {
+  if (loadingVal > 99) {
     clearInterval(interval);
   }
 
-loadText.innerText = `${load}%`
-loadText.style.opacity = scale(load, 0, 100, 1, 0)
-bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+Text.innerText = `${loadingVal}%`
+Text.style.opacity = scale(loadingVal, 0, 100, 1, 0)
+bg.style.filter = `blur(${scale(loadingVal, 0, 100, 30, 0)}px)`
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {

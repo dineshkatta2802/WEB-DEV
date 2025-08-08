@@ -17,6 +17,9 @@ export default function Main() {
   //Getting to know the Captain
   const Captain = randomAnime.isCaptain === "YES";
 
+  //Getting the power
+  const Power = randomAnime.Power;
+
   //CharLogger
   // ✅ Log the displayed data
   console.log("Currently Displayed:");
@@ -45,7 +48,8 @@ export default function Main() {
       <CharCard
         AnimeName={randomAnime.AnimeName}
         CharName={randomAnime.CharName}
-        Power={randomAttack}
+        Attack={randomAttack}
+        Power={Power}
         Captain={Captain}
         Image={image}
         Size={300}

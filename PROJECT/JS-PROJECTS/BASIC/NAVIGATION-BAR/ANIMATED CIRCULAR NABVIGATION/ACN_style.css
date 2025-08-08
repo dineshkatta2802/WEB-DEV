@@ -26,7 +26,7 @@ body {
 
 /* Position each li in a circle around the center */
 .menu li {
-    background-color: ;
+    background-color: aquamarine;
     position: absolute;
     list-style: none;
     top: 50%;

@@ -3,7 +3,20 @@ const leftBtn = document.getElementById('left');
 const rightBtn = document.getElementById('right');
 
 let active = 0;
- 
+
+// Function to Remove "active" Class from All Slides
+function removeActiveClass() {
+    slides.forEach(panel => {
+        panel.classList.remove('active'); 
+    });
+}
+
+// Function to Update Active Slide
+function setActiveSlide() {
+    removeActiveClass();
+    slides[active].classList.add('active');
+}
+
 // Right Button Click Event
 rightBtn.addEventListener("click", function() {
     active++;
@@ -22,23 +35,12 @@ leftBtn.addEventListener("click", () => {
     setActiveSlide();
 });
 
-// Click Event for Each Slide
-slides.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClass();
-        panel.classList.add('active'); 
-    });
-});
+// // Click Event for Each Slide
+// slides.forEach(panel => {
+//     panel.addEventListener('click', () => {
+//         removeActiveClass();
+//         panel.classList.add('active'); 
+//     });
+// });
 
-// Function to Remove "active" Class from All Slides
-function removeActiveClass() {
-    slides.forEach(panel => {
-        panel.classList.remove('active'); 
-    });
-}
 
-// Function to Update Active Slide
-function setActiveSlide() {
-    removeActiveClass();
-    slides[active].classList.add('active');
-}
