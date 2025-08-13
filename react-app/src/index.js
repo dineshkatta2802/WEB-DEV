@@ -20,12 +20,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-import Main from './PROJECTS/CHARACTER_PROFILE(ANIME)/Main'
+// import Main from './PROJECTS/CHARACTER_PROFILE(ANIME)/Main'
+// import Event from './ADDING_INTERACTIVITY/RESPONDING_TO_THE_EVENTS/Responding'
+// import Event from './ADDING_INTERACTIVITY/RESPONDING_TO_THE_EVENTS/Reading_Props'
+import Event from './ADDING_INTERACTIVITY/RESPONDING_TO_THE_EVENTS/Passing_EventHandlers_as_Props'
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main/>
+    {/* <Main/> */}
+    <Event/>
   </React.StrictMode>
 );
