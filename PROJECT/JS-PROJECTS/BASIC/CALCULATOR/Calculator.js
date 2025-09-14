@@ -1,6 +1,6 @@
 let inp = document.querySelector('input');
 let btns = document.querySelectorAll('button');
-
+ 
 let expression = '';
 let arr = Array.from(btns);
 
