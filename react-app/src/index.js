@@ -20,13 +20,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-import Props from './DESCRIBING-UI/PROPS/Props.jsx'
+// import Props from './1. DESCRIBING-UI/IMPORT&EXPORT/ImportExport.jsx'
+import Project from './1. DESCRIBING-UI/PROPS/MOVIES//Movies.jsx'
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Main/> */}
-    <Props/>
+    <Project/>
   </React.StrictMode>
 );
