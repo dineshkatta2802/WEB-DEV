@@ -21,7 +21,7 @@ import ReactDOM from 'react-dom/client';
 
 //Componets made by me
 // import Props from './1. DESCRIBING-UI/IMPORT&EXPORT/ImportExport.jsx'
-import Project from './1. DESCRIBING-UI/PROPS/MOVIES//Movies.jsx'
+import Project from './1. DESCRIBING-UI/Z-E_COMMERCE/Main'
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
