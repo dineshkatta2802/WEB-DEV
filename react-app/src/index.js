@@ -20,8 +20,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-// import Props from './1. DESCRIBING-UI/IMPORT&EXPORT/ImportExport.jsx'
-import Project from './1. DESCRIBING-UI/Z-E_COMMERCE/Main'
+import Project from "./2. ADDING_INTERACTIVITY/RESPONDING_TO_THE_EVENTS/4. Event_Propagation.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
