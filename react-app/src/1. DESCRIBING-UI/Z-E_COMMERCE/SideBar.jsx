@@ -3,21 +3,19 @@
 
     function ListOfGenre(){
             const mainGenre = Genre.map( (genreData) => {
-            const MainKeys = Object.keys(genreData).filter( (result) => result !== 'id' );
-            return MainKeys.toString();
-            });
-        return <div style={{position : 'absolute',
-                            width : '100%',
-                            height : '100vh',
-                            display : 'flex',
-                            flexDirection : 'column',
-                            justifyContent : 'space-around'
-        }}>
-            {
-                mainGenre.map( (genre) => <p>{genre}</p>)
-            }
-            </div>
-    }
+                                                            const MainKeys = Object.keys(genreData).filter( (result) => result !== 'id' );
+                                                            return MainKeys.toString();
+                                                        }
+                                        );
+            return <div style={{position : 'absolute',
+                                width : '100%', height : '100vh',
+                                display : 'flex', flexDirection : 'column',
+                                justifyContent : 'space-around' }}>
+
+                    { mainGenre.map( (genre) => <p>{genre}</p>) }
+
+                    </div>
+                        }
 
     export default function SideBar(){
         return(
