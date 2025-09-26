@@ -21,7 +21,7 @@ export const Genre = [
 },
 {
     id: 2,
-    HomeAndLiving: {
+    Living: {
         Furniture: ["Beds", "Sofas", "Chairs", "Tables", "Wardrobes"],
         Kitchenware: ["Cookware", "Utensils", "Storage"],
         Decor: ["Lighting", "Wall Art", "Carpets", "Curtains"],
@@ -39,7 +39,7 @@ export const Genre = [
 },
 {
     id: 4,
-    BeautyAndHealth: {
+    Health: {
         Skincare: ["Creams", "Lotions", "Facewash"],
         Haircare: ["Shampoo", "Conditioner", "Hair Oil"],
         Grooming: ["Razors", "Trimmers", "Perfumes"],
@@ -50,7 +50,7 @@ export const Genre = [
 },
 {
     id: 5,
-    BooksAndStationery: {
+    Stationery: {
         Books: ["Academic", "Novels", "Magazines"],
         Stationery: ["Pens", "Notebooks", "Files"],
         ArtAndCraft: ["Paints", "Brushes", "DIY Kits"],
@@ -59,7 +59,7 @@ export const Genre = [
 },
 {
     id: 6,
-    KidsAndToys: {
+    Kids: {
         BabyCare: ["Diapers", "Feeding Bottles", "Skin Care"],
         Toys: ["Educational", "Action Figures", "Board Games"],
         KidsFashion: ["Clothing", "Footwear", "Accessories"],
@@ -68,7 +68,7 @@ export const Genre = [
 },
 {
     id: 7,
-    SportsAndOutdoor: {
+    Sports: {
         Sportswear: ["Jerseys", "Shorts", "Shoes"],
         Indoor: ["Table Tennis", "Carrom", "Chess"],
         Outdoor: ["Cricket", "Football", "Badminton"],
@@ -96,7 +96,7 @@ export const Genre = [
 },
 {
     id: 10,
-    LuxuryAndCollectibles: {
+    LuxuryItems: {
         DesignerWear: ["High Fashion", "Luxury Brands"],
         Watches: ["Smart Watches", "Premium Watches"],
         Jewellery: ["Diamond", "Gold", "Platinum"],
@@ -105,7 +105,7 @@ export const Genre = [
 },
 {
     id: 11,
-    DigitalAndServices: {
+    Digital: {
         Software: ["Antivirus", "Office Tools", "Design Software"],
         Subscriptions: ["Streaming", "Music", "E-learning"],
         Travel: ["Flights", "Hotels", "Experiences"],
@@ -115,5 +115,16 @@ export const Genre = [
     },
 ];
 
-    const MainGenre = Genre.map( (data) => Object.keys(data).find( (ans) => ans !== 'id'));
-    console.log(MainGenre);
+    //Lets get an array of the MainKeys that you want to display by .map() method in array
+    const Keys = Genre.map((data) => Object.keys(data).find((res) => res !== 'id'));
+    console.log(Keys);//This is a Mainkeys array
+    let MainKey = Keys[0];
+
+    // Lets get the subkeys of the Genre 
+    const SubKeys = Object.keys(Genre[0][MainKey]);
+    console.log(SubKeys);
+    
+    for(let i=0 ;i<=SubKeys.length;i++){
+        const InnerSubCategory = Object.values(Genre[0][MainKey])[1];
+        console.log(InnerSubCategory);
+    }
