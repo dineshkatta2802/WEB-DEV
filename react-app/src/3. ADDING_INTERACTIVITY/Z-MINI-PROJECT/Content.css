@@ -1,0 +1,48 @@
+.Container{
+    /* background-color: aqua; */
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Heading {
+    /* background-color: blue; */
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 100%;
+    height: 10%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.butns{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    color: #09324A;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.details{
+    background-color: aqua;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
