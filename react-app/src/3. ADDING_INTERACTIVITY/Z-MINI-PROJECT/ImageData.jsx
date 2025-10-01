@@ -1,303 +1,330 @@
 export const imageMap = {
 Fashion: {
     Clothing: {
-        Mens: "",     // e.g. "https://.../fashion/clothing/mens.jpg"
-        Womens: "",
-        Kids: "",
-        Ethnic: "",
-        Western: "",
+        Mens: "https://i.pinimg.com/736x/f0/c5/a9/f0c5a90ed475863fdc8b8ef3f28f9315.jpg",
+        Womens: "./Images/Women Clothes.jpg",
+        Kids: "./Images/Kids  Clothes.jpg",
+        Ethnic: "./Images/Ethnic Clothes.jpg",
+        Western: "./Images/Western Clothes.jpg", 
     },
     Footwear: {
-        Shoes: "",
-        Sneakers: "",
-        Sandals: "",
+        Shoes: "./Images",
+        Sneakers: "./Images",
+        Sandals: "./Images",
     },
     Accessories: {
-        Bags: "",
-        Belts: "",
-        Wallets: "",
-        Watches: "",
-        Sunglasses: "",
+        Bags: "./Images",
+        Belts: "./Images",
+        Wallets: "./Images",
+        Watches: "./Images",
+        Sunglasses: "./Images",
     },
     Jewellery: {
-        Gold: "",
-        Silver: "",
-        Artificial: "",
-        Luxury: "",
+        Gold: "./Images",
+        Silver: "./Images",
+        Artificial: "./Images",
+        Luxury: "./Images",
     },
 },
 Electronics: {
     Mobiles: {
-        Smartphones: "",
-        Tablets: "",
-        Accessories: "",
+        Smartphones: "./Images",
+        Tablets: "./Images",
+        Accessories: "./Images",
     },
     Computers: {
-        Laptops: "",
-        Desktops: "",
-        Monitors: "",
-        Components: "",
+        Laptops: "./Images",
+        Desktops: "./Images",
+        Monitors: "./Images",
+        Components: "./Images",
     },
     Audio: {
-        Headphones: "",
-        Speakers: "",
-        Earbuds: "",
+        Headphones: "./Images",
+        Speakers: "./Images",
+        Earbuds: "./Images",
     },
     Cameras: {
-        DSLR: "",
-        Mirrorless: "",
-        ActionCameras: "",  // Note: your original “Action Cameras” can be “ActionCameras”
+        DSLR: "./Images",
+        Mirrorless: "./Images",
+        ActionCameras: "./Images",  // Note: your original “Action Cameras” can be “ActionCameras”
     },
     HomeAppliances: {
-        Fridge: "",
-        AC: "",
-        WashingMachine: "",
-        Microwave: "",
+        Fridge: "./Images",
+        AC: "./Images",
+        WashingMachine: "./Images",
+        Microwave: "./Images",
     },
     KitchenAppliances: {
-        Mixer: "",
-        Oven: "",
-        CoffeeMaker: "",
+        Mixer: "./Images",
+        Oven: "./Images",
+        CoffeeMaker: "./Images",
     },
 },
 
 Living: {
     Furniture: {
-        Beds: "",
-        Sofas: "",
-        Chairs: "",
-        Tables: "",
-        Wardrobes: "",
+        Beds: "./Images",
+        Sofas: "./Images",
+        Chairs: "./Images",
+        Tables: "./Images",
+        Wardrobes: "./Images",
     },
     Kitchenware: {
-        Cookware: "",
-        Utensils: "",
-        Storage: "",
+        Cookware: "./Images",
+        Utensils: "./Images",
+        Storage: "./Images",
     },
     Decor: {
-        Lighting: "",
-        WallArt: "",
-        Carpets: "",
-        Curtains: "",
+        Lighting: "./Images",
+        WallArt: "./Images",
+        Carpets: "./Images",
+        Curtains: "./Images",
     },
     Gardening: {
-        Plants: "",
-        Tools: "",
-        OutdoorFurniture: "",  // original “Outdoor Furniture”
+        Plants: "./Images",
+        Tools: "./Images",
+        OutdoorFurniture: "./Images",  // original “Outdoor Furniture”
     },
 },
 Grocery: {
     FreshProduce: {
-        Fruits: "",
-        Vegetables: "",
-        Dairy: "",
+        Fruits: "./Images",
+        Vegetables: "./Images",
+        Dairy: "./Images",
     },
     PackagedFood: {
-        Snacks: "",
-        FrozenFood: "",
-        InstantFood: "",
+        Snacks: "./Images",
+        FrozenFood: "./Images",
+        InstantFood: "./Images",
     },
     Beverages: {
-        Tea: "",
-        Coffee: "",
-        Juices: "",
-        SoftDrinks: "",  // from “Soft Drinks”
+        Tea: "./Images",
+        Coffee: "./Images",
+        Juices: "./Images",
+        SoftDrinks: "./Images",  // from “Soft Drinks”
     },
     Gourmet: {
-        OrganicFood: "",
-        ImportedGoods: "",
+        OrganicFood: "./Images",
+        ImportedGoods: "./Images",
     },
 },
 Health: {
     Skincare: {
-        Creams: "",
-        Lotions: "",
-        Facewash: "",
+        Creams: "./Images",
+        Lotions: "./Images",
+        Facewash: "./Images",
     },
     Haircare: {
-        Shampoo: "",
-        Conditioner: "",
-        HairOil: "",
+        Shampoo: "./Images",
+        Conditioner: "./Images",
+        HairOil: "./Images",
     },
     Grooming: {
-        Razors: "",
-        Trimmers: "",
-        Perfumes: "",
+        Razors: "./Images",
+        Trimmers: "./Images",
+        Perfumes: "./Images",
     },
     Fitness: {
-        Treadmills: "",
-        Dumbbells: "",
-        YogaMats: "",  // from “Yoga Mats”
+        Treadmills: "./Images",
+        Dumbbells: "./Images",
+        YogaMats: "./Images",  // from “Yoga Mats”
     },
     Supplements: {
-        Vitamins: "",
-        Protein: "",
-        Ayurvedic: "",
+        Vitamins: "./Images",
+        Protein: "./Images",
+        Ayurvedic: "./Images",
     },
     Medicines: {
-        OTC: "",
-        Prescription: "",
-        HealthcareDevices: "",
+        OTC: "./Images",
+        Prescription: "./Images",
+        HealthcareDevices: "./Images",
     },
 },
 Stationery: {
     Books: {
-        Academic: "",
-        Novels: "",
-        Magazines: "",
+        Academic: "./Images",
+        Novels: "./Images",
+        Magazines: "./Images",
     },
     Stationery: {
-        Pens: "",
-        Notebooks: "",
-        Files: "",
+        Pens: "./Images",
+        Notebooks: "./Images",
+        Files: "./Images",
     },
     ArtAndCraft: {
-        Paints: "",
-        Brushes: "",
-        DIYKits: "",  // from “DIY Kits”
+        Paints: "./Images",
+        Brushes: "./Images",
+        DIYKits: "./Images",  // from “DIY Kits”
     },
     Ebooks: {
-        PDFs: "",
-        OnlineCourses: "",
-        DigitalContent: "",
+        PDFs: "./Images",
+        OnlineCourses: "./Images",
+        DigitalContent: "./Images",
     },
 },
 Kids: {
     BabyCare: {
-        Diapers: "",
-        FeedingBottles: "",  // original “Feeding Bottles”
-        SkinCare: "",
+        Diapers: "./Images",
+        FeedingBottles: "./Images",  // original “Feeding Bottles”
+        SkinCare: "./Images",
     },
     Toys: {
-        Educational: "",
-        ActionFigures: "",  // original “Action Figures”
-        BoardGames: "",
+        Educational: "./Images",
+        ActionFigures: "./Images",  // original “Action Figures”
+        BoardGames: "./Images",
     },
     KidsFashion: {
-        Clothing: "",
-        Footwear: "",
-        Accessories: "",
+        Clothing: "./Images",
+        Footwear: "./Images",
+        Accessories: "./Images",
     },
     BabyGear: {
-        Strollers: "",
-        Cribs: "",
-        CarSeats: "",  // original “Car Seats”
+        Strollers: "./Images",
+        Cribs: "./Images",
+        CarSeats: "./Images",  // original “Car Seats”
     },
 },
 Sports: {
     Sportswear: {
-        Jerseys: "",
-        Shorts: "",
-        Shoes: "",
+        Jerseys: "./Images",
+        Shorts: "./Images",
+        Shoes: "./Images",
     },
     Indoor: {
-        TableTennis: "",  // "Table Tennis"
-        Carrom: "",
-        Chess: "",
+        TableTennis: "./Images",  // "Table Tennis"
+        Carrom: "./Images",
+        Chess: "./Images",
     },
     Outdoor: {
-        Cricket: "",
-        Football: "",
-        Badminton: "",
+        Cricket: "./Images",
+        Football: "./Images",
+        Badminton: "./Images",
     },
     Adventure: {
-        Camping: "",
-        HikingGear: "",  // “Hiking Gear”
-        Cycling: "",
+        Camping: "./Images",
+        HikingGear: "./Images",  // “Hiking Gear”
+        Cycling: "./Images",
     },
     FitnessAccessories: {
-        SkippingRope: "",  // “Skipping Rope”
-        ResistanceBands: "",
+        SkippingRope: "./Images",  // “Skipping Rope”
+        ResistanceBands: "./Images",
     },
 },
 Automotive: {
     CarAccessories: {
-        SeatCovers: "",
-        Mats: "",
-        Covers: "",
+        SeatCovers: "./Images",
+        Mats: "./Images",
+        Covers: "./Images",
     },
     BikeAccessories: {
-        Helmets: "",
-        Jackets: "",
-        SpareParts: "",
+        Helmets: "./Images",
+        Jackets: "./Images",
+        SpareParts: "./Images",
     },
     Tools: {
-        Wrenches: "",
-        Jacks: "",
-        RepairKits: "",
+        Wrenches: "./Images",
+        Jacks: "./Images",
+        RepairKits: "./Images",
     },
     TyresAndLubricants: {
-        Tyres: "",
-        EngineOil: "",
-        Coolants: "",
+        Tyres: "./Images",
+        EngineOil: "./Images",
+        Coolants: "./Images",
     },
 },
 Pets: {
     Food: {
-        DogFood: "",
-        CatFood: "",
-        BirdFood: "",
+        DogFood: "./Images",
+        CatFood: "./Images",
+        BirdFood: "./Images",
     },
     Toys: {
-        Balls: "",
-        ChewToys: "",  // “Chew Toys”
-        Scratchers: "",
+        Balls: "./Images",
+        ChewToys: "./Images",  // “Chew Toys”
+        Scratchers: "./Images",
     },
     Grooming: {
-        Shampoos: "",
-        Brushes: "",
-        NailClippers: "",  // “Nail Clippers”
+        Shampoos: "./Images",
+        Brushes: "./Images",
+        NailClippers: "./Images",  // “Nail Clippers”
     },
     Health: {
-        Supplements: "",
-        VeterinaryProducts: "",  // “Veterinary Products”
+        Supplements: "./Images",
+        VeterinaryProducts: "./Images",  // “Veterinary Products”
     },
 },
 LuxuryItems: {
     DesignerWear: {
-        HighFashion: "",  // “High Fashion”
-        LuxuryBrands: "",  // “Luxury Brands”
+        HighFashion: "./Images",  // “High Fashion”
+        LuxuryBrands: "./Images",  // “Luxury Brands”
     },
     Watches: {
-        SmartWatches: "",  // “Smart Watches”
-        PremiumWatches: "",
+        SmartWatches: "./Images",  // “Smart Watches”
+        PremiumWatches: "./Images",
     },
     Jewellery: {
-        Diamond: "",
-        Gold: "",
-        Platinum: "",
+        Diamond: "./Images",
+        Gold: "./Images",
+        Platinum: "./Images",
     },
     Collectibles: {
-        Antiques: "",
-        Paintings: "",
-        LimitedEditions: "",  // “Limited Editions”
+        Antiques: "./Images",
+        Paintings: "./Images",
+        LimitedEditions: "./Images",  // “Limited Editions”
     },
 },
 Digital: {
     Software: {
-        Antivirus: "",
-        OfficeTools: "",
-        DesignSoftware: "",
+        Antivirus: "./Images",
+        OfficeTools: "./Images",
+        DesignSoftware: "./Images",
     },
     Subscriptions: {
-        Streaming: "",
-        Music: "",
-        ELearning: "",  // “E-learning”
+        Streaming: "./Images",
+        Music: "./Images",
+        ELearning: "./Images",  // “E-learning”
     },
     Travel: {
-        Flights: "",
-        Hotels: "",
-        Experiences: "",
+        Flights: "./Images",
+        Hotels: "./Images",
+        Experiences: "./Images",
     },
     Rentals: {
-        Furniture: "",
-        Vehicles: "",
-        Property: "",
+        Furniture: "./Images",
+        Vehicles: "./Images",
+        Property: "./Images",
     },
     FreelanceServices: {
-        Consulting: "",
-        Repair: "",
-        OnlineSupport: "",
+        Consulting: "./Images",
+        Repair: "./Images",
+        OnlineSupport: "./Images",
     },
 },
 };
+
+
+    // const Keys = Object.keys(imageMap);
+    // console.log(Keys);
+    
+    // Keys.map(Main => {
+    //     const SubKeys = Object.keys(imageMap[Main])
+    //     console.log(SubKeys);
+    //     SubKeys.forEach(Sub => {
+    //         const InnerKeys = Object.keys(imageMap[Main][Sub]);
+    //         console.log(InnerKeys);
+    //     })
+    // })
+
+    // let imageIndex =0;
+    
+    //     const Keys = Object.keys(imageMap);
+    
+    //     const Main = Keys[imageIndex];
+    //     const SubKeys = Object.keys(imageMap[Main])
+    //     const Sub = SubKeys[imageIndex];
+    //     const InnerKey = Object.keys(imageMap[Main][Sub]);
+        
+    //     const currentInnerKey = InnerKey[imageIndex % InnerKey.length];
+    //     const currentImage = imageMap[Main][Sub][currentInnerKey];
+    //     console.log(InnerKey);
+        

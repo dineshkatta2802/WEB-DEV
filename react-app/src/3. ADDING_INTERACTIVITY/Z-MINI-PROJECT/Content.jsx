@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Carousel from './Carousel';
 import './Content.css'
 
 export default function Content({SubKeys, tabs, activeTab, setActiveTab}){
@@ -27,6 +28,7 @@ export default function Content({SubKeys, tabs, activeTab, setActiveTab}){
 
             <div className="details">
                 <h3>{CurrentSubKey}</h3>
+                <Carousel CurrentSubKey={CurrentSubKey}/>
             </div>
 
             <div className="buttons">

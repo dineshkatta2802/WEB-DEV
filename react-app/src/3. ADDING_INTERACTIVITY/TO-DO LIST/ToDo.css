@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+
+.Con{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #09324A, #1B6F81);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* background: linear-gradient(90deg, #09324A, #1B6F81, #AED0C9,#FFFB08); */
+    width: 30%;
+    height: 70%;
+    border-radius: 5%;
+    padding: 20px;
+    background: linear-gradient(360deg, #09324A, #AED0C9, #DAD7C8, white);
+    overflow: hidden;
+}
+
+.inputHolder{
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid #09324A;
+}
+
+.inputHolder input {
+    /* background: linear-gradient(90deg, #DAD7C8, #F3F2EA); */
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.buttons{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+        /* background: linear-gradient(90deg, #FFFB08, #AED0C9); */
+    background: linear-gradient(90deg, #09324A, #1B6F81);
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    transition: transform .3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.taskList ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.taskList .taskName li{
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskList .taskName li .para{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

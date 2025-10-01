@@ -115,16 +115,16 @@ export const Genre = [
     },
 ];
 
-    // //Lets get an array of the MainKeys that you want to display by .map() method in array
-    // const Keys = Genre.map((data) => Object.keys(data).find((res) => res !== 'id'));
-    // console.log(Keys);//This is a Mainkeys array
-    // let MainKey = Keys[0];
+    //Lets get an array of the MainKeys that you want to display by .map() method in array
+    const Keys = Genre.map((data) => Object.keys(data).find((res) => res !== 'id'));
+    console.log(Keys);//This is a Mainkeys array
+    let MainKey = Keys[0];
 
-    // // Lets get the subkeys of the Genre 
-    // const SubKeys = Object.keys(Genre[0][MainKey]);
-    // console.log(SubKeys);
+    // Lets get the subkeys of the Genre 
+    const SubKeys = Object.keys(Genre[0][MainKey]);
+    console.log(SubKeys);
     
-    // for(let i=0 ;i<=SubKeys.length;i++){
-    //     const InnerSubCategory = Object.values(Genre[0][MainKey])[1];
-    //     console.log(InnerSubCategory);
-    // }
+    for(let i=0 ;i<=SubKeys.length;i++){
+        const InnerSubCategory = Object.values(Genre[0][MainKey])[0];
+        console.log(InnerSubCategory);
+    }

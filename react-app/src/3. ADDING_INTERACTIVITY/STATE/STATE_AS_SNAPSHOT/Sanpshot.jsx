@@ -12,5 +12,5 @@ export default function App(){
                                     }
                             }> +3 </button>
         </div>
-    );
+    ); 
 }

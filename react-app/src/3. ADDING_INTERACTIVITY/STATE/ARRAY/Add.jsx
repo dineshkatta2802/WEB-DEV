@@ -15,11 +15,11 @@
 
                 <button 
                         onClick={() => setArtist([
-                                                {id : nextId++, name : name},
-                                                ...artists, 
+                            ...artists, 
+                            {id : nextId++, name : name},
                                                 ])}
 
-                        // onClick={artists.push({id : nextId++ , name : name})} // This actuallly causes 
+                        // onClick={artists.push({id : nextId++ , name : name})} // This actuallly causes mutation
                         >
                     Add</button>
                 <button onClick={() => setArtist([])}>Clear</button>
