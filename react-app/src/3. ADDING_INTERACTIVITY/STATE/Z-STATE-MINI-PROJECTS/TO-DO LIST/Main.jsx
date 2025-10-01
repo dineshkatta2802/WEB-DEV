@@ -15,6 +15,7 @@ export default function ToDo_List(){
     return(
         <div className='Con'>
             <div className="card">
+                <h1 style={{textAlign : 'center', fontSize : 'bold'}}>TO-DO LIST</h1>
                 <div className="inputHolder">
                     <label htmlFor="">
                         <input type="text" value={task} onChange={e => setTask(e.target.value)} />
@@ -47,7 +48,7 @@ export default function ToDo_List(){
                 <div className="taskList">
                     <ul className='taskName'>{lists.map(list => (
                                     <li key={list.id}><p className='para'>{list.name}</p>
-                                    <button className='btn' onClick={() => setList(lists.filter(a => a.id !== list.id))}>Delete</button>
+                                    <button className='btn del' onClick={() => setList(lists.filter(a => a.id !== list.id))}>Delete</button>
                                     </li>
                                 ))}
                     </ul>

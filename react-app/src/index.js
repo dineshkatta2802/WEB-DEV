@@ -20,10 +20,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 //Componets made by me
-// import Project from "./3. ADDING_INTERACTIVITY/STATE/BASICS/useState"
-// import Project from "./3. ADDING_INTERACTIVITY/STATE/ARRAY/Remove"
-import Project from "./3. ADDING_INTERACTIVITY/TO-DO LIST/Main.jsx"
-// import Project from "./3. ADDING_INTERACTIVITY/Z-MINI-PROJECT/D&I"
+import Project from "./3. ADDING_INTERACTIVITY/STATE/BASICS/useState"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
