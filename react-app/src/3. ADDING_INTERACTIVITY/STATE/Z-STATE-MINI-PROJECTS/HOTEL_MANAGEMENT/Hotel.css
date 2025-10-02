@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Soka Heavy';
+    src: url('./SokaHeavy.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Soka Heavy', sans-serif;
+}
+
+.Con{
+    width: 100%;
+    height: 100vh;
+    background-color: #112358;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card{
+    width: 45%;
+    height: auto    ;
+    padding: 10px;
+    color: #00ffff;
+    background-color: #004499;
+    border-radius: 30px;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputHolder{
+    width: 100%;
+    height: 50%;
+    margin: 10px;   
+    /* background-color: #00ffff; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputHolder label {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.inputHolder input{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    color: #004499;
+    outline: none;
+    border: none;
+}
+
+
+.inputHolder select{
+        width: 100%;
+    height: 30px;
+    padding: 5px;
+    color: #004499;
+    outline: none;
+    border: none;
+}
+
+.GuestDetails, .RoomDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.btns button, .room button{
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #004499;
+    background-color: #00ffff;
+    transition: transform  .3s;
+}
+
+.btns button:hover, .room button:hover{
+    transform: scale(1.1);
+}
+
+.display{
+    width: 100%;
+    height: 95vh;
+    /* background   :linear-gradient(360deg , #D4EAFF, #F4F5FA); */
+    border-radius: 30px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.display header{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 100;
+    margin-bottom: 15px;
+}
+
+.display h1{
+    background-color: #00ffff;
+    width: inherit;
+    text-align: center;
+    position: fixed;
+    color: #004499;
+    top: 0;
+}
+
+.data{
+    color: #00ffff;
+    background-color: #004499;
+    /* background: linear-gradient(90deg, #0192C6, #D4EAFF); */
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    padding: 10px;
+    margin: 10px;
+}
+
+.data h2,p{
+    display: inline;
+}
+
+.contactDetails{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

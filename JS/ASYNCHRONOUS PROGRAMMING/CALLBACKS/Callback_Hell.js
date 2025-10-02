@@ -2,24 +2,27 @@
 // forming a pyramid — often called the "Pyramid of Doom"
 // This makes the program difficult to read and maintain
 
-function Walk(callback) {
+function Walk(callback_1) {
     setTimeout(() => {
         console.log('Walked!');
-        callback();
+        callback_1();
+        console.log('Callback of Walk : ',callback_1);
     }, 1500);
 }
 
-function Cleaned(callback) {
+function Cleaned(callback_2) {
     setTimeout(() => {
         console.log('Cleaned!!');
-        callback();
+        callback_2();
+        console.log('Callback of Cleaned : ',callback_2);
     }, 2500);
 }
 
-function Bath(callback) {
+function Bath(callback_3) {
     setTimeout(() => {
         console.log('Bathed!!!');
-        callback();
+        callback_3();
+        console.log('Callback of Bath : ',callback_3);
     }, 3500);
 }
 
