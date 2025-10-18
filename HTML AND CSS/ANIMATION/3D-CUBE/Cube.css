@@ -15,7 +15,7 @@ body {
     height: 100vh;
 }
 
-.con {
+.conCube {
     display: inline-flex;
     perspective: 1000px;
     gap: 10px;

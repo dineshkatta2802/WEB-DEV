@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="contactTitleTag">Contact Us - Awareness 360</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- BARS ANIMATION -->
+    <div class="bars-ani">
+        <div class="bars" style="--i:1 ; background-color: #ffc107;"></div>
+        <div class="bars" style="--i:2 ; background-color: #ffc107;"></div>
+        <div class="bars" style="--i:3 ; background-color: #ffc107;"></div>
+        <div class="bars" style="--i:4 ; background-color: #ffc107;"></div>
+        <div class="bars" style="--i:5 ; background-color: #ffc107;"></div>
+        <div class="bars" style="--i:6 ; background-color: #ffc107;"></div>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+        <header class="main-header" style="background: linear-gradient(45deg, #ffc107 0%, #e0a800 100%);">
+            <a class="logo" href="index.html" style="list-style: none; color: white; text-decoration: none;">Awareness 360</a>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="schemes.html">Schemes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button onclick="logout()" class="logout-button">Logout</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="static-page-content" >
+            <section  class="page-banner contact-banner" aria-labelledby="contact-heading">
+                <h1 id="contact-heading" class="para">Get In Touch</h1>
+                <p>Have questions about a scheme? We're here to help.</p>
+            </section>
+
+            <section class="static-content-block contact-details">
+                <h2 style="border-left: 6px solid #ffc107; color: #ffc107;">Reach Out to Our Team</h2>
+                <p>While we do not process applications directly, we can guide you to the correct official resources and answer general queries about scheme eligibility.</p>
+                
+                <div class="contact-info">
+                    <h3 style="color: #ffc107;">General Support</h3>
+                    <p><strong>Email:</strong> <a href="mailto:support@awareness360.org">support@awareness360.org</a></p>
+                    <p><strong>Helpdesk:</strong> 1800-123-4567 (Toll-Free, for Scheme Information Only)</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3 style="color: #ffc107;">Project Team</h3>
+                    <p>For project feedback or technical issues:</p>
+                    <p><strong>Email:</strong> <a href="mailto:project-team@awareness360.org">project-team@awareness360.org</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer" style="background : linear-gradient(90deg , #ffc107, #e0a800);">
+            <p>&copy; 2024 Awareness 360 | A Semester Project.</p>
+            <div class="footer-links" >
+                <a style="color: white;" href="about.html">About</a>
+                <a style="color: white;"  href="contact.html">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // Show main content after bars animation
+        window.addEventListener('load', () => {
+            const container = document.querySelector('.bars-ani');
+            const mainContent = document.getElementById('main-content');
+
+            const totalDuration = 1.5 * 1000 + 0.1 * 6 * 1000; // 2.1s
+            setTimeout(() => {
+                container.classList.add('finished');
+                mainContent.style.opacity = '1';
+                mainContent.style.visibility = 'visible';
+            }, totalDuration);
+        });
+    </script>
+</body>
+</html>
