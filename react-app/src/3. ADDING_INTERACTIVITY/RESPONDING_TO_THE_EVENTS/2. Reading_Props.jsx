@@ -9,8 +9,8 @@ function AlertButton({message, children}){ // Passing the props to the AlerButto
     }
     return(
         // Lets create a normal button and pass the props
-            <button onClick={handleClick}>
-                {children}
+            <button onClick={handleClick}> {/* 'Upoading the content' , 'Playing the content' , 'Downloadig the contnet' */}
+                {children} {/* Upload , Play , Download */}
             </button>
     );
 }

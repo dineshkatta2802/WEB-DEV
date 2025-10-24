@@ -1,8 +1,8 @@
 import React from 'react';
 
-// function handleClick(){
-//     return console.log("Clicked") ;
-// }
+function handleClick(){
+    return alert("Clicked") ;
+}
 
 export default function App(){
     return(
@@ -11,12 +11,12 @@ export default function App(){
         // </button>
 
         // Alternate ways to pass a event
-        <button onClick={function handleClick(){console.log('Clicked')}}>
+        <button onClick={function handleClick(){alert('Clicked')}}>
             click Here
         </button>
 
         // // Another way to declare an event is a s follows
-        // <button onClick={() => {console.log('Clicked')}}>
+        // <button onClick={() => {alert('Clicked')}}>
         //     click Here
         // </button>
     );

@@ -16,37 +16,27 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-//Componets made by me
-// import Project from "./3. ADDING_INTERACTIVITY/STATE/BASICS/useState"
-// import Project from "./3. ADDING_INTERACTIVITY/STATE/Z-STATE-MINI-PROJECTS/HOTEL_MANAGEMENT/MainHotel.jsx"
-import Project from "./PROJECTS/CHARACTER_PROFILE(ANIME)/Main"
-// import Project from "./3. ADDING_INTERACTIVITY/STATE/RE-IMPLEMETATION OF USE_STATE/RIOUS.jsx"
-// import Project from "./4. MANAGING STATE/REACTING TO INPUT STATES/Main.jsx"
+import React from "react";
+import ReactDOM from "react-dom/client";
+// import Project from "./REACT HOOKS-DANIEL BUGL/1. INTRO TO USESTATE.JSX";
+import Project from "./REACT_HOOKS/RE_IMPLEMETATION_OF_USE-STATE/RIOUS.jsx"
 // import "./style.css";
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+
 // root.render(
 //   <React.StrictMode>
-//     {/* <Main/> */}
-//     <Project/>
+//     <Project />
 //   </React.StrictMode>
 // );
 
-
-// Normally, React automatically knows when to re-render your app (like when state changes). 
-// But since we're making our own useState, we need to tell React when to re-render manually.
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-export function renderApp(){
+// Optional manual render if building custom hooks
+const root = ReactDOM.createRoot(document.getElementById('root'))
+export function renderApp() {
   root.render(
-  <React.StrictMode>
-    {/* <Main/> */}
-    <Project/>
-  </React.StrictMode>
-  )
+    <React.StrictMode>
+      <Project />
+    </React.StrictMode>
+  );
 }
-
 renderApp();
