@@ -19,24 +19,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import Project from "./REACT HOOKS-DANIEL BUGL/1. INTRO TO USESTATE.JSX";
-import Project from "./REACT_HOOKS/RE_IMPLEMETATION_OF_USE-STATE/RIOUS.jsx"
+import Project from "./REACT_HOOKS/BLOG/CREDENTIALS/Main.jsx"
 // import "./style.css";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(
-//   <React.StrictMode>
-//     <Project />
-//   </React.StrictMode>
-// );
+root.render(
+  <React.StrictMode>
+    <Project />
+  </React.StrictMode>
+);
 
 // Optional manual render if building custom hooks
-const root = ReactDOM.createRoot(document.getElementById('root'))
-export function renderApp() {
-  root.render(
-    <React.StrictMode>
-      <Project />
-    </React.StrictMode>
-  );
-}
-renderApp();
+// const root = ReactDOM.createRoot(document.getElementById('root'))
+// export function renderApp() {
+//   root.render(
+//     <React.StrictMode>
+//       <Project />
+//     </React.StrictMode>
+//   );
+// }
+// renderApp();
