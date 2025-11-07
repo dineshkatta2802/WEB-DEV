@@ -1,4 +1,4 @@
-import { renderApp } from "..";
+import { renderApp } from "../..";
 
 // const [value,setValue] = useState('')
 
