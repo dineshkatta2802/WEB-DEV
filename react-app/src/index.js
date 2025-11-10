@@ -18,6 +18,10 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+// load local Font Awesome CSS (installed via npm)
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+// ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/BASIC/USEREDUCER.jsx"
 import Project from "./REACT_HOOKS/PROJECTS/TASK_MANAGER/Main.jsx"
 // import "./style.css";
