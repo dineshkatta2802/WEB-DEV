@@ -3,8 +3,8 @@ import React from 'react';
 export default function Login({setUserName}){
     function handleSubmit(e){
         e.preventDefault();
-        const username = e.target.elementS.username.value;
-        setUserName([{username}])
+        const username = e.target.elements.username.value;
+        setUserName(username);
     }
     return(
         <div>

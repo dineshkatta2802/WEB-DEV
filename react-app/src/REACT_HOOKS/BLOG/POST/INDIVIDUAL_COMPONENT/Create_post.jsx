@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function CreatePost({username, setPosts}){
+export default function CreatePost({username, dispatch}){
     function handleSubmit(e){
         e.preventDefault();
         const title = e.target.elements.title.value;
         const content = e.target.elements.content.value;
         const newPost ={ title, content, author: username};
-        setPosts(posts => [newPost, ...posts]);
+        // dispatch({type : 'CREATE_POST', post : newPost})
+        dispatch({type: 'CREATE_POST', post: newPost});
         e.target.reset();
     }
     return(

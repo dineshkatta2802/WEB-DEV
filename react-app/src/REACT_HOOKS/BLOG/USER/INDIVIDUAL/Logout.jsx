@@ -1,14 +1,13 @@
 import React from 'react';
 
-export default function Logout({username, setUserName  ,setLogout}){
+export default function Logout({username, setUserName}){
     function handleSubmit(e){
         e.preventDefault();
-        setLogout(false);
-        setUserName({username})
+        setUserName('');
     }
     return(
         <div>
-            <form onSubmi={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 Logged in as : {username}
                 <input type="submit" value='Logout'/>
             </form>

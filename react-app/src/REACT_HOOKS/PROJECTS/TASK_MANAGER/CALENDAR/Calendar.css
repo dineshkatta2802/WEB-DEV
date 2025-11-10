@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.CalendarCon{
+    border-radius: inherit;
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+    padding: inherit;
+    position: relative;
+}
+
+.calendar{
+    position: absolute;
+}

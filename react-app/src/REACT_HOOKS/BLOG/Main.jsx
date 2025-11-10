@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import UserBar from './USER/UserBar.jsx';
 import CreatePost from './POST/INDIVIDUAL_COMPONENT/Create_post.jsx';
 import PostList from './POST/PostList.jsx';
+import { PostReducer } from './POST/INDIVIDUAL_COMPONENT/PostReducer.js';
 
 export default function Main(){
     const defaultPosts=[
@@ -21,14 +22,14 @@ export default function Main(){
             author : 'Dinesh Katta'
         },
     ]
-
+    
         const [username, setUserName] = useState('');
-        const [posts,  setPosts] = useState(defaultPosts)
+        const [posts,  dispatch] = useReducer(PostReducer, defaultPosts)
     return (
         <>
             <UserBar username={username} setUserName={setUserName}/>
             <br />
-            {username && <CreatePost username={username} setPosts={setPosts}/>}
+            {username && <CreatePost username={username} dispatch={dispatch}/>}
             <br />
             {username && <PostList posts={posts}/>}
         </>

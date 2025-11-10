@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body ,#root{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(360deg, #100C08, #95122C);
+    /* background: linear-gradient(360deg, #100C08, #95122C, #CA3F16, #FF9408); */
+    /* background: linear-gradient(360deg, #95122C, #FF9408); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Glass{
+    padding: 10px;
+    width: 95%;
+    height: 95%;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 8px 32px 0 black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+}
+
+.Schedulers{
+    padding: inherit;
+    width: 40%;
+    height: 100%;
+    background-color: blue;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    gap: 10px;
+}

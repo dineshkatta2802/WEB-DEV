@@ -12,7 +12,7 @@ export default function PostList({posts = []}){ //Passed the array of posts
                     <Post {...mssg}/>
                     <hr />
                 </Fragment>
-            ))}
+            ))} 
         </div>
     );
 }

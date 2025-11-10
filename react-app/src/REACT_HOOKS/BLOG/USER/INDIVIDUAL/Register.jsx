@@ -1,7 +1,8 @@
-import { faSlash } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 
 export default function Register({setUserName}){
+    const [invalidRepeatPassword, setInvalidRepeatPassword] = useState(false);
+
         function handleSubmit(e){
         e.preventDefault();
         if(e.target.elements.password.value !== e.target.elements.repeat_password.value){
@@ -9,10 +10,9 @@ export default function Register({setUserName}){
             return;
         }
         setInvalidRepeatPassword(false);
-        const username = e.target.element.username.value;
-        setUserName({username})
+        const username = e.target.elements.username.value;
+        setUserName(username);
     }
-    const [invalidRepeatPassword, setInvalidRepeatPassword] = useState(false);
     return(
         <div>
             <h1>Register here</h1>
