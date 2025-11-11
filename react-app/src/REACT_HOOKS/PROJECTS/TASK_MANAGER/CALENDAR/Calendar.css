@@ -5,14 +5,259 @@
 }
 
 .CalendarCon{
-    border-radius: inherit;
-    width: 60%;
-    height: 100%;
-    background-color: aqua;
     padding: inherit;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: inherit;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .8rem 3.2rem 0 black;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5.5rem;
+    text-align: center;
+    color: white;
+    letter-spacing: .3rem;
+}
+
+.navigation-date{
+        padding: 10px;
+    width: 100%;
+    margin: 1rem 0;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navigation-date h2{
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end   ;
+}
+
+.navigation-date-btns{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 1rem;
+}
+
+.navigation-date-btns button{
+    font-size: 2rem;
+    outline: none;
+    width: 3.5rem;
+    border: none;
+    border-radius: 50%;
+    height: 3.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: #4c000f;
+}
+
+.navigation-date-btns button:hover{
+    /* background-color: #CA3F16; */
+        box-shadow: 0 0rem 1rem 0 white;
+}
+
+.weekdays{
+    padding: 10px;
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.weekdays span{
+    width: calc(100% / 7);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* make weekday cells the same height as day cells so popups align */
+    height: 5.5rem;
+}
+
+.days{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
-.calendar{
+.days span{
+    width: calc(100% / 7);
+    height: 5.5rem;
+    /* background-color: aquamarine; */
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.days .current-date{
+    background-color: #4c000f;
+    border-radius: 50%;
+    box-shadow: 0 0rem 1rem 0 white;
+}
+
+.event-popup{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    width: 100%;
+    /* height: 100vh; */
     position: absolute;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    background-color: #4c000f;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.time-input{
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.time-input p{
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+.event-popup-time{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    background-color: white;
+    color: #4c000f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0rem 0rem .5rem 1rem white;
+
+}
+
+.hours, .minutes{
+    font-family: "Bebas Neue", sans-serif;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.time-input input[type='number']::-webkit-outer-spin-button,
+.time-input input[type='number']::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.event-popup textarea{
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 8.3rem);
+    max-height: calc(100% - 8.3rem);
+    border-radius: inherit;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    resize: none;
+    margin-top: 0;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+
+/* .event-popup template ::-webkit-outer-spin-button,
+.event-popup template ::-webkit-inner-spin-button{
+    appearance: none;
+} */
+
+.event-popup textarea::-webkit-scrollbar{
+    appearance: none;
+}
+
+
+.event-popup textarea::placeholder{
+    letter-spacing: .2rem;
+    color: white;
+}
+
+.event-popup textarea:focus::placeholder{
+    color: transparent;
+}
+
+.event-popup textarea:focus{
+    box-shadow: 0 0rem 1rem 0 white;
+}
+
+.event-popup-btn{
+    font-family: "Bebas Neue", sans-serif;
+    width: 20.5rem;
+    height: 10rem;
+    border-radius: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0rem 1rem 0 white;
+    border: none;
+    color: #4c000f;
+    letter-spacing: .2rem;
+}
+
+.event-popup-btn:active{
+    transform: translateY(.1rem);
+    /* transform: scale(1.1); */
+}
+
+.close-event-popup{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0rem 1rem 0 white;
+}
+
+.close-event-popup:active{
+    /* transform: translateY(.1rem); */
+    transform: scale(1.1);
 }

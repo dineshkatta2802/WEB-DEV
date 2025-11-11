@@ -3,8 +3,8 @@ import './Todo.css'
 
 export default function Todo(){
     return(
-        <div className='Todo'>
-            
+        <div className='TodoCon'>   
+            <h1 className='heading'>Todo List</h1>
         </div>
     );
 }
