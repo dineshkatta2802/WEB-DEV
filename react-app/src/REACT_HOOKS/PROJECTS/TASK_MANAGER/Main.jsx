@@ -2,14 +2,18 @@ import React from 'react';
 import './Main.css';
 import Calendar from './CALENDAR/Calendar';
 import Pomodoro from './POMODORO/Pomodoro';
-import Todo from './TODO/Todo';
+import Todo from './TODO_INPUT/Todo';
+import Color from './TODO_LIST/TodoList';
 
 export default function GlassMorphism(){
     return(
         <div className='Glass'>
             <Calendar/>
             <div className="Schedulers">
-                <Todo/>
+                <div className="customize">
+                    <Todo/>
+                    <Color/>
+                </div>
                 <Pomodoro/>
             </div>
         </div>

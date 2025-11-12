@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ColorCon{
+    width: 100%;
+    min-height: 220px;
+    background-color: #4c000f;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: inherit;
+    display: block;
+}
