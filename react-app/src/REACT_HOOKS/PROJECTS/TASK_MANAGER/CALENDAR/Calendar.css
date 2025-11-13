@@ -16,7 +16,7 @@
     /* flex */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .dimmed::after {
@@ -121,6 +121,21 @@
     align-items: center;
     cursor: pointer;
 }
+
+.days span:hover{
+    /* background-color: #CA3F16; */
+    box-shadow: 0 0rem 1rem 0 white;
+    border-radius: 50%;
+}
+
+.days .inactive:hover{
+    border-radius: none;
+    box-shadow: 0 0 0 0;
+}
+
+/* .days:active{
+    transform: scale(.98);
+} */
 
 .days .current-date{
     background-color: #4c000f;

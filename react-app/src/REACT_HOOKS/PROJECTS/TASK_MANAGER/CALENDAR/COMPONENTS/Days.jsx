@@ -23,7 +23,7 @@ export default function Days({currentMonth, currentYear, currentDate, showEventP
     return(
             <div className="days">
                 {[...Array(getFirstWeekDayOfMonth).keys()].map((_,index) => (
-                    <span key={`empty-${index}`}/>
+                    <span className='inactive' key={`empty-${index}`}/>
                 ))}
                 {/* 
                 Array[getFirstWeekdayOfMonth] = create a new empty array of length "getFirstDaoOfMonth" which can be from 0 to 6
@@ -48,7 +48,7 @@ export default function Days({currentMonth, currentYear, currentDate, showEventP
                 */}
 
                 {[...Array(getNoOfDaysInMonth).keys()].map(day => (
-                    <span key={day+1} className={day+1 === currentDate.getDate() && 
+                    <span key={day+1} className= {day+1 === currentDate.getDate() && 
                                                             currentMonth === currentDate.getMonth() &&
                                                             currentYear === currentDate.getFullYear() ? 'current-date' : ''}
                                                             onClick={() => handleDayClick(day+1)}>{day+1}</span>
