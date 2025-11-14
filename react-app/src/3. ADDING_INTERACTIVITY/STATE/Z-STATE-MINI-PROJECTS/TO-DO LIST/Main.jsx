@@ -29,20 +29,20 @@ export default function ToDo_List(){
                 </div>
 
                 <div className="buttons">
-                <button className='btn' onClick={(e) => {
+                <button className='btn' onClick={() => {
                                         if(task.trim() == ''){
                                                 alert("Enter Task")
                                             }
                                         else{
                                             setList([
-                                            ...lists,// This spread syntax tells to bring the whole lists of taks 
+                                            ...lists,// This spread syntax tells to bring the whole lists of tasks 
                                             {id : nextId++, name : task},// this line tell u to add this task 
                                             ])
                                         setTask('')
                                         }
                                         }}>Add</button>
 
-            <button className='btn' onClick={() => setList([])}>Clear</button>
+                    <button className='btn' onClick={() => setList([])}>Clear</button>
                 </div>
 
                 <div className="taskList">

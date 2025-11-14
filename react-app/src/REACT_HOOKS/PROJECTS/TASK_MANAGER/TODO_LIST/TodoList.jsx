@@ -1,9 +1,10 @@
 import React from 'react';
 import './TodoList.css'
 
-export default function Color(){
+export default function TodoList(){
     return(
-        <div className='ColorCon'>
+        <div className='TodoListCon'>
+            
         </div>
     );
 }

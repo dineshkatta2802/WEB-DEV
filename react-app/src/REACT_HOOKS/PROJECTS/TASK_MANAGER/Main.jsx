@@ -3,7 +3,7 @@ import './Main.css';
 import Calendar from './CALENDAR/Calendar';
 import Pomodoro from './POMODORO/Pomodoro';
 import Todo from './TODO_INPUT/Todo';
-import Color from './TODO_LIST/TodoList';
+import TodoList from './TODO_LIST/TodoList';
 
 export default function GlassMorphism(){
     return(
@@ -12,7 +12,7 @@ export default function GlassMorphism(){
             <div className="Schedulers">
                 <div className="customize">
                     <Todo/>
-                    <Color/>
+                    <TodoList/>
                 </div>
                 <Pomodoro/>
             </div>
