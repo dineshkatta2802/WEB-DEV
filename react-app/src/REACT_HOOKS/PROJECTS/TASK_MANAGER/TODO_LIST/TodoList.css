@@ -65,6 +65,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     box-shadow: 0 0 .3rem 0 black;
+    position: relative;
 }
 
 .taskInfo{
@@ -146,22 +147,41 @@
     color: white;
     border-radius: .5rem;
     cursor: pointer;
+    border: none;
 }
 
 .more:active{
     transform: translateY(.5rem);
 }
 
-.controls{
+.controls {
+    position: absolute;
+    top: 0;
+    right: 4rem; 
     height: 100%;
-    max-height: 80px;
-    width: 20%;
-    background-color: turquoise;
+    width: 60px;
+    background-color: #4c000f;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #4c000f;
+    z-index: 10;
+}
+
+
+.controls button{
     cursor: pointer;
-    overflow: visible;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }

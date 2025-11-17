@@ -37,6 +37,39 @@ export default function GlassMorphism(){
     const [eventTime, setEventTime] = useState({hours : '00', minutes : '00'});
     const [list, setList] = useState([]);
 
+    const [editingId, setEditingId] = useState(null);
+    const [editingText, setEditingText] = useState('');
+
+    function handleDuplicate(id){
+        setList(prev => {
+            const Og = prev.find(item => item.id === id)
+            return [
+                ...prev,
+                {
+                    ...Og,
+                    id : nextId++
+                }
+            ]
+        })
+    }
+
+    function startEditing(id, name) {
+    setEditingId(id);
+    setEditingText(name);
+    }
+
+    function saveEdit(id) {
+        setList(prev => 
+            prev.map(item => 
+                item.id === id ? {...item, name: editingText} : item
+            )
+        );
+
+        setEditingId(null);
+        setEditingText('');
+    }
+
+
     // Here we will create a function that will take the id of the task whose more button is clicked
     function handleMoreClick(itemId){
         // now we will toggle the specific id's controls
@@ -56,36 +89,30 @@ export default function GlassMorphism(){
         setEventTask(e.target.value);
     }
 
-function add() {
+    function add() {
     // Check if task is empty
     if (task.trim() === '') {
         alert('Enter the task');
         return;
     }
 
-    // Check if popupDate and eventTime are valid
-    if (popupDate && eventTime) {
         // Perform state updates for adding a task
-        setList([
-            ...list,
+        setList(prevlist => [
+            ...prevlist,
             {
                 id: nextId++, 
                 name: task,
-                time: { 
+                time:includeDueTime ? { 
                     hours: `${eventTime.hours.padStart(2, '0')}`,
                     minutes: `${eventTime.minutes.padStart(2, '0')}`
-                },
-                date: popupDate
+                } : null,
+                date: includeDateTime ? popupDate : null
             }
         ]);
         setTask(''); // Reset the task input field
         setEventTime({ hours: '00', minutes: '00' }); // Reset time picker
-    } else {
-        // Alert if either date or time is missing
-        alert('Enter both Date and DueTime!!!');
+        setShowControls({});
     }
-}
-
 
     // For the EventPopup.jsx
     function addTaskFromPopup(){
@@ -142,7 +169,6 @@ function add() {
         setSelectedDate(newSelectedDate);
     }
 
-
     //Props to send to Calendar component
     const CalendarProps = {
         currentMonth,
@@ -167,7 +193,15 @@ function add() {
     const TodoListProps ={
         list,
         showControls,
-        handleMoreClick
+        handleMoreClick,
+        setList,
+        editingId,
+        editingText,
+        setEditingId,
+        setEditingText,
+        handleDuplicate,
+        startEditing,
+        saveEdit
     }
 
 // -----------------------------------------------------Todo.jsx---------------------------------------------------------------
@@ -176,6 +210,10 @@ function add() {
     const [showDueTimePopup, setShowDueTimePopup] = useState(false);
 
     const [popupDate, setPopupDate] = useState();
+
+    const [includeDueTime, setIncludeDueTime] = useState(false);
+    const [includeDateTime, setIncludeDateTime] = useState(false);
+
 
     //Props to send to Todo component
     const TodoProps ={
@@ -193,7 +231,11 @@ function add() {
         eventTime,
         setEventTime,
         popupDate, 
-        setPopupDate
+        setPopupDate, 
+        includeDueTime, 
+        includeDateTime, 
+        setIncludeDueTime, 
+        setIncludeDateTime
     }
 
     return(

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../Todo.css'
 
 export default function DatePopup({setShowDatePopup, currentDate, popupDate, setPopupDate}){
@@ -17,6 +17,20 @@ export default function DatePopup({setShowDatePopup, currentDate, popupDate, set
         setPopupDate(selectedDate);
         closeDatePopup();
     }
+
+    function handleKeyDown(e){
+        if(e.key === 'Escape'){
+            setShowDatePopup(false);
+        }
+    } 
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown)
+        }
+    }, [])
 
     return(
         <div className='DateCon' onClick={closeDatePopup}>

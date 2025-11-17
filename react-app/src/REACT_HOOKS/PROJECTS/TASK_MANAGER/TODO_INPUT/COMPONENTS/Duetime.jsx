@@ -13,7 +13,7 @@ export default function DueTimePopup({setShowDueTimePopup,eventTime,setEventTime
         if(e.key === 'Escape'){
             setShowDueTimePopup(false);
         }
-    }
+    } 
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown);
