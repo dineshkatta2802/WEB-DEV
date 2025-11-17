@@ -37,12 +37,12 @@ export default function Carousel({currentSubKey}){
 
     return(
         <div>
-            <button className='PreviousBtn'><i class="fa-solid fa-angle-left"></i></button>
+            <button className='PreviousBtn'><i className="fa-solid fa-angle-left"></i></button>
             <div className='Content'>
                 {currentInnerKey}
                 <img src={currentImage} alt={`Image of a ${currentImage}`}/>
             </div>
-            <button className='NextButton'><i class="fa-solid fa-angle-right"></i></button>
+            <button className='NextButton'><i className="fa-solid fa-angle-right"></i></button>
         </div>
     );
 }

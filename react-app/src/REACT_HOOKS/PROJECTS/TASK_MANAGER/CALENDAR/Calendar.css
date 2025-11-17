@@ -178,21 +178,6 @@
     margin: 0;
     font-size: 4rem;
 }
-.event-popup-time, .meridian, .meridian option{
-    padding: 0;
-    margin: 0;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    letter-spacing: .3rem;
-    background-color: white;
-    color: #4c000f;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    box-shadow: 0rem 0rem .5rem 1rem white;
-
-}
 
 .hours, .minutes{
     font-family: "Bebas Neue", sans-serif;
@@ -213,14 +198,22 @@
     appearance: none;
 }
 
-.meridian, .meridian option{
-    border: none;
-    outline: none;
+.event-popup-time{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    background-color: white;
+    color: #4c000f;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0rem 0rem .5rem 1rem white;
 }
 
-.meridian option:hover{
-    background-color: transparent;
-}
+
 .event-popup textarea{
     width: calc(100% - 1.5rem);
     height: calc(100% - 8.3rem);

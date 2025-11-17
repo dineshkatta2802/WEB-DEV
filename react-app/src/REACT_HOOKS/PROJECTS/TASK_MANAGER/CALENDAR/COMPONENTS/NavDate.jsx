@@ -1,23 +1,7 @@
 import React from 'react';
 import '../Calendar.css';
 
-export default function NavDate({currentMonth, currentYear, setCurrentMonth, setCurrentYear}){
-    // Array of months in a Year
-    const monthsOfYear = [
-        'January',
-        'February', 
-        'March', 
-        'April', 
-        'May', 
-        'June', 
-        'July', 
-        'August', 
-        'September', 
-        'October', 
-        'November', 
-        'December'
-    ];
-    
+export default function NavDate({currentMonth, currentYear, setCurrentMonth, setCurrentYear, monthsOfYear}){
     // lets create a function to navigate among the months
     function previousMonth(){
         setCurrentMonth((MonthNo) => (MonthNo === 0 ? 11 : MonthNo-1))

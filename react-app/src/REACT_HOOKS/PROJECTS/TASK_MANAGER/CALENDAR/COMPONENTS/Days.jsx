@@ -2,24 +2,7 @@ import React from 'react';
 import EventPopup from './EventPopup.jsx';
 import '../Calendar.css';
 
-export default function Days({currentMonth, currentYear, currentDate, showEventPopup, setShowEventPopup}){    // In JS the Date Object takes "new Date(year, monthIndex, day)" as parameters
-    // *** currentYear : Gives us the current year s
-    // *** currentMonth + 1 :and since in JS the months index starts from zero we add 1 to it
-    // *** currentDate : it gives us the date of the month from 1-31
-    // ***** Note :  if u pass '0' in the Date parameter we get last date of the previous month so we add 1 to get the current month
-    // Finally the 'getDate' method returns the date of the month
-    const getNoOfDaysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-    // lets create another Date object to know the first day name of the month
-    // It returns the index values
-    const getFirstWeekDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-
-        function handleDayClick(day){
-            // Show popup for any clicked day
-            setShowEventPopup(true)
-        }
-
-
+export default function Days({ getNoOfDaysInMonth, getFirstWeekDayOfMonth, handleDayClick, currentMonth, currentYear, currentDate, showEventPopup, setShowEventPopup, handleEventChange, addTaskFromPopup, eventTask, eventTime,setEventTime}){    // In JS the Date Object takes "new Date(year, monthIndex, day)" as parameters
     return(
             <div className="days">
                 {[...Array(getFirstWeekDayOfMonth).keys()].map((_,index) => (
@@ -54,7 +37,7 @@ export default function Days({currentMonth, currentYear, currentDate, showEventP
                                                             onClick={() => handleDayClick(day+1)}>{day+1}</span>
                 ))}
 
-                {showEventPopup && <EventPopup setShowEventPopup={setShowEventPopup}/>}
+                {showEventPopup && <EventPopup setShowEventPopup={setShowEventPopup} handleEventChange={handleEventChange} addTaskFromPopup={addTaskFromPopup} eventTask={eventTask} eventTime={eventTime} setEventTime={setEventTime}/>}
             </div>
     );
 }

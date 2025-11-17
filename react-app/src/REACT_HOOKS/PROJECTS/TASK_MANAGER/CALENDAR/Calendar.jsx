@@ -1,33 +1,24 @@
-import React, { useState } from 'react';
 import NavDate from './COMPONENTS/NavDate';
 import WeekDays from './COMPONENTS/Weekdays';
 import Days from './COMPONENTS/Days';
 import './Calendar.css';
 
-export default function Calendar() {
-
-    // Date Object
-    const currentDate = new Date();
-    const [currentMonth, setCurrentMonth] = useState(currentDate.getMonth());
-    const [currentYear, setCurrentYear] = useState(currentDate.getFullYear());
-    const [showEventPopup, setShowEventPopup] = useState(false);
-
-
+export default function Calendar({currentMonth, setCurrentMonth, currentYear, setCurrentYear, currentDate, showEventPopup, setShowEventPopup, getNoOfDaysInMonth, getFirstWeekDayOfMonth, handleDayClick, handleEventChange, addTaskFromPopup, eventTask, eventTime,setEventTime, monthsOfYear}) {
     return (
         <div className={`CalendarCon ${showEventPopup ? 'dimmed' : ''}`}>
             <h1 className="heading">Calendar</h1>
 
-            <NavDate currentMonth={currentMonth} currentYear={currentYear} setCurrentMonth={setCurrentMonth} setCurrentYear={setCurrentYear}/>
+            <NavDate currentMonth={currentMonth} currentYear={currentYear} setCurrentMonth={setCurrentMonth} setCurrentYear={setCurrentYear} monthsOfYear={monthsOfYear}/>
 
             <WeekDays />
 
-            <Days currentMonth={currentMonth} currentYear={currentYear} currentDate={currentDate} showEventPopup={showEventPopup} setShowEventPopup={setShowEventPopup}/>
+            <Days getNoOfDaysInMonth={getNoOfDaysInMonth} getFirstWeekDayOfMonth={getFirstWeekDayOfMonth} handleDayClick={handleDayClick} currentMonth={currentMonth} currentYear={currentYear} currentDate={currentDate} showEventPopup={showEventPopup} setShowEventPopup={setShowEventPopup} handleEventChange={handleEventChange} addTaskFromPopup={addTaskFromPopup} eventTask={eventTask} eventTime={eventTime} setEventTime={setEventTime}/>
         </div>
     );
 }
 
 
-// -------------------------------------------------------------OG---------------------------------------------------------------------------------
+// -------------------------------------------------------------OG-Code---------------------------------------------------------------------------------
 // import React, { useState } from 'react';
 // import './Calendar.css';
 
