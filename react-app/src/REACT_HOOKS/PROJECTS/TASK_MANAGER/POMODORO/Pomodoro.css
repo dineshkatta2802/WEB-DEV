@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: black;
 }
 
 .Pomodoro{
@@ -14,6 +15,7 @@
     align-items: center;
     padding: 1rem;
     gap: 1rem;
+    box-shadow: 0 0rem 1rem 0 black; 
 }
 
 .Pomodoroheading, .mssg{
@@ -23,7 +25,7 @@
     text-align: center;
     font-size: 5rem;
     letter-spacing: .3rem;
-    color: #4c000f;
+    color: black;
 }
 
 .mssg{
@@ -42,7 +44,7 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background-color: #4c000f;
+    background-color: #2FA98C;
     border-radius: 2rem;
     padding: .5rem;
 }
@@ -52,7 +54,7 @@
     width: 100%;
     text-align: center;
     font-size: 6rem;
-    color: white;
+    color: black;
 }
 
 
@@ -76,8 +78,8 @@
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: .1rem;
     font-size: 2rem;
-    background-color: white;
-    color: #4c000f;
+    background-color: black;
+    color: #2FA98C;
 }
 
 .pomodoro-controls button:active{
@@ -85,7 +87,7 @@
 }
 
 .status{
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 
@@ -95,7 +97,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    color: white;
+    color: black;
 }
 
 .sliders label {
@@ -108,7 +110,7 @@
     width: 100%;
     height: 8px;
     border-radius: 5px;
-    background: #4c000f;
+    background: #2FA98C;
     outline: none;
     margin-top: 5px;
 }
@@ -116,7 +118,7 @@
 .sliders input[type="range"]::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 5px;
-    background: white;
+    background: black;
 }
 
 .sliders input[type="range"]::-webkit-slider-thumb {
@@ -124,25 +126,25 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #4c000f;            
+    background: #2FA98C;            
     border-radius: 50%;
     cursor: pointer;
     margin-top: -6px;    
-    box-shadow: 0 0rem .5rem 0 white; 
+    box-shadow: 0 0rem .5rem 0 black; 
 }
 
 /* Firefox support */
 .sliders input[type="range"]::-moz-range-thumb {
     width: 20px;
     height: 20px;
-    background: #4c000f;
+    background: #2FA98C;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0rem .5rem 0 white; 
+    box-shadow: 0 0rem .5rem 0 black; 
 }
 
 .sliders input[type="range"]::-moz-range-track {
     height: 8px;
-    background: #4c000f;
+    background: #2FA98C;
     border-radius: 5px;
 }

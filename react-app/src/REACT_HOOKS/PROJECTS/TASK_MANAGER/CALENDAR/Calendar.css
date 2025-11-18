@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: black;
 }
 
 .CalendarCon{
@@ -35,7 +36,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 5.5rem;
     text-align: center;
-    color: white;
+    color: black;
     letter-spacing: .3rem;
 }
 
@@ -51,7 +52,7 @@
 
 .navigation-date h2{
     font-size: 2.5rem;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end   ;
@@ -71,14 +72,14 @@
     border: none;
     border-radius: 50%;
     height: 3.5rem;
-    color: white;
+    color: black;
     cursor: pointer;
-    background-color: #4c000f;
+    background-color: #2FA98C;
 }
 
 .navigation-date-btns button:hover{
     /* background-color: #CA3F16; */
-        box-shadow: 0 0rem 1rem 0 white;
+        box-shadow: 0 0rem 1rem 0 black;
 }
 
 .weekdays{
@@ -86,7 +87,7 @@
     width: 100%;
     margin: 1rem 0;
     display: flex;
-    color: white;
+    color: black;
     flex-wrap: wrap;
 }
 
@@ -104,7 +105,7 @@
 
 .days{
     width: 100%;
-    color: white;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -124,7 +125,7 @@
 
 .days span:hover{
     /* background-color: #CA3F16; */
-    box-shadow: 0 0rem 1rem 0 white;
+    box-shadow: 0 0rem 1rem 0 black;
     border-radius: 50%;
 }
 
@@ -138,9 +139,9 @@
 } */
 
 .days .current-date{
-    background-color: #4c000f;
+    background-color: #2FA98C;
     border-radius: 50%;
-    box-shadow: 0 0rem 1rem 0 white;
+    box-shadow: 0 0rem 1rem 0 black;
 }
 
 .event-popup{
@@ -153,7 +154,7 @@
     position: absolute;
     border-radius: 2rem;
     padding: 2.5rem;
-    background-color: #4c000f;
+    background-color: #2FA98C;
     /* flex */
     display: flex;
     justify-content: center;
@@ -161,7 +162,7 @@
     flex-direction: column;
     gap: 2rem;
     overflow: hidden;
-    box-shadow: 0 0rem 1rem 0 white;
+    box-shadow: 0 0rem 1rem 0 black;
 }
 
 .time-input{
@@ -185,9 +186,9 @@
     outline: none;
     border: none;
     background-color: transparent;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: black;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -204,13 +205,13 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
     letter-spacing: .3rem;
-    background-color: white;
-    color: #4c000f;
+    background-color: black;
+    color: #2FA98C;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 0rem 0rem .5rem 1rem white;
+    box-shadow: 0rem 0rem .5rem 1rem black;
 }
 
 
@@ -225,7 +226,7 @@
     resize: none;
     margin-top: 0;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     letter-spacing: .1rem;
 }
@@ -242,7 +243,7 @@
 
 .event-popup textarea::placeholder{
     letter-spacing: .2rem;
-    color: white;
+    color: black;
 }
 
 .event-popup textarea:focus::placeholder{
@@ -250,7 +251,7 @@
 }
 
 .event-popup textarea:focus{
-    box-shadow: 0 0rem 1rem 0 white;
+    box-shadow: 0 0rem 1rem 0 black;
 }
 
 .event-popup-btn{
@@ -260,9 +261,9 @@
     border-radius: inherit;
     font-size: 2rem;
     cursor: pointer;
-    box-shadow: 0 0rem 1rem 0 white;
+    box-shadow: 0 0rem 1rem 0 black;
     border: none;
-    color: #4c000f;
+    color: #2FA98C;
     letter-spacing: .2rem;
 }
 
@@ -282,8 +283,8 @@
     border-radius: 50%;
     cursor: pointer;
     background-color: transparent;
-    color: white;
-    box-shadow: 0 0rem 1rem 0 white;
+    color: black;
+    box-shadow: 0 0rem 1rem 0 black;
 }
 
 .close-event-popup:active{
