@@ -60,15 +60,15 @@ export default function Pomodoro() {
         </div>
 
         <div className="pomodoro-controls">
-          <button className="start" onClick={() => setIsRunning(true)}>
+          <button className="start" onClick={() => setIsRunning(true)} title="Click to start timer">
             Start
           </button>
 
-          <button className="stop" onClick={() => setIsRunning(false)}>
+          <button className="stop" onClick={() => setIsRunning(false)} title="Click to stop timer">
             Stop
           </button>
 
-          <button className="reset" onClick={reset}>
+          <button className="reset" onClick={reset} title="Click to reset timer">
             Reset
           </button>
         </div>
