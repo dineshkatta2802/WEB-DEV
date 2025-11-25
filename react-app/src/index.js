@@ -23,7 +23,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/BASIC/USEREDUCER.jsx"
-import Project from "./REACT_HOOKS/PROJECTS/QR_CODE/QR_Code.jsx"
+import Project from "./PROJECTS/CHARACTER_PROFILE(ANIME)/Main"
 // import Project from "./REACT_HOOKS/PROJECTS/TASK_MANAGER/TODO_INPUT/COMPONENTS/DatePopup.jsx"
 // import "./style.css";
 
