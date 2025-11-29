@@ -112,7 +112,7 @@
   <li>Dynamic Modal Animations – Compute initial modal positions and toggle visibility</li>
 </ol>
 
-<h2>9. Miscellaneous (Combined Hooks):</h2>
+<h2>Miscellaneous (Combined Hooks):</h2>
 <ol>
   <li>Pixel Pattern Lab – UseState & UseEffect</li>
   <li>Code Snippet Vault – UseState & UseEffect</li>
