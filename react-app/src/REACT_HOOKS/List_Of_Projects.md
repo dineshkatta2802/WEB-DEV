@@ -14,7 +14,7 @@
 
 <h2>Miscellaneous : </h2>
 <ol>
-<li>UseState & UseEffect => Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array <li>
+<li>UseState & UseEffect => Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array </li>
 <li>UseState & UseEffect => Code snippet vault — save favorite snippets with tag filters using state only.</li>
 <li>UseState & UseEffect => Live Typing DNA Visualizer – convert text to colored base-pair bars (A,T,G,C) and animate changes</li>
 <li>UseState & UseRef => Tiny kanban board — draggable task lanes with instant state updates.</li>
