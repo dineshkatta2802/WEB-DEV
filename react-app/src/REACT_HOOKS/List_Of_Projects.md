@@ -19,5 +19,5 @@
 
 <h2>Miscellaneous : </h2>
 <ol>
-<li>Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array (UseState & UseEffect)</li>
+<li>UseState & UseEffect => Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array <li>
 </ol>
