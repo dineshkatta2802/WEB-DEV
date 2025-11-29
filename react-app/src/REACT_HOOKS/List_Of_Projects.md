@@ -22,6 +22,24 @@
   <li>Scroll Progress Indicator – Shows how far the user has scrolled down a page dynamically.</li>
 </ol>
 
+<h2>3. UseReducer:</h2>
+<ol>
+  <li>Theme & Settings Manager – Manage app theme, font size, and preferences with a single state reducer.</li>
+  <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations.</li>
+</ol>
+
+<h2>4. UseRef:</h2>
+<ol>
+  <li>Focus Tracker – Track which input field is currently focused without re-rendering.</li>
+  <li>Click Position Logger – Log mouse click positions on a page in real-time.</li>
+  <li>Timer Stopwatch – Implement a simple stopwatch that runs without causing re-renders.</li>
+  <li>Scroll Position Saver – Keep track of scroll positions of multiple sections to restore later.</li>
+  <li>Draggable Element – Drag elements on a page by tracking mouse movements.</li>
+  <li>Text Highlighter – Highlight selected text dynamically on a webpage without triggering re-renders.</li>
+  <li>Scroll Spy – Track which section is currently visible on the viewport for active navigation.</li>
+  <li>Click Outside Detector – Detect clicks outside a particular component and trigger actions.</li>
+</ol>
+
 <h2>Miscellaneous :</h2>
 <ol>
   <li>Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array (<strong>UseState & UseEffect</strong>)</li>
@@ -35,5 +53,17 @@
   <li>Live Search with Debounce – Fetches search results as user types with debounce (UseState, useRef & UseEffect)</li>
   <li>Speech Recognition Notes – Records and updates live transcription from mic input (UseState, useRef & UseEffect)</li>
   <li>Infinite Scrolling Feed – Load new items as the user scrolls (UseState, useRef, useCallback & UseEffect)</li>
+<li>Async Data Fetcher – Fetch and manage API data with loading, success, and error states (UseReducer & UseEffect)</li>
+<li>Drag & Drop Organizer – Reorder items visually in a list/grid with state updates (UseReducer, UseState & UseRef)</li>
+<li>Chat Interface – Real-time messages with input handling, typing indicators, and scroll management (UseReducer & UseEffect)</li>
+<li>Quiz App with Timer – Dynamic questions with a countdown timer and scoring (UseReducer, UseState & UseEffect)</li>
+<li>Infinite Image Carousel – Cycle through images smoothly while avoiding unnecessary re-renders (<strong>UseRef</strong>)</li>
+  <li>Interactive Carousel Slider – Control slide positions and animations (<strong>UseRef & UseState</strong>)</li>
+  <li>Video Player with Custom Controls – Play, pause, or skip video using refs for HTML media elements (<strong>UseRef & UseState</strong>)</li>
+  <li>Auto-Scrolling Chat Window – Keep the scroll at the bottom as new messages arrive (<strong>UseRef & UseEffect</strong>)</li>
+  <li>Form Validation Highlighter – Highlight invalid fields dynamically while retaining input values (<strong>UseRef & UseState</strong>)</li>
+  <li>Animated Canvas Sketchpad – Draw on a canvas and animate strokes without re-rendering (<strong>UseRef</strong>)</li>
+  <li>Typing Speed Visualizer – Track keystrokes with refs but need state to display live WPM/accuracy (<strong>UseRef & UseState</strong>)</li>
+  <li>Resizable Split Pane – Adjust widths of two panels by dragging while storing dimensions in refs (<strong>UseRef & UseState</strong>)</li>
 </ol>
 
