@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+}
+
+.TodoCon{
+    width: 100%;
+    height: 100%;
+    /* background-color: #2FA98C;
+    box-shadow: 0 0rem .5rem 0 black; */
+    border-radius: inherit;
+    padding: 1rem;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transform: translateY(-10px); */
+}
+
+.heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5.5rem;
+    text-align: center;
+    color: black;
+    letter-spacing: .3rem;
+}
+
+.eventInfo{
+    height: 100%;
+    /* background-color: black;  */
+    /* background-color: #2FA98C;  */
+    border-radius: inherit;
+    padding: 1rem;
+    /* flex */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: hidden;
+}
+
+.eventInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: aqua; */
+}
+
+.eventInput .btns{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 2rem; 
+    /* background-color: aquamarine; */
+}
+
+.eventInput textarea{
+    width: 100%;
+    height: 100%;
+    rows: 4;
+    columns: 50;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    resize: none;
+    overflow-wrap: break-word;
+    black-space: pre-wrap;
+}
+
+.eventInput textarea::-webkit-scrollbar{
+    appearance: none;
+}
+
+.eventInput button{
+    width: 8rem;
+    height: 5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #2FA98C;
+    color: black;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: 0 0rem .5rem 0 black; 
+}
+
+.eventInfo button:active{
+    transform: scale(.98);
+}
+
+.eventInfoCustomization{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: aqua; */
+}
+
+.eventInfoCustomization button{
+    width: 100%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: black;
+    color: #2FA98C;
+    box-shadow: 0 0rem .5rem 0 #2FA98C; 
+}
+
+.eventInfoCustomization button:active{
+    transform: scale(.98);
+}
+
+
+.todo-time-input{
+    background-color: black;
+    width: 50%;
+    height: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.todo-time-input p{
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.todo-hours, .todo-minutes{
+    font-family: "Bebas Neue", sans-serif;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-top: 2px solid #2FA98C;
+    border-bottom: 2px solid #2FA98C;
+    color: #2FA98C;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.todo-time-input input[type='number']::-webkit-outer-spin-button,
+.todo-time-input input[type='number']::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.todo-event-popup-time{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    background-color: #2FA98C;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0rem 0rem .5rem 1rem #2FA98C;
+}
+
+.DateCon, .PriorityCon, .DueTimeCon{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    background-color: #2FA98C;
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+    box-shadow: 0 0rem 1rem 0 black;
+    transform: translate(150px, 230px);
+}
+
+.DateCon{
+    color: #2FA98C;
+}
+
+/* .PriorityCon{
+    width: 200px;
+    height: 200px;
+    transform: translate(-150px, 350px);
+} */
+
+
+.followingDates, .followingPriority, .followingDueTime{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #2FA98C;
+}
+
+.followingDates button, .followingPriority button{
+    font-family: "Bebas Neue", sans-serif;
+    width: 75%;
+    border-radius: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0rem 1rem 0 black;
+    border: none;
+    color: #2FA98C;
+    padding: 1rem;
+    letter-spacing: .2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.today{
+    color: #2FA98C;
+}
+
+
+.date{
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.name{
+    font-family: "Bebas Neue", sans-serif;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.PriorityCon{
+    transform: translate(280px, 230px);
+}
+
+.DueTimeCon{
+    height: 20%;
+    transform: translate(10px, 330px);
+}
+
+
+.time-input{
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.time-input p{
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+}
+
+.hours, .minutes{
+    font-family: "Bebas Neue", sans-serif;
+    height: 5rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.time-input input[type='number']::-webkit-outer-spin-button,
+.time-input input[type='number']::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.event-popup-time{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    background-color: black;
+    color: #2FA98C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0rem 0rem .5rem 1rem black;
+}
+
+.eventInfoCustomization [type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; /* For older WebKit browsers */
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex; /* Use flexbox for centering content */
+    align-items: center;
+    justify-content: center;
+    }
+
+input[type="checkbox"]:checked {
+    background-color: #2FA98C;
+    border-color: #2FA98C;
+    }
+
+input[type="checkbox"]:checked::before {
+    content: '✔'; 
+    color: white;
+    font-size: 14px;
+    }

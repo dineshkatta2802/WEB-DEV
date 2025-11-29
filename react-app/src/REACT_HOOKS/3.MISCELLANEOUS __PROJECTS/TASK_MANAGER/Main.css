@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    /* font-family: "Bebas Neue", sans-serif; */
+    font-family: "Comfortaa", sans-serif;
+    color: black;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body ,#root{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(360deg,BLACK, #DCDDDD 20px, #17876D);
+    /* background: linear-gradient(360deg, #100C08, #2FA98C, #CA3F16, #FF9408); */
+    /* background: linear-gradient(360deg, #2FA98C, #FF9408); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Glass{
+    padding: 10px;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    position: relative;
+}
+
+.Schedulers{
+    padding: 1rem;
+    width: 60%;
+    height: 100%;
+    position: relative;
+    border-radius: inherit;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .8rem 3.2rem 0 black;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    gap: 1rem;
+}
+
+.customize{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

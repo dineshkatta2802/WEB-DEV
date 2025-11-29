@@ -1,4 +1,5 @@
 // import React from 'react';
+
 // import ReactDOM from 'react-dom/client';
 // import './index.css';
 // import App from './App';
@@ -23,7 +24,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/BASIC/USEREDUCER.jsx"
-import Project from "./3. ADDING_INTERACTIVITY/PROJECT-CHARACTER_PROFILE(ANIME)/Main"
+import Project from "./REACT_HOOKS/2.USEEFFECT/GPS/GPS.jsx"
 // import Project from "./REACT_HOOKS/PROJECTS/TASK_MANAGER/TODO_INPUT/COMPONENTS/DatePopup.jsx"
 // import "./style.css";
 
@@ -39,6 +40,7 @@ root.render(
 // Optional manual render if building custom hooks
 // const root = ReactDOM.createRoot(document.getElementById('root'))
 // export function renderApp() {
+
 //   root.render(
 //     <React.StrictMode>
 //       <Project />

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+.Pomodoro{
+    width: 100%;
+    height: 50%;
+    background-color: #f2f2f2;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 0rem 1rem 0 black; 
+}
+
+.Pomodoroheading, .mssg{
+    width: 300px;
+    max-width: 350px;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    color: black;
+}
+
+.mssg{
+    width: 40%;
+    /* background-color: aqua; */
+    font-family: "Comfortaa", sans-serif;
+    font-size: 3rem;
+}
+
+.time,.sliders{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #2FA98C;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+
+.timerCount{
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    color: black;
+}
+
+
+
+.pomodoro-controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.pomodoro-controls button{
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+    background-color: black;
+    color: #2FA98C;
+}
+
+.pomodoro-controls button:active{
+    transform: scale(.98);
+}
+
+.status{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sliders {
+    width: 250px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+}
+
+.sliders label {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.sliders input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #2FA98C;
+    outline: none;
+    margin-top: 5px;
+}
+
+.sliders input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+    background: black;
+}
+
+.sliders input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2FA98C;            
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;    
+    box-shadow: 0 0rem .5rem 0 black; 
+}
+
+/* Firefox support */
+.sliders input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2FA98C;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0rem .5rem 0 black; 
+}
+
+.sliders input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: #2FA98C;
+    border-radius: 5px;
+}
