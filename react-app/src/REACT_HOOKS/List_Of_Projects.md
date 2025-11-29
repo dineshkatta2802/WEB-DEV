@@ -97,7 +97,7 @@
   <li>Paginated Data Table – Memoize sorting/filtering functions for fast rendering</li>
 </ol>
 
-<h2>8. useLayoutEffect:</h2>
+<h2>8. UseLayoutEffect:</h2>
 <ol>
   <li>DOM Element Size Tracker – Measure element dimensions before paint</li>
   <li>Synchronized Scroll Animation – Animate elements smoothly with scroll</li>
