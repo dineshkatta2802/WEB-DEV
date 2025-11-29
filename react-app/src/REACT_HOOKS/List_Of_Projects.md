@@ -1,69 +1,135 @@
 <h1>List of Projects Using React State</h1>
 
-<h2>1.UseState:</h2>
+<h2>1. UseState:</h2>
 <ol>
-  <li>Counter app - Counts the number of times the button is clicked</li>
-  <li>Simple todo - a normal todo app</li>
-  <li>Theme switcher - dark/light</li>
-  <li>Password strength checker - check the quality of the password</li>
-  <li>Speech note compressor — toggle listening state and interim transcript preview with state</li>
-  <li>Micro Physics Simulator – toggle gravity, bounce & friction presets for falling objects rendered in a box</li>
-  <li>Gesture Pattern Vault – record a short swipe/tap gesture sequence and verify it like a lock pattern</li>
-  <li>Realtime Font Playground – Font size, spacing, weight, and family controlled via small state variables to preview typography</li>
+  <li>Counter App – Counts the number of times the button is clicked</li>
+  <li>Simple Todo – A normal todo app</li>
+  <li>Theme Switcher – Dark/light toggle</li>
+  <li>Password Strength Checker – Check the quality of the password</li>
+  <li>Speech Note Compressor – Toggle listening state and preview interim transcript</li>
+  <li>Micro Physics Simulator – Toggle gravity, bounce, and friction presets for falling objects</li>
+  <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences</li>
+  <li>Realtime Font Playground – Control font size, spacing, weight, and family for live preview</li>
 </ol>
 
 <h2>2. UseEffect:</h2>
 <ol>
-  <li>Geolocation Tracker – Continuously fetches and updates user location on the map.</li>
-  <li>Network Status Monitor – Detects online/offline status changes and shows notifications.</li>
-  <li>Battery Status Tracker – Monitors device battery level and charging state in real-time.</li>
-  <li>Browser Tab Activity Logger – Logs user tab focus/blur activity for analytics.</li>
-  <li>Window Resize Visualizer – Dynamically updates layout or graphics based on window size changes.</li>
-  <li>Scroll Progress Indicator – Shows how far the user has scrolled down a page dynamically.</li>
+  <li>Geolocation Tracker – Continuously fetches and updates user location on a map</li>
+  <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li>
+  <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li>
+  <li>Browser Tab Activity Logger – Logs focus/blur activity</li>
+  <li>Window Resize Visualizer – Dynamically updates layout or graphics based on window size</li>
+  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li>
 </ol>
 
 <h2>3. UseReducer:</h2>
 <ol>
-  <li>Theme & Settings Manager – Manage app theme, font size, and preferences with a single state reducer.</li>
-  <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations.</li>
+  <li>Theme & Settings Manager – Manage app theme, font size, and preferences with a single reducer</li>
+  <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations</li>
+  <li>Async Data Fetcher – Fetch and manage API data with loading, success, and error states</li>
+  <li>Drag & Drop Organizer – Reorder items visually in a list/grid</li>
+  <li>Chat Interface – Real-time messages with input handling, typing indicators, and scroll management</li>
+  <li>Quiz App with Timer – Dynamic questions with countdown timer and scoring</li>
 </ol>
 
 <h2>4. UseRef:</h2>
 <ol>
-  <li>Focus Tracker – Track which input field is currently focused without re-rendering.</li>
-  <li>Click Position Logger – Log mouse click positions on a page in real-time.</li>
-  <li>Timer Stopwatch – Implement a simple stopwatch that runs without causing re-renders.</li>
-  <li>Scroll Position Saver – Keep track of scroll positions of multiple sections to restore later.</li>
-  <li>Draggable Element – Drag elements on a page by tracking mouse movements.</li>
-  <li>Text Highlighter – Highlight selected text dynamically on a webpage without triggering re-renders.</li>
-  <li>Scroll Spy – Track which section is currently visible on the viewport for active navigation.</li>
-  <li>Click Outside Detector – Detect clicks outside a particular component and trigger actions.</li>
+  <li>Focus Tracker – Track which input field is currently focused</li>
+  <li>Click Position Logger – Log mouse click positions in real-time</li>
+  <li>Timer Stopwatch – Simple stopwatch without re-renders</li>
+  <li>Scroll Position Saver – Restore scroll positions of multiple sections</li>
+  <li>Draggable Element – Drag elements on a page</li>
+  <li>Text Highlighter – Highlight selected text dynamically</li>
+  <li>Scroll Spy – Track which section is visible for navigation</li>
+  <li>Click Outside Detector – Detect clicks outside a component</li>
+  <li>Infinite Image Carousel – Cycle through images smoothly</li>
+  <li>Animated Canvas Sketchpad – Draw on canvas without re-rendering</li>
 </ol>
 
-<h2>Miscellaneous :</h2>
+<h2>5. UseContext:</h2>
 <ol>
-  <li>Pixel Pattern Lab – Click grid cells to draw pixel designs saved in 2D state array (<strong>UseState & UseEffect</strong>)</li>
-  <li>Code snippet vault — save favorite snippets with tag filters (<strong>UseState & UseEffect</strong>)</li>
-  <li>Voice memo bar — record/play status toggles using Web Speech API (<strong>UseState & UseEffect</strong>)</li>
-  <li>Live Typing DNA Visualizer – convert text to colored base-pair bars (A,T,G,C) and animate changes (<strong>UseState & UseEffect</strong>)</li>
-  <li>Tiny kanban board — draggable task lanes with instant state updates (<strong>UseState & UseRef</strong>)</li>
-  <li>Undo-able Canvas Doodle Pad – draw small sketches and maintain a stack-based stroke history for undo/redo (<strong>UseState & UseReducer</strong>)</li>
-    <li>Local Weather Fetcher – Fetch and update weather data periodically from an API (UseState & UseEffect)</li>
-  <li>Quick Settings Panel (like Win + A) – Toggles system-like settings, needs state management beyond effects (UseState, UseReducer & UseEffect)</li>
-  <li>Live Search with Debounce – Fetches search results as user types with debounce (UseState, useRef & UseEffect)</li>
-  <li>Speech Recognition Notes – Records and updates live transcription from mic input (UseState, useRef & UseEffect)</li>
-  <li>Infinite Scrolling Feed – Load new items as the user scrolls (UseState, useRef, useCallback & UseEffect)</li>
-<li>Async Data Fetcher – Fetch and manage API data with loading, success, and error states (UseReducer & UseEffect)</li>
-<li>Drag & Drop Organizer – Reorder items visually in a list/grid with state updates (UseReducer, UseState & UseRef)</li>
-<li>Chat Interface – Real-time messages with input handling, typing indicators, and scroll management (UseReducer & UseEffect)</li>
-<li>Quiz App with Timer – Dynamic questions with a countdown timer and scoring (UseReducer, UseState & UseEffect)</li>
-<li>Infinite Image Carousel – Cycle through images smoothly while avoiding unnecessary re-renders (<strong>UseRef</strong>)</li>
-  <li>Interactive Carousel Slider – Control slide positions and animations (<strong>UseRef & UseState</strong>)</li>
-  <li>Video Player with Custom Controls – Play, pause, or skip video using refs for HTML media elements (<strong>UseRef & UseState</strong>)</li>
-  <li>Auto-Scrolling Chat Window – Keep the scroll at the bottom as new messages arrive (<strong>UseRef & UseEffect</strong>)</li>
-  <li>Form Validation Highlighter – Highlight invalid fields dynamically while retaining input values (<strong>UseRef & UseState</strong>)</li>
-  <li>Animated Canvas Sketchpad – Draw on a canvas and animate strokes without re-rendering (<strong>UseRef</strong>)</li>
-  <li>Typing Speed Visualizer – Track keystrokes with refs but need state to display live WPM/accuracy (<strong>UseRef & UseState</strong>)</li>
-  <li>Resizable Split Pane – Adjust widths of two panels by dragging while storing dimensions in refs (<strong>UseRef & UseState</strong>)</li>
+  <li>Global Theme Engine – App-wide dark/light + palette switching</li>
+  <li>Design System Tokens – Global layout tokens like spacing, radius, font scale</li>
+  <li>App Identity Provider – Central source for app meta info</li>
+  <li>User Preference Sync – Share UI density, motion preference, font size</li>
+  <li>Role-Based UI Gatekeeper – Expose role and permission checks</li>
+  <li>Multi-Language Text Hub – Provide translations and current locale</li>
+  <li>Notification Center – Globally push/pop toast or banner messages</li>
+  <li>Session Badge System – Ephemeral shared badges across UI</li>
+  <li>Sound Settings Center – Global mute/volume/tone preferences</li>
+  <li>Developer Mode Switch – Toggle debug overlays or dev panels</li>
+  <li>Wallet Connection State – Share connected wallet address + network flag</li>
+  <li>Session Token Vault – Central store for API auth tokens</li>
+  <li>Collaboration Mode Flag – Toggle real-time collab UI mode</li>
+  <li>Global Keybind Config – Share active keybind sets globally</li>
 </ol>
 
+<h2>6. UseMemo:</h2>
+<ol>
+  <li>Matrix Cost Cache – Cache expensive 2D array computations</li>
+  <li>Emoji Hash Generator – Map text to stable emoji sequence</li>
+  <li>Fibonacci Pixel Art Renderer – Cache layout for Fibonacci-sized rows</li>
+  <li>Prime Palette Picker – Cache prime number to color mappings</li>
+  <li>Binary Tune Composer – Cache mapping of binary strings to rhythm patterns</li>
+  <li>Expensive Math Solver – Memoize CPU-heavy formulas</li>
+  <li>Dynamic Theme Color Generator – Cache color palette transformations</li>
+  <li>Avatar Pattern Generator – Generate unique SVG/Canvas patterns</li>
+  <li>Product Price Optimizer – Cache discount, tax, and total calculations</li>
+  <li>Text Similarity Scorer – Memoize cosine similarity computations</li>
+  <li>Performance Metrics Formatter – Cache formatted analytics summaries</li>
+  <li>FibFast Playground – Memoized Fibonacci calculator</li>
+  <li>Prime Matrix Studio – Generate prime number grids</li>
+  <li>Fractal Forge – Memoize generated fractal points</li>
+  <li>Live Code Diff Viewer – Cache diff results for same code pairs</li>
+</ol>
+
+<h2>7. UseCallback:</h2>
+<ol>
+  <li>Memoized Button Click Counter – Increment efficiently without re-renders</li>
+  <li>Dynamic Form Input Handler – Single memoized change handler for multiple inputs</li>
+  <li>Optimized List Filter – Memoized callback to prevent recalculation</li>
+  <li>Debounced Search Input – Memoized callback for debouncing user input</li>
+  <li>Dynamic Form Field Validator – Memoized validation callbacks for multiple fields</li>
+  <li>Memoized Todo List Actions – Callback functions for add/delete/toggle in large lists</li>
+  <li>Interactive Voting App – Memoize vote handlers for efficiency</li>
+  <li>Live Search Autocomplete – useCallback keeps fetch handler stable while useState/useEffect manage API calls</li>
+  <li>Drag-and-Drop List – Memoized handlers for smoother performance</li>
+  <li>Paginated Data Table – Memoize sorting/filtering functions for fast rendering</li>
+</ol>
+
+<h2>8. useLayoutEffect:</h2>
+<ol>
+  <li>DOM Element Size Tracker – Measure element dimensions before paint</li>
+  <li>Synchronized Scroll Animation – Animate elements smoothly with scroll</li>
+  <li>Dynamic Tooltip Positioner – Calculate tooltip position before render</li>
+  <li>Auto-Fit Text Container – Adjust font size to fit text perfectly</li>
+  <li>Sticky Header Animator – Adjust header size and style dynamically on scroll</li>
+  <li>Resizable Split Pane – Adjust panel widths/heights in real-time during drag</li>
+  <li>Responsive Grid Layout – Measure container/child sizes and adjust grid dynamically</li>
+  <li>Responsive Canvas Drawing Board – Canvas resizing and drawing</li>
+  <li>Interactive 3D Object Viewer – Position 3D objects after layout renders</li>
+  <li>Drag-and-Drop Dashboard Builder – Position elements with layout effect, manage state for drag</li>
+  <li>Dynamic Modal Animations – Compute initial modal positions and toggle visibility</li>
+</ol>
+
+<h2>9. Miscellaneous (Combined Hooks):</h2>
+<ol>
+  <li>Pixel Pattern Lab – UseState & UseEffect</li>
+  <li>Code Snippet Vault – UseState & UseEffect</li>
+  <li>Voice Memo Bar – UseState & UseEffect</li>
+  <li>Tiny Kanban Board – UseState & UseRef</li>
+  <li>Undo-able Canvas Doodle Pad – UseState & UseReducer</li>
+  <li>Live Search with Debounce – UseState, UseRef & UseEffect</li>
+  <li>Infinite Scrolling Feed – UseState, UseRef, UseCallback & UseEffect</li>
+  <li>Chat Room State Sync – UseState/UseReducer + UseEffect + UseContext</li>
+  <li>E-Commerce Cart Logic – UseReducer/UseState + UseContext</li>
+  <li>GPS Polling Dashboard – UseEffect + UseState + UseContext</li>
+  <li>Audio Object Controller – UseRef + UseEffect + UseState + UseContext</li>
+  <li>Network Packet Shape Classifier – UseMemo & UseEffect</li>
+  <li>AI Prompt Feature Tokenizer – UseMemo & UseState</li>
+  <li>Live Code Diff Viewer – UseMemo, UseState & UseEffect</li>
+  <li>Search Result Ranker – UseState, UseEffect & UseMemo</li>
+  <li>Large Dataset Table with Filters – UseState & UseMemo</li>
+  <li>Interactive Drawing Canvas – UseMemo & UseState</li>
+  <li>Expensive List Filter – UseCallback + UseState & UseMemo</li>
+</ol>
