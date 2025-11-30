@@ -2,10 +2,10 @@
 
 <h2>1. UseState:</h2>
 <ol>
-  <li>Counter App – Counts the number of times the button is clicked</li>
-  <li>Simple Todo – A normal todo app</li>
-  <li>Theme Switcher – Dark/light toggle</li>
-  <li>Password Strength Checker – Check the quality of the password</li>
+  <li>Counter App – Counts the number of times the button is clicked✅</li>
+  <li>Simple Todo – A normal todo app✅</li>
+  <li>Theme Switcher – Dark/light toggle✅</li>
+  <li>Password Strength Checker – Check the quality of the password✅</li>
   <li>Speech Note Compressor – Toggle listening state and preview interim transcript</li>
   <li>Micro Physics Simulator – Toggle gravity, bounce, and friction presets for falling objects</li>
   <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences</li>

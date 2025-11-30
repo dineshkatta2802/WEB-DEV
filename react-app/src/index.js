@@ -24,7 +24,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/BASIC/USEREDUCER.jsx"
-import Project from "./REACT_HOOKS/2.USEEFFECT/GPS/GPS.jsx"
+import Project from "./REACT_HOOKS/1.USESTATE/FONT-PLAYGROUND/FP.jsx"
 // import Project from "./REACT_HOOKS/PROJECTS/TASK_MANAGER/TODO_INPUT/COMPONENTS/DatePopup.jsx"
 // import "./style.css";
 
