@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging the Human-Machine Divide</title>
+    <style>
+        /* CSS Variables for image paths and main sizes */
+        :root {
+            /* Main Image */
+            --image-main-url: url('https://i.imgur.com/u7q7XGj.png'); 
+            
+            /* Hand Images - REPLACE THESE with your local file paths: */
+            --arm-left-url: url('left.png');
+            --arm-right-url: url('right.png');
+            
+            --window-width: 1000px;
+            --window-height: 60vh;
+        }
+
+        /* ------------------------- 🎨 GLOBAL STYLES & BACKGROUND ------------------------- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #f5f0e6; /* Light, textured color */
+            overflow: hidden; 
+        }
+
+        .grain-texture {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Subtle noise/grain effect simulation */
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255, 255, 255, 0.05),
+                rgba(0, 0, 0, 0.05) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* ------------------------- 🖼️ MAIN LAYOUT CONTAINER ------------------------- */
+        .page-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* ------------------------- ✋ FLANKING ARMS (CROPPED EFFECT) ------------------------- */
+        .arm {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 250px; 
+            height: 500px;
+            z-index: 10;
+            pointer-events: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #e0bfa5; /* Fallback color */
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2); 
+        }
+
+        /* Adam's hand */
+        .arm-left {
+            left: 0;
+            background-image: var(--arm-left-url);
+            background-position: left center;
+            image-rendering: auto; 
+        }
+
+        /* God's hand */
+        .arm-right {
+            right: 0;
+            background-image: var(--arm-right-url);
+            background-position: right center;
+            image-rendering: pixelated; 
+        }
+
+        /* ------------------------- 🖥️ MAIN WINDOW/SCREEN - BLACK & WHITE ------------------------- */
+        .main-content-window {
+            width: 80%;
+            max-width: var(--window-width);
+            height: var(--window-height);
+            min-height: 400px;
+            background-color: #f0f0f0; /* Light gray window background */
+            border: 3px solid black;
+            box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.6); /* Sharper, darker shadow */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            z-index: 20;
+        }
+
+        /* Window Header - BLACK & WHITE */
+        .window-header {
+            background-color: black; /* Black header */
+            border-bottom: 2px solid #555;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: white; /* White text on black header */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: white; /* White square indicator */
+            border: 1px solid #aaa;
+            margin-right: 10px;
+        }
+
+        /* Image Area (The Art inside the window) */
+        .image-area {
+            flex-grow: 1;
+            background-image: var(--image-main-url); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            image-rendering: pixelated; 
+            /* Uncomment this if your image needs to be forced to black and white: */
+            /* filter: grayscale(100%); */
+        }
+
+        /* ------------------------- 🔒 LOCK DIALOG BOX - BLACK & WHITE ------------------------- */
+        .lock-dialog {
+            position: absolute;
+            bottom: 15%; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black; /* Solid black background for the dialog */
+            padding: 8px 15px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #444; 
+        }
+
+        .lock-icon {
+            font-size: 16px;
+            color: white; /* White lock icon */
+        }
+
+        .lock-button {
+            background-color: transparent;
+            color: white; /* White button text */
+            border: none; 
+            padding: 0;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .lock-button:hover {
+            text-decoration: underline;
+            color: #ccc; /* Lighter hover color */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lockButton = document.querySelector('.lock-button');
+            let isNumLockOff = true;
+
+            lockButton.addEventListener('click', () => {
+                isNumLockOff = !isNumLockOff;
+                lockButton.textContent = isNumLockOff ? 'Num lock off' : 'Num lock on';
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+
+        <div class="main-content-window">
+            <header class="window-header">
+                <span class="header-indicator"></span>
+                <p>BRIDGING THE HUMAN MACHINE DIVIDE</p>
+            </header>
+
+            <div class="image-area">
+                <div class="lock-dialog">
+                    <span class="lock-icon">🔒</span>
+                    <button class="lock-button">Num lock off</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grain-texture"></div>
+
+</body>
+</html>

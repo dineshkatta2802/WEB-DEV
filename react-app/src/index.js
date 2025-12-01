@@ -23,9 +23,9 @@ import ReactDOM from "react-dom/client";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-// import Project from "./REACT_HOOKS/BASIC/USEREDUCER.jsx"
-import Project from "./REACT_HOOKS/1.USESTATE/FONT-PLAYGROUND/FP.jsx"
-// import Project from "./REACT_HOOKS/PROJECTS/TASK_MANAGER/TODO_INPUT/COMPONENTS/DatePopup.jsx"
+// import Project from "./REACT_HOOKS/1.USESTATE/GESTURE_PATTERN_VAULT/GPV.jsx"
+import Project from "./REACT_HOOKS/1.USESTATE/PASSWORD_STRENGTH_CHECKER/MainPSC.jsx"
+// import Project from "./REACT_HOOKS/1.USESTATE/FONT-PLAYGROUND/FP.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

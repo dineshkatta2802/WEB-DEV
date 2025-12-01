@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lugrasimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.GPVCon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.arm-left{
+    width: 100%;
+    height: 100%;
+    background-image: url(left.png);
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    left: 8.3rem;
+    top: 14.4rem;
+    will-change: top, left;
+}
+
+.arm-right{
+    width: 100%;
+    height: 100%;
+    background-image: url('right.png');
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    left: 103.1rem;
+    top: 29.3rem;
+    will-change: top, left;
+}
+
+.cld1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('cloud2.png');
+    background-repeat: no-repeat;
+    z-index: 5;
+    object-fit: cover;
+    transform: translate(-.5rem, 20rem);
+    transform: rotateZ('180deg');
+    left: 128.2rem;
+    top: -9.2rem;
+    /* mix-blend-mode: normal; */
+}
+
+.cld2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('cloud3.png');
+    background-repeat: no-repeat;
+    z-index: 5;
+    object-fit: cover;
+    transform: translate(-.5rem, 20rem);
+    transform: rotateZ('180deg');
+    left: -16.9rem;
+    top: -20.3rem;
+    /* mix-blend-mode: multiply; */
+}
+
+
+.browserCon{
+    width: 100vw;
+    max-width: 100rem;
+    height: 75vh;
+    min-height: 50rem;
+    border:.3rem solid white;
+    /* background-color: white; */
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, .7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.header{
+    /* font-family: "Lugrasimo", cursive; */
+    font-family: "IBM Plex Mono", monospace;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid white;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.Dot{
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 1rem;
+}
+
+.imgArea{
+    position: absolute;
+    width: 90vw;
+    max-width: 100rem;
+    height: 75vh;
+    min-height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.lefthand{
+    width: 103.5rem;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(left.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: translate(-18rem, 5rem);
+}
+
+.righthand{
+    width: 30rem;
+    height: 100%;
+    background-image: url(right.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+    object-fit: cover;
+    transform: translate(-.5rem, 20rem);
+    transform: rotateZ('180deg');
+}
+
+
+.panel{
+    font-family: "IBM Plex Mono", monospace;
+    z-index: 4;
+    color: white;
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    top: 4rem;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.controls button{
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+}
+
+.controls button:focus{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-gap: 1rem;
+    margin: 2rem auto;
+}
+
+.cell{
+    width: 8rem;
+    height: 8rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+    font-size: 2rem;
+}
+
+.cell.active{
+    background-color: black;
+    color: white;
+    transform: scale(.95);
+}
+
+.message{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    min-height: 3rem;
+}
+
+.info{
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
