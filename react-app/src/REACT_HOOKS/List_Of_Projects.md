@@ -6,9 +6,9 @@
   <li>Simple Todo – A normal todo app✅</li>
   <li>Theme Switcher – Dark/light toggle✅</li>
   <li>Password Strength Checker – Check the quality of the password✅</li>
-  <li>Speech Note Compressor – Toggle listening state and preview interim transcript</li>
   <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences✅</li>
   <li>Realtime Font Playground – Control font size, spacing, weight, and family for live preview✅</li>
+  <li>Speech Note Compressor – Toggle listening state and preview interim transcript</li>
 </ol>
 
 <h2>2. UseEffect:</h2>

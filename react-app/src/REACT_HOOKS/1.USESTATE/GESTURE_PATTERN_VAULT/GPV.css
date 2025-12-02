@@ -194,7 +194,7 @@ body{
     border: none;
 }
 
-.controls button:focus{
+.controls button:hover{
     background: rgba(0, 0, 0, 0.5);
     color: white;
 }
