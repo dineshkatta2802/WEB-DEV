@@ -6,19 +6,39 @@
   <li>Simple Todo – A normal todo app✅</li>
   <li>Theme Switcher – Dark/light toggle✅</li>
   <li>Password Strength Checker – Check the quality of the password✅</li>
-  <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences✅</li>
   <li>Realtime Font Playground – Control font size, spacing, weight, and family for live preview✅</li>
+  <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences✅</li>
   <li>Speech Note Compressor – Toggle listening state and preview interim transcript.</li>
 </ol>
 
 <h2>2. UseEffect:</h2>
 <ol>
   <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
-  <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li>
-  <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li>
-  <li>Browser Tab Activity Logger – Logs focus/blur activity</li>
-  <li>Window Resize Visualizer – Dynamically updates layout or graphics based on window size</li>
+  <li>Aesthetic Weather Dashboard (Auto Theme Based on Weather)</li>
+  <li>Auto Image Carousel - Change the image every interval</li>
+  <li>Scrollytelling, Parallax Scrolling, Multi-layer Image Parallax, Faux 3D Animation Effects, Animated Gradient Effects, Kinetic Typography</li>
+  <li>Cursor Star Trail</li>
+  <li>Glassmorphic Floating Cards (Parallax Reactive UI)</li>
+  <li>Soft Scroll-Reactive Floating Text</li>
+  <li>Horizontal Aesthetic Gallery That Scrolls With Wheel</li>
+  <li>Zen Blossom Animation (Particles + useEffect loops)</li>
+  <li>Pastel Liquid Loader (Morphing Shapes)</li>
+  <li>Retro Vaporwave Noise & Scanline Effect</li>
+  <li>Day → Night Ambient Scene (Auto Time Switch)</li>
+  <li>Cosmic Status Dashboard</li>
   <li>Scroll Progress Indicator – Shows scroll progress dynamically</li>
+  <!-- <li></li> -->
+  <!-- <li>Flight Radar Minute Ping – Fetches nearest flight data every 30s on mount (API : AviationStack)</li> -->
+  <!-- <li>Space Image of Moment – Fetches ultra-HD images, then swaps softly using effect cleanup (API: astro imagery)</li> -->
+  <!-- <li>Neon News Streamer – Effect fetches latest dev/tech headlines every 5 sec, text crawls like marquee</li> -->
+  <!-- <li>Global Dashcam Live Viewer – Pull live public traffic or city cams via APIs like EarthCam or OpenTraffic.</li> -->
+  <!-- <li>ATC Sky Audio Canvas – Pulls aviation radio streams from LiveATC.net API and visualizes sound intensity as ambient animated particles.</li> -->
+
+  <!-- <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li> -->
+  <!-- <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li> -->
+  <!-- <li>Browser Tab Activity Logger – Logs focus/blur activity</li> -->
+  <!-- <li>Window Resize Visualizer – Dynamically updates layout or graphics based on window size</li> -->
+  <!-- <li>Poster Auto Carousel Loader – Fetches trending movie posters on render lifecycle (API : TMDB)</li> -->
 </ol>
 
 <h2>3. UseReducer:</h2>
