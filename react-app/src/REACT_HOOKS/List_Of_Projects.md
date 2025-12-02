@@ -13,7 +13,7 @@
 
 <h2>2. UseEffect:</h2>
 <ol>
-  <li>Geolocation Tracker – Continuously fetches and updates user location on a map</li>
+  <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
   <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li>
   <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li>
   <li>Browser Tab Activity Logger – Logs focus/blur activity</li>
@@ -113,6 +113,7 @@
 
 <h2>Miscellaneous (Combined Hooks):</h2>
 <ol>
+  <li>AI Image Analyzer (Vision API Wrapper) - Analyses the image and display labels,scores.</li>
   <li>Pixel Pattern Lab – UseState & UseEffect</li>
   <li>Code Snippet Vault – UseState & UseEffect</li>
   <li>Voice Memo Bar – UseState & UseEffect</li>
