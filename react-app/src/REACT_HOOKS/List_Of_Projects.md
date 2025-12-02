@@ -26,7 +26,7 @@
   <li>Retro Vaporwave Noise & Scanline Effect</li>
   <li>Day → Night Ambient Scene (Auto Time Switch)</li>
   <li>Cosmic Status Dashboard</li>
-  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li>
+  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li> 
   <!-- <li></li> -->
   <!-- <li>Flight Radar Minute Ping – Fetches nearest flight data every 30s on mount (API : AviationStack)</li> -->
   <!-- <li>Space Image of Moment – Fetches ultra-HD images, then swaps softly using effect cleanup (API: astro imagery)</li> -->
