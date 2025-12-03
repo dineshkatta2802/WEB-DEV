@@ -14,9 +14,8 @@
 <h2>2. UseEffect:</h2>
 <ol>
   <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
-  <li>Aesthetic Weather Dashboard (Auto Theme Based on Weather)</li>
+  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li> 
   <li>Auto Image Carousel - Change the image every interval</li>
-  <li>Scrollytelling, Parallax Scrolling, Multi-layer Image Parallax, Faux 3D Animation Effects, Animated Gradient Effects, Kinetic Typography</li>
   <li>Cursor Star Trail</li>
   <li>Glassmorphic Floating Cards (Parallax Reactive UI)</li>
   <li>Soft Scroll-Reactive Floating Text</li>
@@ -26,7 +25,8 @@
   <li>Retro Vaporwave Noise & Scanline Effect</li>
   <li>Day → Night Ambient Scene (Auto Time Switch)</li>
   <li>Cosmic Status Dashboard</li>
-  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li> 
+  <li>Aesthetic Weather Dashboard (Auto Theme Based on Weather)</li>
+  <li>Scrollytelling, Parallax Scrolling, Multi-layer Image Parallax, Faux 3D Animation Effects, Animated Gradient Effects, Kinetic Typography</li>
   <!-- <li></li> -->
   <!-- <li>Flight Radar Minute Ping – Fetches nearest flight data every 30s on mount (API : AviationStack)</li> -->
   <!-- <li>Space Image of Moment – Fetches ultra-HD images, then swaps softly using effect cleanup (API: astro imagery)</li> -->
