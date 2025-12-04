@@ -24,7 +24,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/1.USESTATE/GESTURE_PATTERN_VAULT/GPV.jsx"
-import Project from "./REACT_HOOKS/2.USEEFFECT/CURSOR_STAR_TRAIL/CST.jsx"
+import Project from "./REACT_HOOKS/2.USEEFFECT/AUTO_IMAGE_SLIDER/AIS.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -15,7 +15,7 @@
 <ol>
   <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
   <li>Scroll Progress Indicator – Shows scroll progress dynamically</li> 
-  <li>Auto Image Carousel - Change the image every interval</li>
+  <li>Auto Image Carousel - Change the image every interval✅</li>
   <li>Cursor Star Trail</li>
   <li>Glassmorphic Floating Cards (Parallax Reactive UI)</li>
   <li>Soft Scroll-Reactive Floating Text</li>
@@ -33,7 +33,6 @@
   <!-- <li>Neon News Streamer – Effect fetches latest dev/tech headlines every 5 sec, text crawls like marquee</li> -->
   <!-- <li>Global Dashcam Live Viewer – Pull live public traffic or city cams via APIs like EarthCam or OpenTraffic.</li> -->
   <!-- <li>ATC Sky Audio Canvas – Pulls aviation radio streams from LiveATC.net API and visualizes sound intensity as ambient animated particles.</li> -->
-
   <!-- <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li> -->
   <!-- <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li> -->
   <!-- <li>Browser Tab Activity Logger – Logs focus/blur activity</li> -->

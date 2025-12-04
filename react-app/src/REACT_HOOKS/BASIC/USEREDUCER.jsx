@@ -285,9 +285,9 @@ export default function TodoList(){
                         <li className='task' key={todo.id}>
                             {todo.task}
                             <button onClick={() => dispatch({
-                                type: 'Remove',
-                                id: todo.id
-                            })}>Remove</button>
+                                                                type: 'Remove',
+                                                                id: todo.id
+                                                            })}>Remove</button>
                         </li>
                     ))}
                 </ul>
