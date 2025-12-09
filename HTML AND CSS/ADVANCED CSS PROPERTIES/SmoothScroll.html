@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+        html{
+            scroll-behavior: smooth; /* This is responsible for the smooth scrolling*/
+        }
+
+        .item1{
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .item2{
+            background-color: aqua;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Check out the html element in css that is responsible for smooth scrolling -->
+    <div class="item1"><a href="#next">Go to the next page</a></div>
+    <div class="item2" id="next"></div>
+</body>
+</html>
