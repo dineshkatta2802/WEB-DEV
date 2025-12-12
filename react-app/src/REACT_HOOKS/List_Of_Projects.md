@@ -14,9 +14,9 @@
 <h2>2. UseEffect:</h2>
 <ol>
   <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
-  <li>Scroll Progress Indicator – Shows scroll progress dynamically</li> 
+  <li>Scroll Progress Indicator – Shows scroll progress dynamically✅</li> 
   <li>Auto Image Carousel - Change the image every interval✅</li>
-  <li>Cursor Star Trail</li>
+  <li>Cursor Trail</li>
   <li>Glassmorphic Floating Cards (Parallax Reactive UI)</li>
   <li>Soft Scroll-Reactive Floating Text</li>
   <li>Horizontal Aesthetic Gallery That Scrolls With Wheel</li>
@@ -54,7 +54,7 @@
   <li>Quiz App with Timer – Dynamic questions with countdown timer and scoring</li>
 </ol>
 
-<h2>4. UseRef:</h2>
+<h2>4.UseRef:</h2>
 <ol>
   <li>Focus Tracker – Track which input field is currently focused</li>
   <li>Click Position Logger – Log mouse click positions in real-time</li>
