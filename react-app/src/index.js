@@ -23,8 +23,7 @@ import ReactDOM from "react-dom/client";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-// import Project from "./REACT_HOOKS/1.USESTATE/GESTURE_PATTERN_VAULT/GPV.jsx"
-import Project from "./REACT_HOOKS/2.USEEFFECT/SCROLL_INDICATOR/SI.jsx"
+import Project from "./REACT_HOOKS/1.USESTATE/PASSWORD_STRENGTH_CHECKER/MainPSC.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

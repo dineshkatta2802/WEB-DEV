@@ -8,36 +8,40 @@
   <li>Password Strength Checker – Check the quality of the password✅</li>
   <li>Realtime Font Playground – Control font size, spacing, weight, and family for live preview✅</li>
   <li>Gesture Pattern Vault – Record and verify swipe/tap gesture sequences✅</li>
-  <li>Speech Note Compressor – Toggle listening state and preview interim transcript.</li>
+
+  <li>Speech Note Compressor – Toggle listening state and preview interim transcript</li>
 </ol>
 
 <h2>2. UseEffect:</h2>
 <ol>
-  <li>Geolocation Tracker – Continuously fetches and updates user location on a map✅</li>
-  <li>Scroll Progress Indicator – Shows scroll progress dynamically✅</li> 
-  <li>Auto Image Carousel - Change the image every interval✅</li>
-  <li>Cursor Trail</li>
-  <li>Glassmorphic Floating Cards (Parallax Reactive UI)</li>
-  <li>Soft Scroll-Reactive Floating Text</li>
-  <li>Horizontal Aesthetic Gallery That Scrolls With Wheel</li>
-  <li>Zen Blossom Animation (Particles + useEffect loops)</li>
-  <li>Pastel Liquid Loader (Morphing Shapes)</li>
-  <li>Retro Vaporwave Noise & Scanline Effect</li>
-  <li>Day → Night Ambient Scene (Auto Time Switch)</li>
-  <li>Cosmic Status Dashboard</li>
-  <li>Aesthetic Weather Dashboard (Auto Theme Based on Weather)</li>
-  <li>Scrollytelling, Parallax Scrolling, Multi-layer Image Parallax, Faux 3D Animation Effects, Animated Gradient Effects, Kinetic Typography</li>
-  <!-- <li></li> -->
-  <!-- <li>Flight Radar Minute Ping – Fetches nearest flight data every 30s on mount (API : AviationStack)</li> -->
-  <!-- <li>Space Image of Moment – Fetches ultra-HD images, then swaps softly using effect cleanup (API: astro imagery)</li> -->
-  <!-- <li>Neon News Streamer – Effect fetches latest dev/tech headlines every 5 sec, text crawls like marquee</li> -->
-  <!-- <li>Global Dashcam Live Viewer – Pull live public traffic or city cams via APIs like EarthCam or OpenTraffic.</li> -->
-  <!-- <li>ATC Sky Audio Canvas – Pulls aviation radio streams from LiveATC.net API and visualizes sound intensity as ambient animated particles.</li> -->
-  <!-- <li>Network Status Monitor – Detects online/offline status changes and shows notifications</li> -->
-  <!-- <li>Battery Status Tracker – Monitors battery level and charging state in real-time</li> -->
-  <!-- <li>Browser Tab Activity Logger – Logs focus/blur activity</li> -->
-  <!-- <li>Window Resize Visualizer – Dynamically updates layout or graphics based on window size</li> -->
-  <!-- <li>Poster Auto Carousel Loader – Fetches trending movie posters on render lifecycle (API : TMDB)</li> -->
+  <li>Auto Image Carousel – Change images automatically using intervals✅</li>
+  <li>Scroll Progress Indicator – Track and display scroll percentage✅</li>
+  <li>Window Resize Visualizer – React to viewport size changes✅</li>
+  <li>Network Status Monitor – Detect online/offline changes</li>
+  <li>Day → Night Theme Switch – Auto theme change based on time</li>
+  <li>Browser Tab Activity Logger – Track focus and blur events</li>
+  <li>Battery Status Tracker – Monitor battery level and charging state</li>
+  <li>Simple Cursor Follower – Single element follows mouse</li>
+
+  <!-- <li>Cursor Trail – Multiple elements follow cursor smoothly</li>
+  <li>Aesthetic Weather Dashboard – Fetch weather and auto-switch themes</li>
+  <li>Geolocation Tracker – Track user location (no map)✅</li>
+  <li>Scroll-Reactive Floating Text – Text reacts to scroll position</li>
+  <li>Horizontal Gallery Scroll – Wheel scroll controls horizontal movement</li>
+  <li>Cosmic Status Dashboard – Multiple auto-updating metrics</li>
+  <li>API Polling Dashboard – Fetch and refresh data at intervals</li> -->
+
+  <!-- <li>Geolocation Tracker with Map Sync – External map lifecycle handling</li>
+  <li>Scrollytelling Sections – Effects mount/unmount per scroll section</li>
+  <li>Multi-layer Parallax Scrolling – Depth-based scroll effects</li>
+  <li>Day → Night Ambient Scene – Animated environment transitions</li>
+  <li>Neon News Streamer – Poll headlines with animated marquee</li> -->
+
+  <!-- <li>Glassmorphic Floating Cards – Mouse-based parallax UI</li>
+  <li>Zen Blossom Animation – Particle system with effect loops</li>
+  <li>Pastel Liquid Loader – Morphing SVG or canvas shapes</li>
+  <li>Retro Vaporwave Noise & Scanlines – Timed visual overlays</li>
+  <li>Kinetic Typography System – Animated text driven by effects</li> -->
 </ol>
 
 <h2>3. UseReducer:</h2>
