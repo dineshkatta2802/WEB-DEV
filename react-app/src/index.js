@@ -23,7 +23,7 @@ import ReactDOM from "react-dom/client";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-import Project from "./REACT_HOOKS/1.USESTATE/PASSWORD_STRENGTH_CHECKER/MainPSC.jsx"
+import Project from "./REACT_HOOKS/3.USEREDUCER/FAKE_IMAGE_EDITOR/FIE.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

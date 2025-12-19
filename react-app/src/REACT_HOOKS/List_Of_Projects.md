@@ -17,11 +17,11 @@
   <li>Auto Image Carousel – Change images automatically using intervals✅</li>
   <li>Scroll Progress Indicator – Track and display scroll percentage✅</li>
   <li>Window Resize Visualizer – React to viewport size changes✅</li>
+  <li>Simple Cursor Follower – Single element follows mouse✅</li>
+  <li>Day → Night Theme Switch – Auto theme change based on time✅</li>
   <li>Network Status Monitor – Detect online/offline changes</li>
-  <li>Day → Night Theme Switch – Auto theme change based on time</li>
   <li>Browser Tab Activity Logger – Track focus and blur events</li>
   <li>Battery Status Tracker – Monitor battery level and charging state</li>
-  <li>Simple Cursor Follower – Single element follows mouse</li>
 
   <!-- <li>Cursor Trail – Multiple elements follow cursor smoothly</li>
   <li>Aesthetic Weather Dashboard – Fetch weather and auto-switch themes</li>

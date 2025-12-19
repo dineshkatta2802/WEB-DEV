@@ -51,7 +51,7 @@ const reducer = (state, action) => {
         case 'RESET_ALL':
             return {
                 ...state,
-                edits: { ...initialState.edits }
+                edits: { ...initialState.edits },
             };
 
         default:
