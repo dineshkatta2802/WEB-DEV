@@ -23,7 +23,9 @@ import ReactDOM from "react-dom/client";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-import Project from "./REACT_HOOKS/3.USEREDUCER/FAKE_IMAGE_EDITOR/FIE.jsx"
+// import Project from "./REACT_HOOKS/3.USEREDUCER/FAKE_IMAGE_EDITOR/FIE.jsx"
+import Project from "./REACT_HOOKS/3.USEREDUCER/TIC_TAC_TOE/TTT.jsx"
+// import Project from "./REACT_HOOKS/4.MISCELLANEOUS __PROJECTS/TASK_MANAGER/Main"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

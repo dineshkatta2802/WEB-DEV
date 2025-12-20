@@ -47,11 +47,14 @@
 <h2>3. UseReducer:</h2>
 <ol>
   <li>Theme & Settings Manager – Manage app theme, font size, and preferences with a single reducer</li>
+  <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations</li>
   <li>Image Edit Pipeline – Fake photoshop UI where brightness, contrast, filter stack & reset operations are reducer-controlled.✅</li>
   <li>Mars Rover Controller – A UI grid where commands like move, turn, detect obstacle, store path, return home are sent via reducer.</li>
+  <li>Game Turn Engine (Chess / TicTacToe / Cards)</li>
+  <li>Authentication Flow Simulator</li>
+  <li>Mars Rover / Robot Simulator</li>
   <li>Nebula Kanban — Motion-smooth kanban with gravity snap animations.</li>
   <li>Bento UI Layout Engine – Lets you swap, resize, randomize layout blocks. Reducer actions mutate a grid map. Think of it like rearranging Minecraft blocks but at UI level.</li>
-  <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations</li>
   <li>Async Data Fetcher – Fetch and manage API data with loading, success, and error states</li>
   <li>Drag & Drop Organizer – Reorder items visually in a list/grid</li>
   <li>Chat Interface – Real-time messages with input handling, typing indicators, and scroll management</li>
