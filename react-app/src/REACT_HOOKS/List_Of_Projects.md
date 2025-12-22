@@ -19,13 +19,13 @@
   <li>Window Resize Visualizer – React to viewport size changes✅</li>
   <li>Simple Cursor Follower – Single element follows mouse✅</li>
   <li>Day → Night Theme Switch – Auto theme change based on time✅</li>
+  <li>Geolocation Tracker – Track user location (no map)✅</li>
   <li>Network Status Monitor – Detect online/offline changes</li>
   <li>Browser Tab Activity Logger – Track focus and blur events</li>
   <li>Battery Status Tracker – Monitor battery level and charging state</li>
 
   <!-- <li>Cursor Trail – Multiple elements follow cursor smoothly</li>
   <li>Aesthetic Weather Dashboard – Fetch weather and auto-switch themes</li>
-  <li>Geolocation Tracker – Track user location (no map)✅</li>
   <li>Scroll-Reactive Floating Text – Text reacts to scroll position</li>
   <li>Horizontal Gallery Scroll – Wheel scroll controls horizontal movement</li>
   <li>Cosmic Status Dashboard – Multiple auto-updating metrics</li>
@@ -46,13 +46,13 @@
 
 <h2>3. UseReducer:</h2>
 <ol>
+  <li>Image Edit Pipeline – Fake photoshop UI where brightness, contrast, filter stack & reset operations are reducer-controlled.✅</li>
+  <li>Game Turn Engine (Chess / TicTacToe / Cards)✅</li>
+  <li>Multi-Step-Form Wizard</li>
   <li>Theme & Settings Manager – Manage app theme, font size, and preferences with a single reducer</li>
   <li>Counter Dashboard – Multiple counters with increment, decrement, reset, and batch operations</li>
-  <li>Image Edit Pipeline – Fake photoshop UI where brightness, contrast, filter stack & reset operations are reducer-controlled.✅</li>
   <li>Mars Rover Controller – A UI grid where commands like move, turn, detect obstacle, store path, return home are sent via reducer.</li>
-  <li>Game Turn Engine (Chess / TicTacToe / Cards)</li>
   <li>Authentication Flow Simulator</li>
-  <li>Mars Rover / Robot Simulator</li>
   <li>Nebula Kanban — Motion-smooth kanban with gravity snap animations.</li>
   <li>Bento UI Layout Engine – Lets you swap, resize, randomize layout blocks. Reducer actions mutate a grid map. Think of it like rearranging Minecraft blocks but at UI level.</li>
   <li>Async Data Fetcher – Fetch and manage API data with loading, success, and error states</li>

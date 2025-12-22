@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './FP.css'
-import { faM } from '@fortawesome/free-solid-svg-icons';
 
 export default function FontPlayground(){
     const [size, setSize] =  useState(10);
