@@ -25,7 +25,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // ----------------------------MY IMPORTED FILES---------------------------
 // import Project from "./REACT_HOOKS/3.USEREDUCER/FAKE_IMAGE_EDITOR/FIE.jsx"
 // import Project from "./REACT_HOOKS/5.MISCELLANEOUS __PROJECTS/TASK_MANAGER/Main"
-import Project from "./REACT_HOOKS/1.USESTATE/FONT-PLAYGROUND/FP"
+import Project from "./REACT_HOOKS/1.USESTATE/HOTEL_MANAGEMENT/MainHotel.jsx"
 // import "./style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
