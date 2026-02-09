@@ -18,7 +18,7 @@ const rules = [
         cs.map(c => (c.id === 'B' ? { ...c, val: 0 } : c)),
     },
 
-    // Total >= 20 => LOCK
+    // Total >= 20 => "LOCK"
     {
     condition: (cs) => cs.reduce((sum, c) => sum + c.val, 0) >= 20,
     action: () => 'LOCK',

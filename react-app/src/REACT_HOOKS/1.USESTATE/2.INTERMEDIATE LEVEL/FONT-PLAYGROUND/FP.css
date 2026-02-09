@@ -56,7 +56,6 @@ body{
 .grid {
     width: 100vw;
     height: 100vh;
-    position: fixed;
     inset: 0;
     position: absolute;
     background-image:
