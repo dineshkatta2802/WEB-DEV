@@ -14,7 +14,7 @@ export default function FontPlayground(){
         fontFamily: family
     }
 
-    return(
+    return( 
         <div className='FPCon'>
             <div className="playground"></div>
             <div className="grid"></div>

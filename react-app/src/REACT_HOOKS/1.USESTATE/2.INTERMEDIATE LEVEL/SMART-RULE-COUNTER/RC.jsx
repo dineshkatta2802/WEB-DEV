@@ -79,8 +79,8 @@ return (
         <div className="buttons">
         {counters.map(c => (
             <div key={c.id} className="buttonEle">
-            <span><button onClick={() => counterUpdater(c.id, 1)}>+</button></span>
-            <span><button onClick={() => counterUpdater(c.id, -1)}>-</button></span>
+                <span><button onClick={() => counterUpdater(c.id, 1)}>+</button></span>
+                <span><button onClick={() => counterUpdater(c.id, -1)}>-</button></span>
             </div>
         ))}
         </div>
