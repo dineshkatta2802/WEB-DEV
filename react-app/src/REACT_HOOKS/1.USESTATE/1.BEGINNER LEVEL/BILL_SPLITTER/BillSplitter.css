@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Oswald:wght@300;400;500;600&display=swap');
+
+:root{
+    --primary : #3869F4;
+    --seondary : #111A24;
+    --tertiary : #151F2C;
+
+    --darkBase : #0D131A;
+
+    --card-bg : #141E29;
+    --card-hover : #172334;
+    --border : #223247;
+
+    --button-bg : #3869F4;
+    --button-hover : #2F5CE0;
+    --button-active : #274BC2;
+    --button-text : #FFFFFF;
+    --button-shadow : rgba(56,105,244,0.35);
+
+    --ip-bg : #101821;
+    --ip-border : #223247;
+    --ip-focus : #3869F4;
+    --ip-placeholder : #6B7A90; 
+
+    --primary-text : #E6EDF5;
+    --seondary-text : #9FB0C6;
+    --muted-text : #6B7A90;
+
+    --accent-soft-red: #E35D6A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--darkBase);
+}
+
+/* ===== Bill Container ===== */
+.BillCon{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* ===== Shared Section Styles ===== */
+.BillCon > div{
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    /* background: linear-gradient(180deg, #05614B, #073c33, #020E0E); */
+    background-color: var(--card-bg);
+    border: .2rem solid var(--card-hover);
+    display: flex;
+    flex-direction: column;
+}
+
+.BillCon > div:hover,
+.BillCon > div:focus,
+.BillCon > div:active{
+    box-shadow: 0 0 .5rem var(--button-active);
+}
+
+/* ===== Section 1 ===== */
+.sec1{
+    flex: 0.7;
+    gap: 1.5rem;
+}
+
+/* ===== Shared userInputs styles ===== */
+.userInputs1,
+.userInputs2 {
+    width: 100%;
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--darkBase);
+    backdrop-filter: blur(10rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.userInputs2 {
+    flex: 2;
+    min-height: 60%;
+}
+
+/* ===== Heading ===== */
+.heading{
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+/* ===== Shared DataEntry-1  & DataEntry-2(1) Styles ===== */
+.dataEntry1,
+.dataEntry2_1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ===== Shared DataEntry-1 Input & DataEntry-2(1) Styles ===== */
+.dataEntry1 input,
+.dataEntry2_1 input,
+.dataEntry2_1 select,
+.individualItemList input
+{
+    padding: .8rem 1rem;
+    flex: 1;
+    color: var(--primary);
+    border: .15rem solid var(--primary);
+    border-radius: 1rem;
+    background: transparent;
+    font-size: 1.5rem;
+    transition: .3s ease;
+}
+
+.individualItemList input{
+    flex: .37;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.dataEntry1 input::placeholder,
+.dataEntry2_1 input::placeholder,
+.dataEntry2_1 select::placeholder,
+.individualItemList input::placeholder{
+    color: var(--button-active);
+}
+
+.dataEntry1 input:focus,
+.dataEntry2_1 input:focus,
+.dataEntry2_1 select:focus,
+.individualItemList input:focus{
+    box-shadow: 0 0 .5rem var(--button-bg);
+    /* transform: scale(1.02); */
+    outline: none;
+}
+
+/* ===== Buttons ===== */
+.dataEntry1 button, 
+.deleteBtn,
+.newItem,
+.ieDel{
+    padding: 0 1.2rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    border: .15rem solid var(--primary);
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary);
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.deleteBtn,
+.ieDel{
+    height: 2.5rem;
+    border-radius: .7rem;
+}
+
+.dataEntry1 button span, 
+.deleteBtn span,
+.newItem span,
+.ieDel span{
+    position: relative;
+    z-index: 1;
+}
+
+/* Button hover animation */
+.dataEntry1 button::before, 
+.deleteBtn::before,
+.newItem::before,
+.ieDel::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-120%);
+    transition: transform .4s ease;
+    z-index: 0;
+}
+
+
+.clearBtn::before, 
+.deleteBtn::before,
+.ieDel::before{
+    background-color: var(--accent-soft-red);
+}
+
+.dataEntry1 .addBtn::before,
+.newItem::before{
+    background-color: var(--primary);
+    transform: translateX(120%);
+}
+
+.dataEntry1 button:hover::before,
+.deleteBtn:hover::before,
+.newItem:hover::before,
+.ieDel:hover::before{
+    transform: translateX(0);
+}
+
+.dataEntry1 button:hover,
+.deleteBtn:hover,
+.newItem:hover,
+.ieDel:hover{
+    color: var(--darkBase);
+}
+
+.clearBtn:hover, 
+.deleteBtn:hover,
+.ieDel:hover{
+    border: .15rem solid var(--accent-soft-red);
+}
+
+.dataEntry1 button:active, 
+.deleteBtn:active,
+.newItem:active,
+.ieDel:active{
+    transform: scale(.95);
+}
+
+/* ===== Names List ===== */
+.namesList{
+    /* width: auto; */
+    flex: initial;
+    max-height: 11.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--card-hover);
+    overflow: scroll;
+    padding: 1rem;
+}
+
+.namesList .empty,
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--button-active);
+}
+
+/* Names List ul */
+.namesList ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.namesList ul li ,
+.all li{
+    width: 100%;
+    padding: .3rem;
+    background-color: var(--secondary);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.namesList ul li:hover,
+.all li:hover {
+    background-color: var(--border);
+}
+
+/* Hide scrollbar */
+.namesList::-webkit-scrollbar,
+.sec2{
+    display: none;
+}
+
+.namesList,
+.sec2{
+    scrollbar-width: none;
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.all li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sec2 .all .totalBox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+
+    background-color: var(--card-hover);
+    border-top: .2rem solid var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.money{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-transform: capitalize;
+}
+
+.personRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+/* ===== Data Entry-2(1) Select ===== */
+.dataEntry2_1 select {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* ===== DataEntry-2(2) ===== */
+.dataEntry2_2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* ===== Data Entry-2(2) members & splitPercentage ===== */
+.dataEntry2_2 .membersCon,
+.dataEntry2_2 .percentCon{
+    flex: 1;
+    padding: .5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.dataEntry2_2 .membersCon .members,
+.dataEntry2_2 .percentCon .percent{
+    width: 100%;
+    min-height: 90%;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: var(--seondary);
+}
+
+.dataEntry2_2 .membersCon{
+    flex : .3;
+}
+
+.dataEntry2_2 .membersCon .heading,
+.dataEntry2_2 .percentCon .heading{
+    font-size: 1.5rem;
+}
+
+.members .pplList li{
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.members .pplList li:hover{
+    background-color: var(--border);
+    cursor: pointer;
+}
+
+.members .pplList button{
+    width: 3rem;
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid var(--button-hover);
+    border-radius: 5rem;
+}
+
+.members .pplList button:hover{
+    cursor: pointer;
+}
+
+.members .pplList button:active{
+    transform: scale(.9);
+    background-color: var(--primary);
+    color: var(--primary-text);
+}
+
+.percent ul li{
+    color: var(--primary);
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: .2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.percent ul li:hover{
+    background-color: var(--border);
+    cursor: pointer;
+}
+
+/* ===== Section 2 & 3 ===== */
+.sec2, 
+.sec3{
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 1.6rem;
+}
+
+.sec2{
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 6rem ;
+}

@@ -36,8 +36,7 @@ function counterUpdater(id, delta) {
     if (isLocked) return;
 
     const updated = counters.map(c =>
-    c.id === id ? { ...c, val: c.val + delta } : c
-    );
+    c.id === id ? { ...c, val: c.val + delta } : c);
 
     applyRules(updated);
 }

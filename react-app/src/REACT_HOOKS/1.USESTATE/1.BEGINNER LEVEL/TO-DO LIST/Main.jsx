@@ -30,7 +30,7 @@ export default function ToDo_List(){
 
                 <div className="buttons">
                 <button className='btn' onClick={() => {
-                                        if(task.trim() == ''){
+                                        if(task.trim() === ''){
                                                 alert("Enter Task")
                                             }
                                         else{
