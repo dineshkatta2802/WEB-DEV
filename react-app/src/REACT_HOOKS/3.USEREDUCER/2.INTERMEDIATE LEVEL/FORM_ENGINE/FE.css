@@ -2,13 +2,7 @@
     /* font-family: 'Aileron', sans-serif; */
 
     :root{
-        --bg : #16161a;
-        --stroke  : #010101;
-        --light : #fffffe;
-        --para : #94a1b2;
-        --highlight : #7f5af0;
-        --secondary  : #72757e;
-        --tertiary : #2cb67d;
+
     }
 
 @font-face {
@@ -26,8 +20,7 @@ html{
 }
 
 body{
-    color: var(--light);
-    background-color: var(--bg);
+    
 }
 
 .FECon{
