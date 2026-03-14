@@ -1,5 +1,5 @@
 
-const COUNTRIES = [
+export const COUNTRIES = [
     { name: "Afghanistan", code: "AF", dial: "93", flag: "🇦🇫" },
     { name: "Albania", code: "AL", dial: "355", flag: "🇦🇱" },
     { name: "Algeria", code: "DZ", dial: "213", flag: "🇩🇿" },
