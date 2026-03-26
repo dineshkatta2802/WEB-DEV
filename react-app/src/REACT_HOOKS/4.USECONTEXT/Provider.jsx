@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Theme } from './Theme';
 
-export default function ThemeProvider({children}){
-    const [theme, themeToggle] = useState('light');
+export default function THEME_PROVIDER({children}){
+    const [theme, setTheme] = useState('light');
 
     return(
-            <Theme value={[theme, themeToggle]}>
+            <Theme.Provider value={[theme, setTheme]}>
                 {children}
-            </Theme>
+            </Theme.Provider>
     );
 }
