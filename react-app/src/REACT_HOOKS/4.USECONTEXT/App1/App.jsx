@@ -1,7 +1,7 @@
 import React from 'react';
-import THEME_PROVIDER from './Provider';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import THEME_PROVIDER from '../Provider';
+import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 const style ={
     width  :'100%',

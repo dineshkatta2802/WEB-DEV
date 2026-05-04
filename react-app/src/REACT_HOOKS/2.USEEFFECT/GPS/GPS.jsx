@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import "./GPS.css"
 
 export default function GPS(){
@@ -6,7 +6,7 @@ export default function GPS(){
     const [loading, setLoading] = useState(true); // An text saying it is searching...
     const [fail, setFail] = useState(null); // An error mssg
 
-    useState(() => {
+    useEffect(() => {
         navigator.geolocation.getCurrentPosition( // Asks the permission
             (pos) => {
                 setCoords({

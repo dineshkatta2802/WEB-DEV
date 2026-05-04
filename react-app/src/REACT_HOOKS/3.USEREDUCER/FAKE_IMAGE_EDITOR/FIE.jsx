@@ -90,13 +90,24 @@ export default function FIE() {
     });
   };
 
+  // ----- If controlArr is an array of array
+  // const controlArr = [
+  //   ["Brightness", "brightness", 0, 200],
+  //   ["Contrast", "contrast", 0, 200],
+  //   ["Saturation", "saturation", 0, 200],
+  //   ["Grayscale", "grayscale", 0, 100],
+  //   ["Sepia", "sepia", 0, 100],
+  //   ["Hue", "hue", 0, 360],
+  // ];
+
+  // ----- If controlArr is an array of objects
   const controlArr = [
-    ["Brightness", "brightness", 0, 200],
-    ["Contrast", "contrast", 0, 200],
-    ["Saturation", "saturation", 0, 200],
-    ["Grayscale", "grayscale", 0, 100],
-    ["Sepia", "sepia", 0, 100],
-    ["Hue", "hue", 0, 360],
+    {label : "Brightness", key : "brightness", min : 0, max : 200},
+    {label : "Contrast", key : "contrast", min : 0, max : 200},
+    {label : "Saturation", key : "saturation", min : 0, max : 200},
+    {label : "Grayscale", key : "grayscale", min : 0, max : 100},
+    {label : "Sepia", key : "sepia", min : 0, max : 100},
+    {label : "Hue", key : "hue", min : 0, max : 360},
   ];
 
   return (
@@ -119,18 +130,38 @@ export default function FIE() {
           <img src={Img} alt="Image" style={style} />
         </div>
 
-        <div className="controls">
-          <div className="ranges">
-            {controlArr.map(([label, key, min, max]) => (
-              <div key={key}>
-                <label htmlFor={key}>{label}</label>
+        {/* ----- If controlArr is an array of array */}
+        {/* <div className="controls">
+          <div className="ranges" style={{backgroundColor  :'blue'}}>
+            {controlArr.map((item) => (
+              <div key={item[1]}>
+                <label htmlFor={item[1]}>{item[0]}</label>
                 <input
                   type="range"
-                  min={min}
-                  max={max}
-                  name={key}
-                  id={key}
-                  value={state.edits[key]}
+                  min={item[2]}
+                  max={item[3]}
+                  name={item[1]}
+                  id={item[1]}
+                  value={state.edits[item[1]]}
+                  onChange={handleUpdate}
+                />
+              </div>
+            ))}
+          </div> */}
+
+        {/* ----- If controlArr is an array of objects */}
+        <div className="controls">
+          <div className="ranges" style={{backgroundColor  :'blue'}}>
+            {controlArr.map((item) => (
+              <div key={item.key}>
+                <label htmlFor={item.key}>{item.label}</label>
+                <input
+                  type="range"
+                  min={item.min}
+                  max={item.max}
+                  name={item.key}
+                  id={item.key}
+                  value={state.edits[item.key]}
                   onChange={handleUpdate}
                 />
               </div>
