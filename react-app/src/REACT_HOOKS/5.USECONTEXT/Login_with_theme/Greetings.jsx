@@ -6,7 +6,7 @@ export default function Greetings(){
 
     return(
         <p>
-          You logged in as {currentUser}.  
+            You logged in as {currentUser}.  
         </p>
-    );
+    ); 
 }
