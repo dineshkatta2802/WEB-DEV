@@ -1,5 +1,6 @@
 <h1>Smart Typing Dashboard </h1>
 <i>6th May Thu</i>
+<br>
 <i>Status - Complete</i>
 
 <h3>What does it do?</h3>
