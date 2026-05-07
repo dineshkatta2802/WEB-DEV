@@ -23,7 +23,7 @@ import ReactDOM from "react-dom/client";
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-import Project from "./REACT_HOOKS/5.USECONTEXT/Theme/Main";
+import Project from "./PROJECTS/MINI/SMART_COUNTER_DASHBOARD/Main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
