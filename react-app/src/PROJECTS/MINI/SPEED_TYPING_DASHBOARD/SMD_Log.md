@@ -41,5 +41,21 @@ UseEffect -
 </li>
 </ol>
 
-<h2></h2>
-<p></p>
+<h2>Architecture — What Happens on Each Keystroke</h2>
+<pre>
+User types
+    ↓
+onChange fires
+    ├── Guard: if empty → reset everything, return early
+    ├── if isIdle → setIsIdle(false)
+    ├── setInputText(value)
+    ├── lastKeyStrokeRef.current = Date.now()
+    ├── if startTimerRef.current === null → set it to Date.now()
+    ├── Calculate speed (if duration > 0.1s) → setTypingSpeed()
+    └── clearTimeout old timer → idleTimerRef.current = setTimeout(2000)
+                                          ↓
+                                    [2s of no typing]
+                                          ↓
+                                    setIsIdle(true)
+                                    startTimerRef.current = null
+</pre>
