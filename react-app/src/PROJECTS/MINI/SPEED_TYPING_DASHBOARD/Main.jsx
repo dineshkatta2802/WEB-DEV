@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Keyboard from './Keyboard'
 import UserInput from './UserInput';
 import History from './History';
+import './MainStyle.css';
 import { HistoryContext } from './History_context';
 
 

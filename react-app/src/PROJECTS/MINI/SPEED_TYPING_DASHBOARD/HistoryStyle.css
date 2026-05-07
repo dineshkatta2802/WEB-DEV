@@ -11,6 +11,8 @@
     color: crimson;
     font-size: 3rem;
     text-decoration: underline;
+    text-shadow: .1rem .1rem 1rem rgba(220, 20, 60, 0.8);
+    letter-spacing: .1rem;
 }
 
 .hisCon ul{
