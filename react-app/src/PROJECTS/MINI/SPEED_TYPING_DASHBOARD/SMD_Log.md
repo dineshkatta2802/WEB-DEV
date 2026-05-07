@@ -63,8 +63,8 @@ onChange fires
 <h2>Idle Detection</h2>
 <ol>
 Every KeyStroke : 
-<li>clearTimeout(idleTimerRef.current) - <i>Cancel previous Timer</i></li>
-<li>idleTimerRef.current = setTimeout(() => setIsIdle(true), 2000) - <i>Start fresh</i></li>
+<li><b>clearTimeout(idleTimerRef.current)</b> - <i>Cancel previous Timer</i></li>
+<li><b>idleTimerRef.current = setTimeout(() => setIsIdle(true), 2000)</b> - <i>Start fresh</i></li>
 </ol>
 <pre>
 'H' typed → [====2s timer====]
