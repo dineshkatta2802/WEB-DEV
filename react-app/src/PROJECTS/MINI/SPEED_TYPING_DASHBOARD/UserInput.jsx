@@ -1,38 +1,46 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import './InputStyle.css'
+import { HistoryContext } from './History_context';
 
 export default function UserInput(){
     const [inputText, setInputText] = useState('');
     const [isIdle, setIsIdle] = useState(false);
     const [typingSpeed, setTypingSpeed] = useState(0);
+    const [status, setStatus] = useState('Not Saved');
+
     const idleTimerRef = useRef(null);
     const startTimerRef = useRef(null);
     const lastKeyStrokeRef = useRef(null);
+
+    const {setHistory} = useContext(HistoryContext);
 
 
     const handleChange = (e) => {
         if(e.target.value === ''){
             setInputText('');
+            setStatus('Idle');
             setTypingSpeed(0);
             startTimerRef.current = null;
             clearTimeout(idleTimerRef.current);
             return;
         };
 
-        if(isIdle) setIsIdle(false);
+        if(isIdle){
+            setIsIdle(false)
+            // setStatus('Idle')
+        };
+        setStatus('Saving');
 
         setInputText(e.target.value);
 
         lastKeyStrokeRef.current = Date.now();
 
-        //Total time taken
         if(startTimerRef.current === null){ // If startTimeRef not yet Started then start
             startTimerRef.current = Date.now(); // start once on first character
         }
-        // console.log('Start : ',(startTimerRef.current - startTimerRef)/1000);
-        // console.log('Current : ',(lastKeyStrokeRef.current - startTimerRef.current)*10/1000)
 
         const totalChars = e.target.value.length;
+        //Total time taken
         const duration = (lastKeyStrokeRef.current - startTimerRef.current) / 1000;
         if(duration > .1){
             const speed = totalChars/duration;
@@ -45,21 +53,38 @@ export default function UserInput(){
             setIsIdle(true)
             startTimerRef.current = null;
             setTypingSpeed(0);
+            setStatus('Saved');
         }, 2000); // start a new timer
-
+        
     }
-
+    
     useEffect(() => {
         return () => clearTimeout(idleTimerRef.current);
-    }, [])
+    }, []);
+    
+    useEffect(() => {
+        if(isIdle && inputText.trim() !== ''){
+            setHistory(prev => [inputText, ...prev].slice(0, 5))
+            setInputText('');
+        }
+    }, [isIdle, inputText])
 
-    return(
+    return(<div className='MainCon'>
         <div className='UserInputCon'>
             <input value={inputText} type="text" onChange={handleChange} placeholder='Enter any value'/>
             <div className='spanCon'>
                 <span>{isIdle ? 'Idle' : 'Typing'}</span>
+                <span>Saving : {status}</span>
                 <span>{typingSpeed.toFixed(1)}</span>
             </div>
+        </div>
+        {/* <div>
+            <ul>
+                {history.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div> */}
         </div>
     );
 }
