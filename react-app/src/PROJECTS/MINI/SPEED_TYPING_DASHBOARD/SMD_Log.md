@@ -3,11 +3,16 @@
 <br>
 <i>Status - Complete</i>
 
-<h3>What does it do?</h3>
-<p>A smart input typing speed tracker which measures the average speed of number of characters typed per sec</p>
-<p>Detects when the user is not typing - idle</p>
+<h2>What does it do?</h2>
+<p>A smart input typing speed tracker which measures the average speed of number of characters typed per sec.</p>
 
-<h2></h2>
+<h2>Features</h2>
+<ol>
+<li>Idle Detection - <i>Detects when the user is not typing</i></li>
+<li></li>
+</ol>
+
+
 <p></p>
 <h2></h2>
 <h2></h2>
