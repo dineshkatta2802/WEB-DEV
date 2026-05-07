@@ -59,3 +59,20 @@ onChange fires
                                     setIsIdle(true)
                                     startTimerRef.current = null
 </pre>
+
+<h2>Idle Detection</h2>
+<ol>
+Every KeyStroke : 
+<li>clearTimeout(idleTimerRef.current) - <i>Cancel previous Timer</i></li>
+<li>idleTimerRef.current = setTimeout(() => setIsIdle(true), 2000) - <i>Start fresh</i></li>
+</ol>
+<pre>
+'H' typed → [====2s timer====]
+'e' typed →           cancelled → [====2s timer====]
+'y' typed →                                cancelled → [====2s timer====]
+                                                               ↓ completes
+                                                          setIsIdle(true)
+</pre>
+
+<h2>Speed Calculations</h2>
+<>
