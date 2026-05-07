@@ -1,7 +1,7 @@
 # Dev Log — Smart Input Tracker
 **Date:** May 2026  
 **Stack:** React, CSS  
-**Status:** Complete (history feature pending)  
+**Status:** Complete 
 **File:** `UserInput.jsx` + `InputStyle.css`
 
 ---
@@ -96,7 +96,7 @@ setTimeout(() => setIsIdle(true), 2000); // ID lost, can never cancel
 
 // Fixed
 clearTimeout(idleTimerRef.current);
-idleTimerRef.current = setTimeout(() => setIsIdle(true), 2000);
+<mark>idleTimerRef.current</mark> = setTimeout(() => setIsIdle(true), 2000);
 ```
 
 ### Bug 2 — Stale state in totalChars (critical)
