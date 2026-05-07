@@ -96,7 +96,7 @@ setTimeout(() => setIsIdle(true), 2000); // ID lost, can never cancel
 
 // Fixed
 clearTimeout(idleTimerRef.current);
-<mark>idleTimerRef.current</mark> = setTimeout(() => setIsIdle(true), 2000);
+idleTimerRef.current = setTimeout(() => setIsIdle(true), 2000);
 ```
 
 ### Bug 2 — Stale state in totalChars (critical)
