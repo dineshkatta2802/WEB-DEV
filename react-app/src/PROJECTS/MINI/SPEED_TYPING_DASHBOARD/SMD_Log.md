@@ -1,6 +1,6 @@
 <h1>Smart Typing Dashboard </h1>
-<p>6th May Thu</p>
-<p>Status - Complete</p>
+<i>6th May Thu</i>
+<i>Status - Complete</i>
 
 <h3>What does it do?</h3>
 <p>A smart input typing speed tracker which measures the average speed of number of characters typed per sec</p>
