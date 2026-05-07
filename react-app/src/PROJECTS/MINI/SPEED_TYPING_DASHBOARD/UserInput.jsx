@@ -44,6 +44,7 @@ export default function UserInput(){
         idleTimerRef.current = setTimeout(() => {
             setIsIdle(true)
             startTimerRef.current = null;
+            setTypingSpeed(0);
         }, 2000); // start a new timer
 
     }
