@@ -8,8 +8,9 @@
 
 <h2>Features</h2>
 <ol>
-<li>Idle Detection - <i>Detects when the user is not typing</i></li>
-<li></li>
+<li>Idle Detection - <i>Detects when the user is not typing.</i></li>
+<li>Speed Calculations - <i>Calculate the number of characters typed per second.</i></li>
+<li>Reset Timer - <i>After every 2 seconds of being idle it resets.</i></li>
 </ol>
 
 
