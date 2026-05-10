@@ -67,7 +67,7 @@ export default function UserInput(){
             setHistory(prev => [inputText, ...prev].slice(0, 5))
             setInputText('');
         }
-    }, [isIdle, inputText])
+    }, [isIdle, inputText, setHistory])
 
     return(<div className='MainCon'>
         <div className='UserInputCon'>
