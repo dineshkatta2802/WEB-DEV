@@ -14,7 +14,6 @@ export default function UserInput(){
 
     const {setHistory} = useContext(HistoryContext);
 
-
     const handleChange = (e) => {
         if(e.target.value === ''){
             setInputText('');
@@ -33,15 +32,18 @@ export default function UserInput(){
 
         setInputText(e.target.value);
 
-        lastKeyStrokeRef.current = Date.now();
-
+        
         if(startTimerRef.current === null){ // If startTimeRef not yet Started then start
             startTimerRef.current = Date.now(); // start once on first character
         }
+        
+        // Update last keystroke time on every change
+        lastKeyStrokeRef.current = Date.now();
 
         const totalChars = e.target.value.length;
         //Total time taken
         const duration = (lastKeyStrokeRef.current - startTimerRef.current) / 1000;
+        // Calculate Speed only if duration is greater than 0.1 seconds to avoid division by zero or very high speeds
         if(duration > .1){
             const speed = totalChars/duration;
             setTypingSpeed(speed);
@@ -62,6 +64,7 @@ export default function UserInput(){
         return () => clearTimeout(idleTimerRef.current);
     }, []);
     
+    // History Update Effect
     useEffect(() => {
         if(isIdle && inputText.trim() !== ''){
             setHistory(prev => [inputText, ...prev].slice(0, 5))

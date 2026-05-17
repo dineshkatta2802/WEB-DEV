@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export default function Main(){
     const [inputText, setInputText] = useState('');
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const timerRef = useRef(null);
@@ -46,6 +46,7 @@ export default function Main(){
             }
 
             // Calling the function
+
         }, 2000);
 
         return () =>  {clearTimeout(timerRef.current)};

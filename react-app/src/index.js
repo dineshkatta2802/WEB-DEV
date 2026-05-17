@@ -23,7 +23,7 @@ import ReactDOM from "react-dom/client";
 // import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // ----------------------------MY IMPORTED FILES---------------------------
-import Project from "./MISCELLANEOUS_PROJECTS/MINI/SPEED_TYPING_DASHBOARD/Main";
+import Project from "./MISCELLANEOUS_PROJECTS/MINI/DRAGGABLE_ELEMENT/Main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
