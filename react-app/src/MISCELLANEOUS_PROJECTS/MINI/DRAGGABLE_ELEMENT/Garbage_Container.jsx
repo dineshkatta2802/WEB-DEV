@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Paper from './Paper';
 import './Style.css';
 
 export default function GarbageCon({title}) {
+    const [axisLock, setAxiLock] = useState('free');
+
     return (
         <div className='garbageCon'>
             <header className='header'>
@@ -10,6 +12,9 @@ export default function GarbageCon({title}) {
                 <p className='title'>{title}</p>
             </header>
             <Paper/>
+            <footer>
+                
+            </footer>
         </div>
     );
 }
