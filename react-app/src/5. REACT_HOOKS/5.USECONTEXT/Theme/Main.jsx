@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ThemeContext } from './Theme';
 import Form from './Form';
+
 export default function Main(){
     const [theme, setTheme] = useState(() => { return localStorage.getItem('currentTheme') ||  'light'});
     useEffect(() => {
