@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ThemeContext } from './Theme';
+import { ThemeContext } from './Context/Theme';
 import GarbageCon from './Garbage_Container';
 import './Style.css';
 

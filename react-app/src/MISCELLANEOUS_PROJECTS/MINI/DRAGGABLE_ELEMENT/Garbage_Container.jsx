@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Paper from './Paper';
+import React from 'react';
+import MyDrag from './MyDrag';
+import Canvas from './Canvas';
 import './Style.css';
 
 export default function GarbageCon({title}) {
-    const [axisLock, setAxiLock] = useState('free');
 
     return (
         <div className='garbageCon'>
@@ -11,10 +11,10 @@ export default function GarbageCon({title}) {
                 <span className='dot'></span>
                 <p className='title'>{title}</p>
             </header>
-            <Paper/>
-            <footer>
-                
-            </footer>
+            <MyDrag>
+                <Canvas/>
+                {/* <TrashZone/> */}
+            </MyDrag>
         </div>
     );
 }

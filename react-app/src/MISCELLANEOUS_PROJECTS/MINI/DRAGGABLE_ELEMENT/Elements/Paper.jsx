@@ -116,3 +116,51 @@ return (
     </div>
     );
 }
+
+// ---------- FAQ'S ----------
+
+/**
+1) Why use useRef for position instead of useState?
+
+Using useRef allows us to store mutable values that persist across renders without causing re-renders when they change. 
+In this case, positionRef holds the current position of the element, and we can update it directly without triggering a re-render of the component. 
+This is crucial for performance, especially during dragging, as we want to update the position smoothly without unnecessary re-renders.
+
+-----
+
+2) Why use requestAnimationFrame (RAF)?
+
+requestAnimationFrame (rAF) is the browser's way of saying: "tell me what you want drawn, and I'll do it at the best possible moment — right before I paint the screen."
+
+The browser has a paint cycle tied to your monitor's refresh rate. 
+At 60hz, that's every ~16.67ms. rAF gives you a callback slot that runs at the start of each frame, before the GPU composites anything.
+
+-----
+
+3) Why transform: translate() instead of left and top? 
+
+This is a CSS performance concept called the "Compositor layer". When you change left/top, the browser must:
+
+Recalculate layout (reflow) — expensive
+Repaint pixels — expensive
+Composite the result
+
+When you change transform, the browser skips steps 1 and 2 entirely and goes straight to step 3. 
+The element was already painted; the GPU just shifts the pixels. This is why transform-based animations feel instant even on slower devices. 
+
+-----
+
+4) Why snap to a grid?
+
+Snapping to a grid can improve the user experience by providing a sense of structure and alignment. 
+It can make it easier for users to position elements precisely and create a more organized layout. 
+In design tools, snapping to a grid helps maintain consistency and can speed up the design process by reducing the need for manual adjustments.
+
+-----
+
+5) Why save position in localStorage?
+
+Saving the position in localStorage allows the application to persist the state of the draggable element across page reloads. 
+This means that if a user moves the element to a specific location and then refreshes the page, the element will remain in that position instead of resetting to its initial state. 
+This enhances the user experience by providing continuity and allowing users to maintain their custom layout or configuration without losing it upon refreshing the page.
+ * */
