@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Albert Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.Main {
+    width: 100%;
+    height: 98vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5rem;
+}
+
+.sec-1 {
+    width: 20%;
+    height: 100%;
+    /* border-radius : 1.5rem; */
+    padding: .5rem;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: space-evenly; */
+    flex-direction: column;
+    gap: 3rem;
+    /* background-color: blue; */
+    /* border-right: 2px solid  #60519B; */
+    /* border-image: linear-gradient(90deg, white, #323548, #60519B, #60519B, white);
+    border-image-slice: 1; */
+}
+
+.sec-1 .logo {
+    width: 100%;
+    height: 30%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.sec-1 img {
+    width: 147px;
+    height: 147px;
+}
+
+.sec-1 .toggles { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem;
+    gap: .5rem;
+    /* background-color: aqua; */
+}
+
+.toggles .toggle_Name {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: black;
+    border-radius: 1rem;
+}
+
+.toggles .toggle_Name img{
+    width: 3rem;
+    height: 3rem;
+    color: white;
+}
+
+.active-icon {
+    filter: brightness(0) invert(1);
+}
+
+.sec-2 {
+    width: 50%;
+    height: 100%;
+    padding: .5rem;
+    border-radius : 1.5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sec-2 .Opera {
+    width: 100%;
+    height: 60%;
+    background-color: #3235481A;
+    border-radius: inherit;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.Opera .part-1 {
+    width: 100%;
+    height: 60%;
+    font-weight: 350;
+    margin-top: .5rem;
+    /* background-color: aqua; */
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.part-1 .Modes,
+.part-2 .Flag {
+    width : 35%;
+    height : 100%;
+    background-color: #464B641A;
+    border-radius: inherit;
+    padding: 1rem;
+    display: flex;
+    /* align-items: center;  */
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.Modes .modeNames,
+.Flag .flagNames {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: .3rem;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.Modes .mode_Names,
+.Flag .flagNames .flag_Names{
+    border-radius: .8rem;
+    display: flex;
+    padding: .5rem;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+    width: 90%;
+    height: 3.5rem;
+}
+
+.part-1 .Details {
+    width: 65%;
+    height: 100%;
+    background-color: #464B641A;
+    border-radius: inherit;
+    padding: 1rem;
+}
+
+.Details .detailNames {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.detail_Names_1,
+.detail_Names_2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail_Names_1 div,
+.detail_Names_2 div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.detail_Names_1 div input ,
+.detail_Names_2 div input {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #3235481A;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 4px #0000001A;
+    padding: .8rem;
+}
+
+.Opera .part-2 {
+    width: 100%;
+    height: 40%;
+    border-radius: inherit;
+    /* background-color: aqua; */
+    /* padding: 1rem; */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.part-2 .Attenuation {
+    width: 40%;
+    height: 100%;
+    background-color: #464B641A;
+    padding: 1rem;
+    border-radius: inherit;
+    font-size: 1.5rem;
+}
+
+.attenuation_Names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.atten_Name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.atten_Name input {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #3235481A;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 4px #0000001A;
+    padding: .8rem;
+}
+
+.part-2 .Flag {
+    width: 20%;
+    height: 100%;
+    background-color: #464B641A;
+    padding: 1rem;
+    border-radius: inherit;
+}
+.part-2 .Word {
+    width: 40%;
+    height: 100%;
+    background-color: #464B641A;
+    padding: 1rem;
+    border-radius: inherit;
+}
+
+
+.sec-2 .Beam {
+    width: 100%;
+    height: 40%;
+    border-radius: inherit;
+    background-color: #3235481A;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.BeamPanel {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.BeamPanel .colorsPanel{
+    max-width: 30%;
+    height: 98%;
+    border-radius: inherit;
+    background-color: #464B641A;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.colorsPanel div {
+    /* padding: 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.colorsPanel .color {
+    width: 50rem;;
+    height: 3rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: inset 1px 1px 4px #0000001A;
+}
+
+.colorsPanel .bin {
+    background-color: #60519B;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.BeamPanel .addPanel {
+    width: 20%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+}
+
+.addPanel div {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.west{
+    background: linear-gradient(90deg,#1E202C 50%, #5E3A4F);
+}
+
+.zenith {
+    background: linear-gradient(90deg, #1E202C 50%,#60519BCC );
+}
+
+.east {
+    background: linear-gradient(90deg, #1E202C 50%, #3B595F);
+}
+
+.addPanel div img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.BeamPanel .extra {
+    width: 50%;
+}
+.sec-3 {
+    width: 40%;
+    height: 100%;
+    padding: 1rem;
+    border-radius : 1.5rem;
+    background-color: blue;
+}
