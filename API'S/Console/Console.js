@@ -1,4 +1,4 @@
-//1. console.assert(conditon ,  message)
+//1. console.assert(condition ,  message)
 //      condition : if true ntg happens
 //      message  : only shown when the condition is false
 
@@ -34,8 +34,8 @@ console.countReset("bob");
 console.count("alice");
 
 //5. console.debug()
-// This method is used to log the debug level messges to the broser console
-// These messages are hiddens are hidden by default by some of the browser we can enable it by selecting "Verbose" or "Default"
+// This method is used to log the debug level messages to the browser console
+// These messages are hidden are hidden by default by some of the browser we can enable it by selecting "Verbose" or "Default"
 
 const user = { name: "Dinesh", role: "Developer" };
 console.debug("User details:", user);

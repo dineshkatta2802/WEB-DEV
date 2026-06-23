@@ -12,4 +12,4 @@ export default function MyProvider({theme, setTheme, children}){
             </UserContext>
         </ThemeContext.Provider>
     );
-}
+} 
