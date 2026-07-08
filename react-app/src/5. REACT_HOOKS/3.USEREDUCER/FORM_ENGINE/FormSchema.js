@@ -13,7 +13,6 @@ export const formSchema = [
             {name : 'maritalStatus', label : 'Marital Status', type : 'select', required : true, options : ['Married', 'Not Married']},
         ],
     },
-
     {
         section : 'Contact Information',
         fields : [

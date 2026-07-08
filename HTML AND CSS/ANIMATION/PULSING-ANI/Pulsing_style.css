@@ -34,7 +34,7 @@ body{
 
 .icon img{
     box-shadow: 2px 2px 3px white;
-    width: 10rem;
+    width: 10rem; 
     height: 10rem;
     object-fit: cover;
     border-radius: 50%;
