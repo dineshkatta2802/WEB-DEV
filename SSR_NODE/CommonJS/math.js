@@ -12,7 +12,7 @@ const subtract = (a, b) => {
 // module.exports = {add : add}
 // module.exports = {addition : add}
 
-// ----------
+// ----------------------------------------
 
 // Multiple Exports:
 // module.exports = {
@@ -27,3 +27,12 @@ const subtract = (a, b) => {
 //     addition : add,
 //     subtraction : subtract
 // }
+
+// ----------------------------------------
+
+// Inline Exports:
+// module.exports.add = add;
+// module.exports.addition = add;
+//            or   
+// exports.add = add;
+// exports.addition = add;
