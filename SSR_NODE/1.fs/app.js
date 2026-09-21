@@ -4,60 +4,59 @@ There are 3 styles of writing the methods of fs :
 2.Synchronous - fs.methodSync() - Need explicit variable
 3.Promises - fs.promises.method() - Need explicit variable & Require => "require(fs/promises)"
 
-Read
+=> Read : 
 readFile()	readFileSync()	promises.readFile()
 
-Write
+=> Write : 
 writeFile()	writeFileSync()	promises.writeFile()
 
-Append
+=> Append : 
 appendFile()	appendFileSync()	promises.appendFile()
 
-Create
+=> Create : 
 directory	mkdir()	mkdirSync()	promises.mkdir()
 
-Read
+=> Read : 
 directory	readdir()	readdirSync()	promises.readdir()
 
-Rename
+=> Rename : 
 move	rename()	renameSync()	promises.rename()
 
-Copy
+=> Copy : 
 copyFile()	copyFileSync()	promises.copyFile()
 
-Delete
+=> Delete : 
 rm()	rmSync()	promises.rm()
 
-File
+=> File : 
 info	stat()	statSync()	promises.stat()
 
-Access
+=> Access : 
 access()	accessSync()	promises.access()
 
-Permissions
+=> Permissions : 
 chmod()	chmodSync()	promises.chmod()
 
-Ownership
+=> Ownership : 
 chown()	chownSync()	promises.chown()
 
-Timestamps
+=> Timestamps : 
 utimes()	utimesSync()	promises.utimes()
 
-Symlink
+=> Symlink : 
 symlink()	symlinkSync()	promises.symlink()
 
-Read
+=> Read : 
 symlink	readlink()	readlinkSync()	promises.readlink()
 
-Real
+=> Real : 
 path	realpath()	realpathSync()	promises.realpath()
 
-Open
+=> Open : 
 open()	openSync()	promises.open()
 
-Truncate
+=> Truncate : 
 truncate()	truncateSync()	promises.truncate()
-
 */
 
 const fs = require('node:fs');
@@ -70,6 +69,7 @@ const fs = require('node:fs');
 fs.readFile('data.txt', 'utf8', (err, data) => {
     if(err) throw err;
     console.log(data);
+    return;
 })
 
 //Synchronous
@@ -90,6 +90,7 @@ fs.readFile('data.txt', 'utf8', (err, data) => {
 fs.writeFile('data.txt', 'Hello World', (err) => {
     if(err) throw err;
     console.log('File Written');
+    return;
 })
 
 //Synchronous
@@ -107,6 +108,7 @@ fs.writeFile('data.txt', 'Hello World', (err) => {
 fs.appendFile('data.txt', '\n This line is added', (err) => {
     if(err) throw err;
     console.log('File Appended');
+    return;
 })
 
 //Synchronous
@@ -121,9 +123,10 @@ fs.appendFile('data.txt', '\n This line is added', (err) => {
 
 // =>  4. mkdir()
 // Callback
-fs.mkdir('Directory Name', (err, data) => {
+fs.mkdir('Directory Name', (err) => {
     if(err) throw err;
     console.log('Directory Created');
+    return;
 })
 
 //Synchronous
@@ -141,6 +144,7 @@ fs.mkdir('Directory Name', (err, data) => {
 fs.mkdir('Directory Name', (err) => {
     if(err) throw err;
     console.log();
+    return;
 })
 
 //Synchronous
@@ -158,6 +162,7 @@ fs.mkdir('Directory Name', (err) => {
 fs.readdir('.', (err, files) => {
     if(err) throw err;
     console.log(files); // array of files
+    return;
 })
 
 //Synchronous
@@ -175,6 +180,7 @@ fs.readdir('.', (err, files) => {
 fs.rename('oldname.txt', "newname.txt", (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.renameSync('oldname.txt', 'newname.txt');
@@ -189,6 +195,7 @@ fs.rename('oldname.txt', "newname.txt", (err) => {
 fs.copyFile('Original.txt', "Backup.txt", (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.copyFileSync('Original.txt', 'Backup.txt');
@@ -203,6 +210,7 @@ fs.copyFile('Original.txt', "Backup.txt", (err) => {
 fs.rm('data.txt', (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.rmSync('data.txt');
@@ -226,7 +234,8 @@ stats.isSymbolicLink()
 fs.stat('data.txt', (err, stats) => {
     if(err) throw err;
 
-    console.log(stats.size());
+return;
+    console.log(stats.size);
     console.log(stats.isFile());
     console.log(stats.isDirectory());
 })
@@ -250,6 +259,7 @@ fs.stat('data.txt', (err, stats) => {
 fs.unlink('data.txt', (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.unlinkSync('data.txt');
@@ -264,6 +274,7 @@ fs.unlink('data.txt', (err) => {
 fs.truncate('data.txt', 10, (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.truncateSync('data.txt', 10);
@@ -278,6 +289,7 @@ fs.truncate('data.txt', 10, (err) => {
 fs.chmod('data.txt', 0o755, (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.chmodSync('data.txt', 0o755);
@@ -292,6 +304,7 @@ fs.chmod('data.txt', 0o755, (err) => {
 fs.chown('data.txt', 1000, 1000, (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.chownSync('data.txt', 1000, 1000);
@@ -307,6 +320,7 @@ const now = new Date();
 fs.utimes('data.txt', now, now, (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.utimesSync('data.txt', now, now);
@@ -321,6 +335,7 @@ fs.utimes('data.txt', now, now, (err) => {
 fs.symlink('Original.txt', 'ShortCut.txt', (err) => {
     if(err) throw err;
 })
+return;
 
 //Synchronous
 // const files = fs.symlinkSync('Original.txt', 'ShortCut.txt');
@@ -332,33 +347,35 @@ fs.symlink('Original.txt', 'ShortCut.txt', (err) => {
 
 // =>  16. readlink()
 // Callback
-fs.readLink('Shortcut.txt', (err, link) => {
+fs.readlink('Shortcut.txt', (err, link) => {
     if(err) throw err;
     console.log(link);
+    return;
 })
 
 //Synchronous
-// const files = fs.readLinkSync('Shortcut.txt');
+// const files = fs.readlinkSync('Shortcut.txt');
 // console.log(link);
 
 //Promises
-// const files = await fs.readLink('Shortcut.txt');
+// const files = await fs.readlink('Shortcut.txt');
 // console.log(link);
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 // =>  17. realPath()
 // Callback
-fs.realPath('./Shortcut.txt', (err, path) => {
+fs.realpath('./Shortcut.txt', (err, path) => {
     if(err) throw err;
     console.log(path);
+    return;
 })
 
 //Synchronous
-// const files = fs.realPathSync('./Shortcut.txt');
+// const files = fs.realpathSync('./Shortcut.txt');
 // console.log(path);
 
 //Promises
-// const files = await fs.realPath('./Shortcut.txt');
+// const files = await fs.realpath('./Shortcut.txt');
 // console.log(path);
 
