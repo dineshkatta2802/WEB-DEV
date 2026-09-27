@@ -1,28 +1,40 @@
-// const router = (req, res) => {
-//     if(req.method === 'GET' && req.url === '/products'){
-//         res.end('All Products');
-//         return;
-//     }
-//     if(req.method === 'POST' && req.url === '/products'){
-//         res.end('Create Product');
-//         return;
-//     }
-//     res.statusCode = 404;
-//     res.end("Route not found");
-// }
-
-// module.exports = router;
-
 const routesArray = [];
 
-const router = (req, res) => {
-    for(const route of routesArray){
-        if(route.method === req.method && route.path === req.url){
-            return route.handler(req,res);
+const matchRoutes = (routePath, requestPath) => {
+    const routeSegments = routePath.split('/').filter(Boolean);
+    const requestSegments = requestPath.split('/').filter(Boolean);
+
+    if(routeSegments.length !== requestSegments.length) return null;
+
+    const params = {};
+
+    for(let i=0; i< routeSegments.length; i++){
+        const routeSeg = routeSegments[i];
+        const requestSeg = requestSegments[i];
+
+        if(routeSeg.startsWith(':')){
+            const paramName = routeSeg.slice(1); // String - slice() not array splice()
+            // To handle encoded characters in the url : /products/hello%20world
+            params[paramName] = decodeURIComponent(requestSeg);
         }
-        res.statusCode = 404;
-        res.end('Route not found');
+        else if(routeSeg !== requestSeg) return null;
     }
+    return params;
+}
+
+const router = (req, res) => {
+    const url = new URL(req.url, 'http://localhost:3000');
+    for(const route of routesArray){
+        if(route.method !== req.method) continue;
+        const params = matchRoutes(route.path, url.pathname);
+        if(params !== null){ 
+            req.params = params;
+            req.query = url.searchParams;
+            return route.handler(req, res);
+        }
+    }
+    res.statusCode = 404;
+    res.end('Route not found');
 }
 
 router.get = function (path, handler){
@@ -49,4 +61,4 @@ router.delete = function (path, handler){
     });
 }
 
-modules.exports = router;
+module.exports = router;
