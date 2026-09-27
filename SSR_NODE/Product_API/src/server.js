@@ -1,26 +1,24 @@
 const http = require("node:http");
-    const router = require('./router');
-// import router from './router';
+const router = require('./router');
+const productController = require('./controllers/productController');
 
-router.get('/products', (req, res) => {
-    res.end("All Products");
-});
+// GET
+router.get('/products', productController.getProducts);
 
-router.get('/products/:id', (req, res) => {
-    res.end(`Product Id : ${req.params.id}`);
-});
+// GET :id
+router.get('/products/:id', productController.getProducts);
 
-router.post('/products', (req, res) => {
-    res.end("Create Products");
-});
+// POST
+router.post('/products', productController.createProduct);
 
-router.delete('/products', (req, res) => {
-    res.end("Delete Products");
-});
+// PUT
+router.put('./products/:id', productController.replaceProduct);
 
-router.delete('/products/:id', (req, res) => {
-    res.end(`Delete Id : ${req.params.id}`);
-});
+// PATCH
+router.patch('./products/:id', productController.updateProduct);
+
+// DELETE
+router.delete('/products', productController.deleteProduct);
 
 const server = http.createServer((req, res) => {
     router(req, res);

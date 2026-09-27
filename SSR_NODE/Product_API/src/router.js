@@ -53,6 +53,22 @@ router.post = function (path, handler){
     });
 }
 
+router.put = function (path, handler) {
+    routesArray.push({
+        method: 'PUT',
+        path,
+        handler
+    });
+}
+
+router.patch = function (path, handler) {
+    routesArray.push({
+        method: 'PATCH',
+        path,
+        handler
+    });
+}
+
 router.delete = function (path, handler){
     routesArray.push({
         method : 'DELETE',

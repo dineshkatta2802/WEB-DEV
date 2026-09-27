@@ -24,6 +24,13 @@ function create(element) {
     return element;
 }
 
+function update(id, item) {
+    const index = productsList.findIndex(p => p.id === id);
+    if(index === -1) return null;
+    productsList[index] = item;
+    return productsList[index];
+}
+
 function removeById(id) {
     const index = productsList.findIndex(p => p.id === id);
     if(index === -1) return null;
@@ -34,5 +41,6 @@ module.exports = {
     findAll,
     findById,
     create,
+    update,
     removeById
 }
