@@ -1,6 +1,6 @@
 const http = require("node:http");
-// const router = require('./router');
-import router from './router';
+    const router = require('./router');
+// import router from './router';
 
 router.get('/products', (req, res) => {
     res.end("All Products");

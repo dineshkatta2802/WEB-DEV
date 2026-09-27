@@ -1,41 +1,25 @@
-const productsList = [
-    {
-        id : 1,
-        name : 'Laptop',
-        price : 50000
-    },
-    {
-        id : 2,
-        name : 'Keyboard',
-        price : 2000
-    }
-];
-
-// let nextId = 3;
+const productRepository = require('../repositories/productRepositories');
 
 function getProducts() {
-    return productsList;
+    return productRepository.findAll();
 }
 
 function getProductsId(id) {
-    return productsList.find(p => p.id === id)
+    return productRepository.findById(id);
 }
 
 function createProduct(name, price) {
+    const productsList = productRepository.findAll();
     const newProduct = {
         id : productsList.length + 1,
         name,
         price
     }
-
-    productsList.push(newProduct);
-    return newProduct;
+    return productRepository.create(newProduct);
 }
 
 function deleteProduct(id) {
-    const index = productsList.findIndex(p => p.id === id);
-    if(index === -1) return null;
-    return productsList.splice(index, 1)[0];
+    return productRepository.removeById(id);
 }
 
 module.exports = {
