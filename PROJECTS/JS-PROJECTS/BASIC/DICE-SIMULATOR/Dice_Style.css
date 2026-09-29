@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con{
+    width: 50%;
+    height: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dice-face{
+    font-size: 200px;
+}
+
+.rolldice{
+    animation: rollDice 1s linear forwards;
+}
+
+@keyframes rollDice {
+0% {
+    transform: rotateX(0deg) rotateY(0deg);
+}
+50% {
+    transform: rotateX(180deg) rotateY(180deg);
+}
+100% {
+    transform: rotateX(360deg) rotateY(360deg);
+}
+}
+
+
+.btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+    transition: background-color .5s ;
+}
+
+.btn:hover{
+    background-color: darkcyan;
+}

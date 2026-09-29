@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite ID", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.panel {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .5;
+    height: 80vh;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: width 1s ease-in-out;
+}
+
+.panel h3 {
+    margin: 0;
+    color: white;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    left: 10px;
+    position: absolute;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.panel.active {
+    width: 70vw;
+    opacity: 1;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease 0.4s;
+}

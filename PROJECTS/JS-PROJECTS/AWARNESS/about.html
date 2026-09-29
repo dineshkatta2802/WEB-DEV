@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title id="aboutTitleTag">About Us - Awareness 360</title>
+    <meta name="description" content="Awareness 360: bridging the information gap by making government schemes simple, accessible and actionable for everyone.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- BARS ANIMATION -->
+    <div class="bars-ani" aria-hidden="true">
+        <div class="bars" style="--i:1 ; background-color: #28a745;"></div>
+        <div class="bars" style="--i:2 ; background-color: #28a745;"></div>
+        <div class="bars" style="--i:3 ; background-color: #28a745;"></div>
+        <div class="bars" style="--i:4 ; background-color: #28a745;"></div>
+        <div class="bars" style="--i:5 ; background-color: #28a745;"></div>
+        <div class="bars" style="--i:6 ; background-color: #28a745;"></div>
+    </div>
+
+    <!-- MAIN PAGE CONTENT (initially hidden until animation finishes) -->
+    <div id="main-content" style="opacity:0; visibility:hidden;">
+        <header class="main-header" style="background: linear-gradient(45deg, #28a745 0%, #1e7e34 100%);" role="banner">
+            <a class="logo" href="index.html" aria-label="Awareness 360 home" style="list-style: none; color: white; text-decoration: none;">Awareness 360</a>
+
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="schemes.html">Schemes</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button onclick="logout()" class="logout-button">Logout</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="static-page-content" role="main">
+            <!-- HERO / BANNER -->
+            <section class="page-banner about-banner" style="margin-bottom: 0;" aria-labelledby="about-heading">
+                <div class="banner-inner">
+                    <h1 id="about-heading">About Awareness 360</h1>
+                    <p class="lead">Making government welfare schemes easy to find, understand and apply for — so no eligible person is left behind.</p>
+                </div>
+            </section>
+
+            <!-- MISSION & VISION -->
+            <div class="static-content-block ani" aria-labelledby="mission-heading">
+                <div class="conSound">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <div>
+                                    <h2 style="color: #28a745;" id="mission-heading">Our Mission</h2>
+                <p>
+                    <strong>Awareness 360</strong> exists to break the information barrier between government welfare programs and the people they are meant to serve.
+                    We simplify complex official documents, identify eligibility clearly, provide step-by-step application guidance, and point users to verified application portals and local support resources.
+                </p>
+
+                <h3 style="color: #28a745;">Our Vision</h3>
+                <p>
+                    A future in which every eligible citizen — regardless of education, language, or location — can quickly discover the exact benefits they qualify for and apply confidently.
+                    We want informed citizens, higher scheme uptake, and reduced exclusion caused by confusing or inaccessible information.
+                </p>
+                </div>
+            </div>
+
+            <!-- THE NEED -->
+            <section class="static-content-block" aria-labelledby="need-heading">
+                <h2 style="color: #28a745;" id="need-heading">Why This Matters</h2>
+                <p>
+                    Many government schemes are underutilized because:
+                </p>
+                <ul>
+                    <li>Official guidelines are written in technical or legal language.</li>
+                    <li>Information is scattered across multiple websites and PDF documents.</li>
+                    <li>Benefit claim processes differ from state to state and require specific documents.</li>
+                    <li>Marginalized communities lack accessible, localized guidance in their preferred languages.</li>
+                </ul>
+                <p>
+                    Awareness 360 addresses these gaps by consolidating scope, eligibility, required documents, application steps, and official links — all with clear language and visual cues.
+                </p>
+            </section>
+
+            <!-- WHAT WE DO -->
+            <section class="static-content-block" aria-labelledby="features-heading">
+                <h2 id="features-heading">What We Do</h2>
+
+                <article aria-labelledby="feature-1">
+                    <h3 id="feature-1">Curated Scheme Summaries</h3>
+                    <p>Short, plain-language summaries that explain: who is eligible, what benefits are available, how and where to apply, and what documents are required.</p>
+                </article>
+
+                <article aria-labelledby="feature-2">
+                    <h3 id="feature-2">Step-by-step Application Guides</h3>
+                    <p>Practical guides with screenshots, sample forms, and local office contact information to make applying painless.</p>
+                </article>
+
+                <article aria-labelledby="feature-3">
+                    <h3 id="feature-3">Eligibility Checker</h3>
+                    <p>A simple questionnaire that helps users quickly identify schemes they are likely to qualify for (non-sensitive inputs only).</p>
+                </article>
+
+                <article aria-labelledby="feature-4">
+                    <h3 id="feature-4">Multilingual & Accessible Content</h3>
+                    <p>Content written in clear English and prepared for translation/localization into regional languages. Designed with accessibility best practices (semantic headings, ARIA where needed, and keyboard-friendly navigation).</p>
+                </article>
+
+                <article aria-labelledby="feature-5">
+                    <h3 id="feature-5">Resources for Helpers</h3>
+                    <p>Printable checklists, community worker guides, and contact templates for NGOs, student volunteers, and local government staff who help beneficiaries apply.</p>
+                </article>
+            </section>
+
+            <!-- HOW IT WORKS -->
+            <div class="static-content-block" aria-labelledby="how-heading">
+                
+                <div>
+                    <h2 id="how-heading">How Awareness 360 Works</h2>
+                <ol>
+                    <li><strong>Research:</strong> We source scheme details from official government portals, notifications, and circulars.</li>
+                    <li><strong>Simplify:</strong> Experts rewrite requirements in plain language and convert legal text into actionable steps.</li>
+                    <li><strong>Localize:</strong> We add state-specific notes where rules differ, plus contact details of local implementing agencies.</li>
+                    <li><strong>Publish:</strong> Each scheme page includes eligibility checks, documents list, application links, and a “how to apply” walkthrough.</li>
+                    <li><strong>Update:</strong> We keep pages current — updating them whenever official guidelines change.</li>
+                </ol>
+
+                <p><em>Note:</em> We do not process applications ourselves — our role is to guide users to the correct official channels and help them understand the process.</p>
+                </div>
+
+                <div class="conCube">
+        <div class="cube1">        
+        <div class="face top"></div>
+        <div class="face front">Research</div>
+        <!-- <div class="face right">RIGHT</div> -->
+        <!-- <div class="face left">LEFT</div> -->
+        <div class="face back"></div> 
+        <div class="face bottom"></div>
+        </div>
+        <div class="cube2">        
+            <div class="face top"></div>
+            <div class="face front">Simplify</div>
+            <!-- <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div> -->
+            <div class="face back"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="cube3">        
+            <div class="face top"></div>
+            <div class="face front">Localize</div>
+            <!-- <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div> -->
+            <div class="face back"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="cube4">        
+            <div class="face top"></div>
+            <div class="face front">Publish</div>
+            <!-- <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div> -->
+            <div class="face back"></div>
+            <div class="face bottom"></div>
+        </div>
+        <div class="cube5">        
+            <div class="face top"></div>
+            <div class="face front">Update</div>
+            <!-- <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div> -->
+            <div class="face back"></div>
+            <div class="face bottom"></div>
+        </div>
+    </div>
+            </div>
+
+            <!-- IMPACT / METRICS -->
+            <section class="static-content-block" aria-labelledby="impact-heading">
+                <h2 id="impact-heading">Impact & Benefits</h2>
+                <p>
+                    Our objective is measurable: increase scheme awareness and successful applications among underserved communities. Example impact metrics we track:
+                </p>
+                <ul>
+                    <li>Number of scheme pages published and updated.</li>
+                    <li>Average time saved per user (by avoiding repeated searches).</li>
+                    <li>Community outreach sessions conducted and attendees.</li>
+                    <li>Feedback indicating successful claims after using our guides.</li>
+                </ul>
+
+                <p>Even small increases in awareness can translate to meaningful support reaching families in need — improving education, healthcare and livelihood outcomes.</p>
+            </section>
+
+            <!-- PRIVACY & DATA -->
+            <section class="static-content-block" aria-labelledby="privacy-heading">
+                <h2 id="privacy-heading">Privacy & Data</h2>
+                <p>
+                    We respect user privacy. Awareness 360:
+                </p>
+                <ul>
+                    <li>Collects only non-sensitive information for features like the eligibility checker (e.g., age range, category, state) and never stores personally identifiable information without explicit consent.</li>
+                    <li>Links only to official government portals for application submission; we do not host or route sensitive documents or applications on behalf of users.</li>
+                    <li>Provides clear guidance on what personal documents users will need to apply and where to submit them securely.</li>
+                </ul>
+                <p>See our <a href="privacy.html">Privacy Policy</a> for full details.</p>
+            </section>
+
+            <!-- TEAM AND PARTNERS -->
+            <section class="static-content-block" aria-labelledby="team-heading">
+                <h2 id="team-heading">Team & Partners</h2>
+                <p>
+                    Awareness 360 is a semester project led by a team of students and mentors with backgrounds in web development, public policy research, and community outreach.
+                </p>
+                <ul>
+                    <li><strong>Project Lead:</strong> (Venu Gopal)</li>
+                    <li><strong>Frontend & UX:</strong> (Haswanth)</li>
+                    <li><strong>Content & Research:</strong> (Deepak)</li>
+                    <li><strong>Community Outreach:</strong> (Chakka Sai kumar)</li>
+                </ul>
+                <p>We collaborate with local NGOs and student volunteers to test content usability and ensure it is genuinely helpful to end users.</p>
+            </section>
+
+            <!-- CALL TO ACTION -->
+            <section class="static-content-block cta" aria-labelledby="cta-heading">
+                <h2 id="cta-heading">Get Involved</h2>
+                <p>
+                    You can help Awareness 360 reach more people:
+                </p>
+                <ul>
+                    <li><strong>Contribute:</strong> Report a scheme we missed or send corrections.</li>
+                    <li><strong>Volunteer:</strong> Help translate pages or run local awareness sessions.</li>
+                    <li><strong>Share:</strong> If a guide helped you, tell others — small shares lead to real claims for people who need them.</li>
+                </ul>
+
+                <p><a class="primary-btn" href="contact.html">Contact Us</a> to volunteer or suggest a scheme.</p>
+            </section>
+
+        </main>
+
+        <footer class="main-footer" role="contentinfo" style="background: linear-gradient(90deg, #28a745, #1e7e34);">
+            <p>&copy; 2025 Awareness 360 | A Semester Project.</p>
+            <div class="footer-links">
+                <a href="privacy.html" style="color: white;">Privacy Policy</a>
+                <a href="contact.html" style="color: white;">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // Show main content after bars animation
+        window.addEventListener('load', () => {
+            const container = document.querySelector('.bars-ani');
+            const mainContent = document.getElementById('main-content');
+
+            // Total duration = max delay + animation duration (calculated to match CSS animation)
+            const totalDuration = 1.5 * 1000 + 0.1 * 6 * 1000; // 1.5s + 0.6s = 2.1s
+            setTimeout(() => {
+                container.classList.add('finished');
+                mainContent.style.opacity = '1';
+                mainContent.style.visibility = 'visible';
+            }, totalDuration);
+        });
+
+        // Simple logout fallback (you likely already have auth.js)
+        function logout() {
+            if (typeof window.authLogout === 'function') {
+                window.authLogout();
+            } else {
+                // fallback: clear local storage and redirect to login
+                localStorage.clear();
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
+</body>
+</html>

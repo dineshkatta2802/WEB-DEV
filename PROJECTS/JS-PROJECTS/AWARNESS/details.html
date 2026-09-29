@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="schemeTitleTag">Scheme Details - Awareness 360</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo" href="index.html">Awareness 360</div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="schemes.html">Schemes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button onclick="logout()" class="logout-button" aria-label="Logout of the portal">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="scheme-details-section">
+            <h1 id="detail-scheme-name">Loading Scheme Details...</h1>
+            <a href="schemes.html" class="back-link">← Back to All Schemes</a>
+
+            <div class="details-grid">
+                <article class="detail-block overview-block">
+                    <h2>Scheme Overview</h2>
+                    <p id="detail-focus"></p>
+                    <p id="detail-overview-content"></p>
+                </article>
+
+                <article class="detail-block eligibility-block">
+                    <h2>Who is Eligible?</h2>
+                    <ul id="detail-eligibility-list">
+                        <li>Loading eligibility criteria...</li>
+                    </ul>
+                </article>
+                
+                <article class="detail-block steps-block">
+                    <h2>How to Apply (Steps)</h2>
+                    <ol id="detail-steps-list">
+                        <li>Loading application steps...</li>
+                    </ol>
+                </article>
+            </div>
+
+            <div class="official-link-container">
+                <p>For detailed, up-to-date, and legally binding information, always refer to the official source:</p>
+                <a id="detail-official-link" href="#" target="_blank" class="cta-button official-link">Official Scheme Website</a>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Awareness 360 | A Semester Project.</p>
+        <div class="footer-links">
+            <a href="about.html" aria-label="About Us Link">About</a>
+            <a href="contact.html" aria-label="Contact Us">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/details.js"></script>
+</body>
+</html>

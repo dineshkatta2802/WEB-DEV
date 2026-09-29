@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness 360 - Scheme Finder</title>
+    <meta name="description" content="Find Central and Andhra Pradesh government schemes, explained in simple language.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- BARS ANIMATION -->
+    <div class="bars-ani">
+        <div class="bars" style="--i:1; background-color: #17a2b8;"></div>
+        <div class="bars" style="--i:2; background-color: #17a2b8;"></div>
+        <div class="bars" style="--i:3; background-color: #17a2b8;"></div>
+        <div class="bars" style="--i:4; background-color: #17a2b8;"></div>
+        <div class="bars" style="--i:5; background-color: #17a2b8;"></div>
+        <div class="bars" style="--i:6; background-color: #17a2b8;"></div>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content" style="opacity: 0; visibility: hidden;">
+        <header class="main-header" style="background: linear-gradient(45deg, #17a2b8 0%, #138496 100%);">
+            <a class="logo" href="index.html" style="list-style: none; color: white; text-decoration: none;">Awareness 360</a>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="schemes.html">Schemes</a></li> 
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><button onclick="logout()" class="logout-button" aria-label="Logout of the portal">Logout</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-banner schemes-banner" aria-labelledby="schemes-page-title">
+                <h1 id="schemes-page-title">All Government Schemes</h1>
+                <p>Use the filters below to find the program that suits your needs.</p>
+            </section>
+
+            <section id="schemes" class="scheme-finder">
+                <h2>Filter Schemes</h2>
+                <div class="filter-controls">
+                    <label for="state-filter">State/Central:</label>
+                    <select id="state-filter" aria-label="Filter schemes by state or central government">
+                        <option value="all">All Schemes</option>
+                        <option value="central">Central 🇮🇳</option>
+                        <option value="ap">Andhra Pradesh</option>
+                    </select>
+
+                    <label for="beneficiary-filter">Category:</label>
+                    <select id="beneficiary-filter" aria-label="Filter schemes by beneficiary group">
+                        <option value="all">All Categories</option>
+                        <option value="farmer">Farmers 🚜</option>
+                        <option value="woman_girl">Women / Girl Child 👧</option>
+                        <option value="elderly">Elderly / Pension 👴</option>
+                        <option value="student">Students 📚</option>
+                        <option value="social_security">Social Security / Health ❤️</option>
+                        <option value="livelihood">Skill / Livelihood 💼</option>
+                        <option value="general">General Welfare</option>
+                    </select>
+                    
+                    <input type="search" id="scheme-search" placeholder="Search by scheme name or benefit..." aria-label="Search schemes">
+                </div>
+
+                <div id="scheme-list" class="scheme-grid">
+          <!-- Andhra Pradesh Schemes (Current 2025) -->
+          <article class="scheme-card" data-state="ap" data-category="education" data-beneficiary="student">
+            <h3>Thalliki Vandanam (AP)</h3>
+            <p class="summary">₹15,000 annual aid per child (Classes I–XII) to mothers/guardians for school education.</p>
+            <a href="details.html?scheme=Thalliki%20Vandanam%20(AP)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="ap" data-category="social_security" data-beneficiary="elderly">
+            <h3>NTR Bharosa Pension Scheme (AP)</h3>
+            <p class="summary">Enhanced monthly pension for elderly, widows, disabled, and vulnerable citizens.</p>
+            <a href="details.html?scheme=NTR%20Bharosa%20Pension%20Scheme%20(AP)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="ap" data-category="women" data-beneficiary="woman_girl">
+            <h3>Aadabidda Nidhi Scheme (AP)</h3>
+            <p class="summary">Monthly financial assistance for women aged 18–59 from low-income families.</p>
+            <a href="details.html?scheme=Aadabidda%20Nidhi%20Scheme%20(AP)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="ap" data-category="housing" data-beneficiary="general">
+            <h3>NTR Housing Scheme (AP)</h3>
+            <p class="summary">Affordable housing for low-income and homeless families across Andhra Pradesh.</p>
+            <a href="details.html?scheme=NTR%20Housing%20Scheme%20(AP)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="ap" data-category="livelihood" data-beneficiary="livelihood,woman_girl">
+            <h3>NTR Jala Siri (AP)</h3>
+            <p class="summary">Irrigation and livelihood enhancement program for farmers and rural women groups.</p>
+            <a href="details.html?scheme=NTR%20Jala%20Siri%20(AP)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <!-- Central Schemes (Unchanged) -->
+          <article class="scheme-card" data-state="central" data-category="farmer" data-beneficiary="farmer">
+            <h3>PM Kisan Samman Nidhi (Central)</h3>
+            <p class="summary">₹6,000 per year income support for landholding farmer families.</p>
+            <a href="details.html?scheme=PM%20Kisan%20Samman%20Nidhi%20(Central)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="housing" data-beneficiary="general">
+            <h3>Pradhan Mantri Awas Yojana (PMAY)</h3>
+            <p class="summary">Financial assistance or subsidy for EWS, LIG, MIG families to buy/build homes.</p>
+            <a href="details.html?scheme=Pradhan%20Mantri%20Awas%20Yojana%20(PMAY)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="social_security" data-beneficiary="elderly,social_security">
+            <h3>Atal Pension Yojana (APY) (Central)</h3>
+            <p class="summary">Fixed monthly pension after age 60 for unorganized sector workers.</p>
+            <a href="details.html?scheme=Atal%20Pension%20Yojana%20(APY)%20(Central)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="livelihood" data-beneficiary="livelihood">
+            <h3>PM Vishwakarma Yojana (Central)</h3>
+            <p class="summary">Skill training, toolkit stipend, and collateral-free loans for traditional artisans.</p>
+            <a href="details.html?scheme=PM%20Vishwakarma%20Yojana%20(Central)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="farmer" data-beneficiary="farmer">
+            <h3>PM Fasal Bima Yojana (PMFBY)</h3>
+            <p class="summary">Comprehensive crop insurance for farmers growing notified crops.</p>
+            <a href="details.html?scheme=PM%20Fasal%20Bima%20Yojana%20(PMFBY)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="health" data-beneficiary="woman_girl">
+            <h3>Pradhan Mantri Matru Vandana Yojana (PMMVY)</h3>
+            <p class="summary">Cash incentive of ₹5,000 for pregnant women and lactating mothers (first child).</p>
+            <a href="details.html?scheme=Pradhan%20Mantri%20Matru%20Vandana%20Yojana%20(PMMVY)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="social_security" data-beneficiary="woman_girl">
+            <h3>Sukanya Samriddhi Yojana (SSY)</h3>
+            <p class="summary">High-interest, tax-free savings for parents of a girl child (under 10).</p>
+            <a href="details.html?scheme=Sukanya%20Samriddhi%20Yojana%20(SSY)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="health" data-beneficiary="social_security">
+            <h3>Ayushman Bharat - PMJAY (Central)</h3>
+            <p class="summary">Health cover of ₹5 Lakh per family per year for SECC 2011 vulnerable families.</p>
+            <a href="details.html?scheme=Ayushman%20Bharat%20-%20PMJAY%20(Central)" class="learn-more cta-button">Know More</a>
+          </article>
+
+          <article class="scheme-card" data-state="central" data-category="social_security" data-beneficiary="general">
+            <h3>Pradhan Mantri Jan Dhan Yojana (PMJDY)</h3>
+            <p class="summary">Zero balance savings account and financial services for unbanked citizens.</p>
+            <a href="details.html?scheme=Pradhan%20Mantri%20Jan%20Dhan%20Yojana%20(PMJDY)" class="learn-more cta-button">Know More</a>
+          </article>
+        </div>
+            </section>
+        </main>
+
+        <footer class="main-footer" style="background-color: #138496;">
+            <p>&copy; 2024 Awareness 360 | A Semester Project.</p>
+            <div class="footer-links">
+                <a href="about.html" aria-label="About Us Link" style="color: white;">About</a>
+                <a href="contact.html" aria-label="Contact Us" style="color: white;">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+
+     <script>
+        // SHOW MAIN CONTENT AFTER BARS ANIMATION
+        window.addEventListener('load', () => {
+            const container = document.querySelector('.bars-ani');
+            const mainContent = document.getElementById('main-content');
+
+            // Total duration = max delay + animation duration
+            const totalDuration = 1.5 * 1000 + 0.1 * 6 * 800; // 1.5s + 0.6s = 2.1s
+            setTimeout(() => {
+                container.classList.add('finished');
+                mainContent.style.opacity = '1';
+                mainContent.style.visibility = 'visible';
+            }, totalDuration);
+        });
+
+    </script>
+
+    </body>
+    </html>
