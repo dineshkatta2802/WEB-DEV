@@ -8,7 +8,7 @@ const taskFile = path.join(__dirname, 'task.json');
 const data = fs.readFileSync(taskFile, 'utf-8');
 let tasks = JSON.parse(data);
 
-const newId = tasks.length > 0 ?Math.max(...tasks.map(t => t.id))+1 : 1;
+const newId = tasks.length > 0 ? Math.max(...tasks.map(t => t.id))+1 : 1;
 
 // Adding
 if(args[0] === 'add' && args[1]?.trim()){
