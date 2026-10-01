@@ -10,96 +10,125 @@ if(!folder){
     process.exit(1);
 }
 
-const fileDirectories = [
-    'Coding',
-    'Document',
-    'Images',
-    'Audio',
-    'Video',
+// const fileDirectories = [
+//     'Coding',
+//     'Document',
+//     'Images',
+//     'Audio',
+//     'Video',
+// ];
 
-];
+const categories = {
+    ".js": "Coding",
+    ".py": "Coding",
+    ".java": "Coding",
+    ".c": "Coding",
+    ".html": "Coding",
+    ".css": "Coding",
+
+    ".txt": "Documents",
+    ".pdf": "Documents",
+    ".doc": "Documents",
+    ".docx": "Documents",
+
+    ".jpg": "Images",
+    ".jpeg": "Images",
+    ".png": "Images",
+    ".gif": "Images",
+    ".webp": "Images",
+
+    ".mp3": "Audio",
+    ".wav": "Audio",
+    ".m4a": "Audio",
+
+    ".mp4": "Video",
+    ".mkv": "Video",
+    ".mov": "Video",
+};
 
 const downloadsFolder = path.join(__dirname, "Downloads");
 
 // Creating directory by checking its existence
-const folderExistence_Creation = (dirName, parentFolder) => {
+const createDirectory = (dirName, parentFolder, callback) => {
     const directoryPath = path.join(parentFolder, dirName);
-    if(fs.existsSync(directoryPath)){ 
-        console.log(`"${dirName}" directory Exists in ${directoryPath}`) 
-    }
-    else{
-        fs.mkdirSync(directoryPath, {recursive : true});
-        console.log(`New "${dirName}" directory created in ${parentFolder}`);
-    }     
+    fs.mkdir(directoryPath, {recursive : true}, (err) => {
+        if(err) {
+            callback(err);
+            return;
+        }
+        callback(null, directoryPath);
+    })
 }
 
 // Moving files 
-const fileFormatting = (oldPath, newPath) => {
+const moveFile = (oldPath, newPath) => {
     fs.rename(oldPath, newPath, (err) => {
         if(err){
-            console.log('Error moving the files');
+            console.error(`Failed to move ${oldPath}:`, err.message);
         }
     });
 }
 
-folderExistence_Creation('Downloads', __dirname);
+createDirectory('Downloads', __dirname);
 
-fs.readdir(folder, (err, files) => {
+fs.readdir(folder, {withFileTypes : true}, (err, files) => {
     if(err){
         console.error(err);
         return;
     };
     files.forEach((file) => {
+        if(!file.isFile()) return;
         const fileExtension = path.extname(file).toLowerCase();
         const filePath = path.join(folder,file);
-        // console.log(filePath);
-        // console.log(path.join(downloadsFolder, fileDirectories[0], file))
-        switch (fileExtension){
-            case '.js':
-            case '.py':
-            case '.java':
-            case '.c':
-            case '.html':
-            case '.css':
-            folderExistence_Creation(fileDirectories[0], downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, fileDirectories[0], file));
-            break;
+        // switch (fileExtension){
+        //     case '.js':
+        //     case '.py':
+        //     case '.java':
+        //     case '.c':
+        //     case '.html':
+        //     case '.css':
+        //     createDirectory(fileDirectories[0], downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, fileDirectories[0], file));
+        //     break;
 
-            case '.txt':
-            case '.pdf':
-            case '.doc':
-            case '.docx':
-            folderExistence_Creation(fileDirectories[1], downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, fileDirectories[1], file));
-            break;
+        //     case '.txt':
+        //     case '.pdf':
+        //     case '.doc':
+        //     case '.docx':
+        //     createDirectory(fileDirectories[1], downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, fileDirectories[1], file));
+        //     break;
 
-            case '.jpg':
-            case '.jpeg':
-            case '.png':
-            case '.gif':
-            case '.webp':
-            folderExistence_Creation(fileDirectories[2], downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, fileDirectories[2], file));
-            break;
+        //     case '.jpg':
+        //     case '.jpeg':
+        //     case '.png':
+        //     case '.gif':
+        //     case '.webp':
+        //     createDirectory(fileDirectories[2], downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, fileDirectories[2], file));
+        //     break;
 
-            case '.mp3':
-            case '.wav':
-            case '.m4a':
-            folderExistence_Creation(fileDirectories[3], downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, fileDirectories[3], file));
-            break;
+        //     case '.mp3':
+        //     case '.wav':
+        //     case '.m4a':
+        //     createDirectory(fileDirectories[3], downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, fileDirectories[3], file));
+        //     break;
 
-            case '.mp4':
-            case '.mkv':
-            case '.mov':
-            folderExistence_Creation(fileDirectories[4], downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, fileDirectories[4], file));
-            break;
+        //     case '.mp4':
+        //     case '.mkv':
+        //     case '.mov':
+        //     createDirectory(fileDirectories[4], downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, fileDirectories[4], file));
+        //     break;
             
-            default:
-            folderExistence_Creation('OtherFiles', downloadsFolder);
-            fileFormatting(filePath, path.join(downloadsFolder, "OtherFiles", file));
-            break;
-        } 
+        //     default:
+        //     createDirectory('OtherFiles', downloadsFolder);
+        //     moveFile(filePath, path.join(downloadsFolder, "OtherFiles", file));
+        //     break;
+        // } 
+        const category = categories[fileExtension] || "OtherFiles";
+        createDirectory(category, downloadsFolder);
+        moveFile(filePath, path.join(downloadsFolder, category, file));
     });
 })
