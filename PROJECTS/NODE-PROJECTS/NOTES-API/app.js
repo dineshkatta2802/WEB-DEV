@@ -1,6 +1,5 @@
 const http = require("node:http");
 const fs = require("node:fs/promises");
-const { error } = require("node:console");
 
 const PORT = 3000;
 

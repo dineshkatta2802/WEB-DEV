@@ -19,11 +19,9 @@ const parseBody = (req) => {
             try {
                 const data = JSON.parse(body);
                 resolve(data);
-                return;
             } catch (error) {
                 console.error(error);
                 reject(error);
-                return;
             }
         });
         req.on('error', err => {
