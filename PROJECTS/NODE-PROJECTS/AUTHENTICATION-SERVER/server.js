@@ -45,11 +45,16 @@ const getSessionData = async() => {
     return JSON.parse(data);
 }
 
-const generateID = () => {
-    return Math.random().toString(36).substring(2, 10);
+const getCookie = (req, name) => {
+    const header = req.headers.cookie;
+    if(!header) return undefined;
+    const cookie = header.split(';').map(c => c.trim()).find(c => c.startsWith(`${name}=`));
+    return cookie?.split('=').slice(1).join('=');
 }
 
 const server = http.createServer(async(req, res) => {
+    console.log('Method : ', req.method);
+    console.log('URL : ', req.url);
     try {
         //POST /register
         if(req.method === 'POST' && req.url === '/register') {
@@ -75,13 +80,14 @@ const server = http.createServer(async(req, res) => {
         // POST login
         if(req.method === 'POST' && req.url === '/login') {
             const liveData = await parseBody(req);
+            if(!validatingData(liveData)) return sendResponse(res, 400, {error : "Invalid Data"});
             const userData = await getUserData();
             const user = userData.find(u => u.userName === liveData.userName);
-            if(!user) return sendResponse(res, 401, {error : "No user found"});
+            if(!user) return sendResponse(res, 401, {error : "Invalid Credentials"});
             const storeSalt = user.salt;
             const newHashPassword = crypto.scryptSync(liveData.password, storeSalt, 64).toString('hex');
             if(newHashPassword !== user.passwordHash) return sendResponse(res, 401, {error : 'Invalid Credentials'});
-            const sessionId = generateID();
+            const sessionId = crypto.randomBytes(32).toString('hex');
             const sessionData = await getSessionData();
             const newSession = {
                 userId : user.id,
@@ -89,7 +95,35 @@ const server = http.createServer(async(req, res) => {
             }
             sessionData.push(newSession);
             await fs.writeFile('./session.json', JSON.stringify(sessionData, null, 2));
+            res.setHeader('Set-Cookie', `sessionId=${sessionId}; HttpOnly`)
             return sendResponse(res, 200, {message : "Login Successful", user : {id : user.id, userName : user.userName}});
+        }
+
+        // GET profile
+        // if(req.method === 'GET' && req.url === '/profile'){
+        //     const sessionId = getCookie(req, "sessionId");
+        //     const sessionData = await getSessionData();
+        //     const session = sessionData.find(s  => s.sessionId === sessionId);
+        //     if(!session) return sendResponse(res, 401, {error: 'Unauthorized'});
+        //     const userData = await getUserData();
+        //     const user = userData.find(u => u.id === session.userId);
+        //     if(!user) return sendResponse(res, 401, {error : 'Unauthorized'});
+        //     return sendResponse(res, 200, {message : 'Authorized User', user : {id : user.id, useName : user.useName}});
+        // }
+
+        // GET /profile (BOLA Demonstration)
+        if (req.method === 'GET' && req.url.startsWith('/profile/')) {
+            const userId = Number(req.url.split('/')[2]);
+            const sessionId = getCookie(req, "sessionId");
+            const sessionData = await getSessionData();
+            const session = sessionData.find(s => s.sessionId === sessionId);
+            if (!session) return sendResponse(res, 401, { error: 'Unauthorized' });
+            // Authorization Line
+            if(userId !== session.userId) return sendResponse(res, 403, {error : 'Forbidden'}); 
+            const userData = await getUserData();
+            const user = userData.find(u => u.id === userId);
+            if (!user) return sendResponse(res, 404, { error: 'User not found' });
+            return sendResponse(res, 200, {id: user.id, userName: user.userName});
         }
 
         return sendResponse(res, 404, {error : 'Route not found'});
@@ -99,4 +133,4 @@ const server = http.createServer(async(req, res) => {
     }
 }).listen(PORT, () => {
     console.log(`Server is live at http://localhost:${PORT}`);
-})
+});

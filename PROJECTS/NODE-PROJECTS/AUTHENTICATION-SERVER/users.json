@@ -1,20 +1,14 @@
 [
   {
     "id": 1,
-    "userName": "Divya",
-    "passwordHash": "d89cd8177c16ef013257ee4de0a46c9a9d1618db3c805ad5be277ed7cf93ac9dde08abad0c7f4bc8d571c0c3efd1f52c23505f5e1841e16d1906279cebb92c7a",
-    "salt": "18ea7a7da0bcab0597d7b9cb8c65135b"
+    "userName": "Chari",
+    "passwordHash": "2c7e6fe20546bd43e19197fac8215985f719314346e3b5be6cebae4f6a4581251ce1fbe32d014471a4085db0c589e530cf73b7819af8a5b07b6228fc2c84d57d",
+    "salt": "07f71079a9b206a8402daaf54f6ecc34"
   },
   {
     "id": 2,
     "userName": "Dinesh",
-    "passwordHash": "6d549b24ee8f1cfd80f46d673239c0bc73bd773115d4ffcab54038b4ebe97d9dbdb58dfec62695b491c0c5b8d95db98dece32c858267dca63b437f6844df7aac",
-    "salt": "1eeba3372d589e393ef83e56d0290f90"
-  },
-  {
-    "id": 3,
-    "userName": "DineshKatta",
-    "passwordHash": "0514fc379d3384500474ff874664eb0e5f2cc6c3b966417a2db3df21b8233f819aba0ce157101c05744477e35271c5ed62325a3b87abc2834792bb111f364ea9",
-    "salt": "de50b77f54dca366aa0a3ec62a10491b"
+    "passwordHash": "08c6d65e0e2ed1baf5c4113c9e1e117fd18d550ea6e64794d561adcee64a8bdf7b5e295303ffbd72a7f7eccc84cea6be088f2b701dbe08419b5d18c0a9ce6c58",
+    "salt": "193e50c20b5f90ad93b850db07f508ed"
   }
 ]
