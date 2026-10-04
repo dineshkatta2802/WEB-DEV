@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "userName": "Xavier",
+        "salt": "3d5130e9aeadd23f5ce8e0deb8252c28",
+        "hashedPassword": "013a3450eb3dd5813842eaed86949fafcba3161284213d3c104bdba8f8c4b1c1be408b6c02c86fa9d767e07304dcb6e5fc9d57c63618438522397b0e93634c6c"
+    },
+    {
+        "id": 2,
+        "userName": "Dinesh",
+        "salt": "d3ddd6f247e36741ab29a3f7a05aef0b",
+        "hashedPassword": "a7d771ca9f319d41bb07840e7312182e743719c40ff340f6955e42d74b9ccf1570a34eeff44339670bb989f685383a9b58d3bf292a4dd5d7f33790c3e2883047"
+    }
+]

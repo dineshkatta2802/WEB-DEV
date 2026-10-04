@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "userId": 2,
+        "userName": "Dinesh",
+        "message": "Hello this is dinesh",
+        "timeStamp": "2026-10-04T09:58:20.839Z"
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "userName": "Dinesh",
+        "message": "Hello this is Xavier",
+        "timeStamp": "2026-10-04T09:58:28.183Z"
+    }
+]
